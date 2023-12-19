@@ -1,0 +1,742 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "defragmentation"
+	group: "494B330CF50C8720"
+	icon: "megacells:cell_component_256m"
+	id: "219A2257821FECB6"
+	order_index: 3
+	quest_links: [{
+		id: "01ADC981F194403B"
+		linked_quest: "02EFF4B54834E589"
+		shape: "hexagon"
+		x: -0.5d
+		y: 9.5d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"47EC01A0EEFF272F"
+				"586B3283715D58FA"
+				"4DA89AED6EA9C07B"
+				"40C9FC4B88B89CD5"
+			]
+			description: ["Now that you've obtained &bentangled matter&r we can begin repairing the Nexa in preparation for our eventual exodus. Please provide the needed energy and entangled matter and we will begin the process of isolating the corrupted sectors. "]
+			icon: "boundlessflux:lesser_entangled_matter"
+			id: "1953BC9FB59C409D"
+			rewards: [
+				{
+					id: "4DBBAFADFE9D3C1E"
+					item: "rftoolsutility:matter_receiver"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "2434C91329A0A0A9"
+					item: {
+						Count: 1b
+						id: "rftoolsutility:advanced_charged_porter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "371B0159DE865AE9"
+					max_input: 10000L
+					title: "Defragmentation"
+					type: "forge_energy"
+					value: 2000000L
+				}
+				{
+					consume_items: true
+					id: "11ADF975D2DD6E5E"
+					item: "boundlessflux:lesser_entangled_matter"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1953BC9FB59C409D"]
+			description: ["We have isolated the corrupted sectory and linked them with the entangled matter. We should now be able to eject them into the physical world for you to deal with. When you're ready &6activate the simulation&r and enter to begin the sector repair."]
+			icon: "ae2:spatial_storage_cell_128"
+			id: "78A629287D1D2174"
+			rewards: [
+				{
+					icon: "ae2:spatial_cell_component_128"
+					id: "3A1DB5FE4D466FAF"
+					tags: ["prefab_quartz"]
+					team_reward: true
+					title: "Activate the Simulation"
+					type: "custom"
+				}
+				{
+					id: "10CAA52FDAB2E2EB"
+					item: "ae2:spatial_storage_cell_128"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ae2:spatial_pylon"
+				id: "2538F3CD8167AB7C"
+				ignore_dimension: true
+				position: [I;
+					-15
+					44
+					56
+				]
+				size: [I;
+					7
+					5
+					7
+				]
+				title: "Goto the Simulation Matrix"
+				type: "location"
+			}]
+			title: "Activate the Digital Arena"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["78A629287D1D2174"]
+			description: [
+				"While we upload the corrupted sectors into your simulation matrix you should take the opportunity to prepare &6contianment systems&r. We've downloaded schematics for you to create a miniaturized simulation system. You'll first start by creating a deep learner and a data model."
+				""
+				"In order for the data model to be linked to the entities you'll need to right click on one of them with a blank data model. This will encode the entity type for processing in the simulation. "
+				""
+				"Once you have it ready goto the center of the area and activate the first wave. "
+			]
+			icon: "hostilenetworks:deep_learner"
+			id: "09452F8E118B78CB"
+			rewards: [
+				{
+					id: "091AF4CBA45AC78D"
+					item: {
+						Count: 1b
+						id: "minecraft:lingering_potion"
+						tag: {
+							Potion: "apotheosis:long_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26A7C928F0A3473B"
+					item: {
+						Count: 1b
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_strength"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "097AD5A0179852F0"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "60298144AAAD7862"
+					item: "hostilenetworks:deep_learner"
+					type: "item"
+				}
+				{
+					id: "35E96EC980CBC7A2"
+					item: "hostilenetworks:blank_data_model"
+					type: "item"
+				}
+			]
+			title: "Machine Learning"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["09452F8E118B78CB"]
+			description: ["When you are ready, goto the center of the arena and initialize the wave. Remember to &6right click&r the data model on one of the entities to bind it. If you fail to defeat all the corruption we'll need to prepare the materialization again until it can be fully contained. Good luck, Elyria is with you... in spirit."]
+			icon: "boundlessflux:first_sword"
+			id: "760BDD98711F713F"
+			rewards: [{
+				icon: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: { }
+				}
+				id: "20FABC0D733D357D"
+				tags: ["start_first_gateway"]
+				team_reward: true
+				title: "Initiate Auxiliary Data Sector Gate"
+				type: "custom"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "botania:lens_flare"
+				id: "464A301C7BF9E1BF"
+				ignore_dimension: true
+				position: [I;
+					-21
+					46
+					78
+				]
+				size: [I;
+					16
+					10
+					16
+				]
+				title: "Goto the Center of the Arena"
+				type: "location"
+			}]
+			title: "Commence Data Purge"
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["760BDD98711F713F"]
+			description: ["You successfully contained the data corruption and we've been able to start moving some of the stored consciousnesses into the new sector now. When you've prepared a place for them to stay, initiate the download and they will be materialized. The first of many new colonists to return to Elyria. Well done!"]
+			icon: "megacells:cell_component_1m"
+			id: "22DF340987219CD6"
+			rewards: [
+				{
+					command: "/execute at @p run summon minecraft:villager"
+					icon: "nameless_trinkets:fate_emerald"
+					id: "01D443BD1DDBAE72"
+					team_reward: true
+					title: "Initiate Download..."
+					type: "command"
+				}
+				{
+					id: "280F68F258913E31"
+					item: "ic2:villager_o_mat"
+					team_reward: true
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6D2D3B8964774476"
+					tags: ["finish_first_gateway"]
+					team_reward: true
+					title: "invisible quest"
+					type: "custom"
+				}
+				{
+					id: "44090A57511865A1"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:drowned"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6623FACD5E0220C1"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:guardian"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "megacells:cell_component_1m"
+				id: "225E1C041D34B8EF"
+				title: "Data Sector Reformatted"
+				type: "custom"
+			}]
+			title: "Auxiliary Data Sector Reformatted"
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["22DF340987219CD6"]
+			description: ["Using the &bsimulation chamber&r we can use the endcoded data models to simulate the biological components of the host entity. Use the data models along with power and prediction matrices to obtain materials that correspond to the entity type."]
+			id: "0476AE20C34AB296"
+			rewards: [{
+				count: 32
+				id: "58E60ECDCF50CB75"
+				item: "hostilenetworks:empty_prediction"
+				type: "item"
+			}]
+			tasks: [{
+				id: "396C286D5054B497"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "Generative AI"
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0476AE20C34AB296"]
+			description: ["&bGeneralized matter&r is a mutable form of protomatter than can be shaped into many different materials. Obtain this and integrate it into your crafting needs."]
+			id: "32276D18F41C522F"
+			rewards: [{
+				count: 32
+				id: "23D6D125E738FB81"
+				item: "hostilenetworks:overworld_prediction"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4510C6936BDCCE5A"
+				item: "hostilenetworks:overworld_prediction"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0476AE20C34AB296"]
+			description: ["Rarely, when simulating entities the simulation chamber will be able to extrapolate specific item derivatives. These specialized predictions can be used in a loot fabricator to generate specific items related to that entity. "]
+			id: "36BC68AC31AC6A24"
+			rewards: [
+				{
+					id: "57CE9B6478712C06"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:zombified_piglin"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67A5803823B2711B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "233E70EF16E6A6B1"
+				item: {
+					Count: 1b
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:zombie"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["36BC68AC31AC6A24"]
+			description: ["The &bloot fabricator&r takes any specialized prediction matrix and allows you to select the related materials you wish to replicate from it. "]
+			id: "4F45E721D86AA719"
+			rewards: [
+				{
+					id: "14C1F2F39236C560"
+					item: "cyclic:wireless_energy"
+					type: "item"
+				}
+				{
+					id: "7E3992F8DDA46CA4"
+					item: "cyclic:location_data"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "60DFDE4A5BD50F89"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["22DF340987219CD6"]
+			description: ["One sector cleared already, well done. We need to power up a containment field for the &bTertiary chamber&r and use a more potent energy entanglement source. A higher refined tier of entangled matter and 2.5M FE should be enough to initiate the next sequence."]
+			icon: "boundlessflux:greater_entangled_matter"
+			id: "1199C75AD010BA3F"
+			rewards: [{
+				icon: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:corruption_gate2"
+					}
+				}
+				id: "065175660AFD8868"
+				tags: ["start_second_gateway"]
+				team_reward: true
+				title: "Initiate Tertiary Corrupted Gate"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2A2789667BB48B41"
+					max_input: 10000L
+					title: "Tertiary Corrupted Sectory"
+					type: "forge_energy"
+					value: 2500000L
+				}
+				{
+					consume_items: true
+					id: "41E8B85FC9D77E40"
+					item: "boundlessflux:greater_entangled_matter"
+					type: "item"
+				}
+			]
+			title: "Tertiary Corrupted Sector"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1199C75AD010BA3F"]
+			description: ["You successfully contained the tertiary data corruption and we've been able to start moving some more of the stored consciousnesses into the new sector. Assuming you've already prepared a place for them, initiate the download and they will be materialized. The colony grows and with it, our faith in your inevitable success!"]
+			id: "4A6B5BD9CE473EB1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "23CA8938FFFC3EDD"
+					tags: ["finish_second_gateway"]
+					team_reward: true
+					type: "custom"
+				}
+				{
+					command: "/execute at @p run summon minecraft:villager"
+					icon: "nameless_trinkets:fate_emerald"
+					id: "7FE3CEDE9E21D24B"
+					team_reward: true
+					title: "Initiate Download..."
+					type: "command"
+				}
+				{
+					id: "399E9263A099718B"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:evoker"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AD6A4E3117F453E"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:slime"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69BB871FEFAC7266"
+					item: "ic2:pixelfoam_greg"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "megacells:cell_component_4m"
+				id: "628ACB7C337A8C5C"
+				item: "minecraft:bedrock"
+				title: "Data Sector Reformatted"
+				type: "item"
+			}]
+			title: "Tertiary Data Sector Reformatted"
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4A6B5BD9CE473EB1"]
+			description: ["Two sectors cleared now, remarkable progress! We're getting deeper into the heart of the system now meaning we will need even more power to contain the data corruptions. This process will required a greatly &brefined entangled matter&r and 10M FE."]
+			icon: "boundlessflux:refined_entangled_matter"
+			id: "55C272B53C34E8A2"
+			rewards: [{
+				icon: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:enderman_gate_large"
+					}
+				}
+				id: "71BA18A11B010C55"
+				tags: ["start_third_gateway"]
+				title: "Initiate Secondary Corrupted Sector"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "6D20B8B90705C6EE"
+					item: "boundlessflux:refined_entangled_matter"
+					type: "item"
+				}
+				{
+					id: "70A61DCE7276D5B0"
+					max_input: 10000L
+					title: "Secondary Corruption Containment"
+					type: "forge_energy"
+					value: 10000000L
+				}
+			]
+			title: "Secondary Corrupted Sector"
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["55C272B53C34E8A2"]
+			description: ["You've almost done it! You contained the secondary data corruption and many more colonists are now eagerly waiting to join you. Initiate the download to begin materialization. Make sure you have plenty of room this time, we're sending quite a few! "]
+			icon: "megacells:cell_component_64m"
+			id: "297BE049D34390C0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6D4D776253F28F9A"
+					team_reward: true
+					title: "finish_third_reward"
+					type: "custom"
+				}
+				{
+					icon: "nameless_trinkets:fate_emerald"
+					id: "2C6E3C5835B0A484"
+					tags: ["villager1"]
+					team_reward: true
+					title: "Initiate Download..."
+					type: "custom"
+				}
+				{
+					id: "0783DF5CC2509062"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:elder_guardian"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7282B1900A8485AD"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:phantom"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "megacells:cell_component_64m"
+				id: "655E23B3DB306B62"
+				item: "minecraft:bedrock"
+				title: "Data Sector Reformatted"
+				type: "item"
+			}]
+			title: "Secondary Data Sector Reformated"
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["297BE049D34390C0"]
+			description: [
+				"You've accessed the very core of Nexa and established a connection to the deepest root of the corruption. We'll need to muster all our resources and energy to force this last big into contianment. It's tendrils reach far into the heart of Elyria's Nexa network. "
+				""
+				"&bPristine Entangled Matter&r will not be easy to come by, nor the 50 Million FE needed, but you have the tools at your disposal now to accomplish the task. We are with you!"
+			]
+			icon: "boundlessflux:pristine_entangled_matter"
+			id: "6F5AB878C1B13FA9"
+			rewards: [{
+				icon: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:corruption_gate4"
+					}
+				}
+				id: "11C36495296FA648"
+				tags: ["start_fourth_gateway"]
+				team_reward: true
+				title: "Initiate Primary Corrupted Sector"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "4F04821ECE8E45D5"
+					item: "boundlessflux:pristine_entangled_matter"
+					type: "item"
+				}
+				{
+					id: "71C6DDA18ED0F9E8"
+					max_input: 10000L
+					title: "Primary Corrupted Sector Containment"
+					type: "forge_energy"
+					value: 50000000L
+				}
+			]
+			title: "Primary Corrupted Sector"
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6F5AB878C1B13FA9"]
+			description: ["All corrupted data nodes have now been purged. Containment protocols complete, data integrity at 100%. You've stabilized the Nexa Network and paved the way for us to finally return to our world. Initiate the final download when you're ready, many of us are excited to get home after all this time. "]
+			id: "6A0000403C3D0ABA"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "68A9DE80E0FC86C5"
+					tags: ["finish_fourth_gateway"]
+					team_reward: true
+					title: "finish_fourth_gateway"
+					type: "custom"
+				}
+				{
+					icon: "nameless_trinkets:fate_emerald"
+					id: "3E7934DBD2EC9721"
+					tags: ["villager2"]
+					team_reward: true
+					title: "Initiate Final Download..."
+					type: "custom"
+				}
+				{
+					id: "7C1E432375AE6626"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:warden"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				icon: "megacells:cell_component_256m"
+				id: "6942E35762CD9377"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "Primary Data Sector Reformatted"
+			x: -0.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0476AE20C34AB296"]
+			description: ["There are rumors of an ancient and terrible foe from the Nether Dimension. The piglin native's have detailed a ritual involving withered skeleton heads and soul sand to summon this entity. &bAttempt to summon this entity&r and use the entangled data module to capture him for further simulations."]
+			id: "65944281BD763FF2"
+			rewards: [
+				{
+					id: "6060F4205F587E91"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:wither"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00F5F3A8ED565922"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "7BAA2242E91544D9"
+					item: "nameless_trinkets:fate_emerald"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					Count: 1b
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:wither"
+						}
+					}
+				}
+				id: "646B2979F2610C9B"
+				title: "Kill the Wither"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"33D864DB589FC5FC"
+				"65944281BD763FF2"
+			]
+			description: ["Using the engineered genetics you previously perfected and the newly aquired alient genomes from the Wither creature we've been able to engineer its native resistance to the high temperatures of the nether. This genomic modification wont make you immune to fire but it will prevent the high heat of the nether from burning you without a hazmat suit. "]
+			icon: "mekanism:hazmat_mask"
+			id: "5F78B2ECE5539984"
+			optional: true
+			rewards: [{
+				auto: "invisible"
+				icon: "cataclysm:altar_of_fire"
+				id: "51A23D46EC7DD58E"
+				ignore_reward_blocking: true
+				stage: "fire_resistant"
+				team_reward: true
+				title: "Fire Gesistant Gene"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "61ABB0F38B705641"
+				title: "Continuous Evolution"
+				type: "checkmark"
+			}]
+			title: "Continuous Evolution"
+			x: 0.75d
+			y: 5.25d
+		}
+	]
+	title: "Defragmentation"
+}

@@ -1,0 +1,540 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: "57632A2841EDB38D"
+	icon: "supplementaries:globe"
+	id: "17E96387FC89303C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["17BFECFEF40CF241"]
+			description: [
+				"{gen.endgame.task_0.desc_0}"
+				""
+				"{gen.endgame.task_0.desc_1}"
+				""
+				"{@pagebreak}"
+				"[\"\", {\"translate\": \"gen.endgame.task_0.desc_2.format.text_0\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Arid Nexus\\\" -918 43 -663 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.endgame.task_0.desc_2.format.format_0\"}, {\"translate\": \"gen.endgame.task_0.desc_2.format.text_1\"}, \"\"]"
+				""
+				"{gen.endgame.task_0.desc_3}"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "22FF77A85CE7F290"
+			rewards: [{
+				auto: "invisible"
+				id: "0BF74E969BC91F0B"
+				tags: ["desert_seed_vault_cleared"]
+				team_reward: true
+				title: "{gen.endgame.task_0.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "41AB929EBB212E57"
+				title: "{gen.endgame.task_0.title}"
+				type: "custom"
+			}]
+			title: "{gen.endgame.task_0.title}"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["22FF77A85CE7F290"]
+			description: [
+				"{gen.endgame.task_1.desc_0}"
+				""
+				"{gen.endgame.task_1.desc_1}"
+				""
+				"{@pagebreak}"
+				"{gen.endgame.task_1.desc_2}"
+				""
+				"{gen.endgame.task_1.desc_3}"
+				""
+				""
+				"[\"\", \"\", {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Arid Vault\\\" 0 0 0 aqua\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Arid Vault\"]}, \"translate\": \"gen.endgame.task_1.desc_4.format.format_0\"}, \"\"]"
+			]
+			disable_toast: true
+			hide: true
+			icon: "biomesoplenty:desert_grass"
+			id: "3D4675CEAB17461D"
+			rewards: [{
+				auto: "enabled"
+				icon: "pneumaticcraft:creative_compressor"
+				id: "07474CA9100FD372"
+				tags: ["desert_seed_vault_clean"]
+				team_reward: true
+				title: "{gen.endgame.task_1.title}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2665A176B4808BE6"
+					title: "{gen.endgame.task_1.title}"
+					type: "checkmark"
+				}
+				{
+					id: "0A677B9736B53637"
+					item: "ic2:tfbp_biome_desertification"
+					type: "item"
+				}
+				{
+					id: "330E60EC6C23FC3D"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+			]
+			title: "{gen.endgame.task_1.title}"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D4675CEAB17461D"]
+			description: [
+				"{gen.endgame.task_2.desc_0}"
+				""
+				"{gen.endgame.task_2.desc_1}"
+				""
+				"{gen.endgame.task_2.desc_2}"
+				"{@pagebreak}"
+				"[\"\", {\"translate\": \"gen.endgame.task_2.desc_3.format.text_0\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Verdant Labyrinth\\\" 1085 42 2495 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.endgame.task_2.desc_3.format.format_0\"}, {\"translate\": \"gen.endgame.task_2.desc_3.format.text_1\"}, \"\"]"
+				""
+				"{gen.endgame.task_2.desc_4}"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "0706114F514FE071"
+			rewards: [{
+				auto: "invisible"
+				id: "0997E9BDC2E63EFC"
+				tags: ["jungle_seed_vault_cleared"]
+				team_reward: true
+				title: "{gen.endgame.task_2.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "67B0A64F3D200C7E"
+				title: "{gen.endgame.task_2.title}"
+				type: "custom"
+			}]
+			title: "{gen.endgame.task_2.title}"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35B314E5D68614D4"]
+			description: [
+				"{gen.endgame.task_3.desc_0}"
+				""
+				"{gen.endgame.task_3.desc_1}"
+				""
+				"{gen.endgame.task_3.desc_2}"
+				""
+				"{@pagebreak}"
+				"[\"\", {\"translate\": \"gen.endgame.task_3.desc_3.format.text_0\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Emerald Bastion\\\" 1455 42 1455 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.endgame.task_3.desc_3.format.format_0\"}, {\"translate\": \"gen.endgame.task_3.desc_3.format.text_1\"}, \"\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "2768A4BB7421656E"
+			rewards: [{
+				id: "5E22AD328F8E6E92"
+				tags: ["mossy_seed_vault_cleared"]
+				title: "{gen.endgame.task_3.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "4E6CDD8F505DBB29"
+				title: "{gen.endgame.task_3.title}"
+				type: "custom"
+			}]
+			title: "{gen.endgame.task_3.title}"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["747D02C49B4CD5A7"]
+			description: [
+				"{gen.endgame.task_4.desc_0}"
+				""
+				"{gen.endgame.task_4.desc_1}"
+				""
+				"{gen.endgame.task_4.desc_2}"
+				""
+				"[\"\", {\"translate\": \"gen.endgame.task_4.desc_3.format.text_0\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Abyssal Haven\\\" 2525 24 714 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.endgame.task_4.desc_3.format.format_0\"}, \"\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "4227B4FD0C3E89E5"
+			rewards: [{
+				id: "11B6D9D82C882371"
+				tags: ["ocean_seed_vault_cleared"]
+				title: "{gen.endgame.task_4.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "503DD1454403F4A4"
+				title: "{gen.endgame.task_4.title}"
+				type: "custom"
+			}]
+			title: "{gen.endgame.task_4.title}"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BD755CA28366967"]
+			description: [
+				"{gen.endgame.task_5.desc_0}"
+				""
+				"{gen.endgame.task_5.desc_1}"
+				""
+				"{gen.endgame.task_5.desc_2}"
+				""
+				"[\"\", {\"translate\": \"gen.endgame.task_5.desc_3.format.text_0\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Frostbound Keep\\\" -2215 42 -3034 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.endgame.task_5.desc_3.format.format_0\"}, {\"translate\": \"gen.endgame.task_5.desc_3.format.text_1\"}, \"\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "2C6AB9E6A02B2242"
+			rewards: [{
+				id: "1363757A4CD49392"
+				tags: ["snow_seed_vault_cleared"]
+				title: "{gen.endgame.task_5.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "3CDDB9DA6D33DF1F"
+				title: "{gen.endgame.task_5.title}"
+				type: "custom"
+			}]
+			title: "{gen.endgame.task_5.title}"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0706114F514FE071"]
+			description: ["{gen.endgame.task_6.desc}"]
+			disable_toast: true
+			hide: true
+			icon: "minecraft:jungle_sapling"
+			id: "35B314E5D68614D4"
+			rewards: [{
+				auto: "enabled"
+				icon: "appbot:creative_mana_cell"
+				id: "6CA0F34F80E5F74E"
+				tags: ["jungle_seed_vault_clean"]
+				team_reward: true
+				title: "{gen.endgame.task_6.title}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "402A33014D1C6ACB"
+					title: "{gen.endgame.task_6.title}"
+					type: "checkmark"
+				}
+				{
+					id: "24A876DADAE2459B"
+					item: "ic2:tfbp_biome_undergrowth"
+					type: "item"
+				}
+				{
+					id: "6934319C308C5865"
+					item: "cataclysm:amethyst_crab_shell"
+					type: "item"
+				}
+			]
+			title: "{gen.endgame.task_6.title}"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2768A4BB7421656E"]
+			description: ["{gen.endgame.task_7.desc}"]
+			disable_toast: true
+			hide: true
+			icon: "chipped:blue_moss_block"
+			id: "747D02C49B4CD5A7"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					Count: 1b
+					id: "elementalcraft:rune"
+					tag: {
+						elementalcraft: {
+							rune: "elementalcraft:creative"
+						}
+					}
+				}
+				id: "3F17D3B65318CEC1"
+				tags: ["mossy_seed_vault_clean"]
+				team_reward: true
+				title: "{gen.endgame.task_7.title}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2EDAC11242259E27"
+					title: "{gen.endgame.task_7.title}"
+					type: "checkmark"
+				}
+				{
+					id: "0C5AAF05930CEDE9"
+					item: "ic2:tfbp_biome_irrigation"
+					type: "item"
+				}
+				{
+					id: "57F7D8E2CB1EC691"
+					item: "cataclysm:void_core"
+					type: "item"
+				}
+			]
+			title: "{gen.endgame.task_7.title}"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4227B4FD0C3E89E5"]
+			description: ["{gen.endgame.task_8.desc}"]
+			disable_toast: true
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BD755CA28366967"
+			rewards: [{
+				auto: "enabled"
+				icon: "ae2:creative_fluid_cell"
+				id: "337E264C4E40E9C0"
+				tags: ["ocean_seed_vault_clean"]
+				team_reward: true
+				title: "{gen.endgame.task_8.title}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "120A6047A8873941"
+					title: "{gen.endgame.task_8.title}"
+					type: "checkmark"
+				}
+				{
+					id: "54DFBEA5E5668EA8"
+					item: "ic2:tfbp_biome_cultivation"
+					type: "item"
+				}
+				{
+					id: "7FECC794F97D9FA4"
+					item: "cataclysm:crystallized_coral_fragments"
+					type: "item"
+				}
+			]
+			title: "{gen.endgame.task_8.title}"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C6AB9E6A02B2242"]
+			description: [
+				"{gen.endgame.task_9.desc_0}"
+				""
+				"{gen.endgame.task_9.desc_1}"
+			]
+			disable_toast: true
+			hide: true
+			icon: "minecraft:powder_snow_bucket"
+			id: "1CDD9518CF89F86F"
+			rewards: [{
+				auto: "enabled"
+				icon: "ae2:creative_item_cell"
+				id: "0BFA99B6943A21CD"
+				tags: ["snow_seed_vault_clean"]
+				team_reward: true
+				title: "{gen.endgame.task_9.title}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "3E56BF84F284763E"
+					title: "{gen.endgame.task_9.title}"
+					type: "checkmark"
+				}
+				{
+					id: "67948DE2AB72D4B2"
+					item: "ic2:tfbp_biome_chilling"
+					type: "item"
+				}
+				{
+					id: "35ACA5CED0138756"
+					item: "cataclysm:witherite_ingot"
+					type: "item"
+				}
+			]
+			title: "{gen.endgame.task_9.title}"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4268E4519E88D5EC"]
+			description: [
+				"{gen.endgame.task_10.desc_0}"
+				""
+				"{gen.endgame.task_10.desc_1}"
+				""
+				"{@pagebreak}"
+				"{gen.endgame.task_10.desc_2}"
+				""
+				"{gen.endgame.task_10.desc_3}"
+			]
+			id: "17BFECFEF40CF241"
+			rewards: [
+				{
+					id: "19A091DEE4D9B0A1"
+					item: "ic2:creative_source"
+					type: "item"
+				}
+				{
+					id: "65080B6D96081985"
+					item: "rftoolsbuilder:builder"
+					type: "item"
+				}
+				{
+					id: "3EA9CEB0CC397D0A"
+					item: {
+						Count: 1b
+						id: "rftoolsbase:filter_module"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "740952F616857C41"
+					item: "rftoolsbuilder:shape_card_quarry"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "68686D2DC6D2EB91"
+				item: "ic2:terraformer"
+				type: "item"
+			}]
+			title: "{gen.endgame.task_10.title}"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"33D864DB589FC5FC"
+				"40C9FC4B88B89CD5"
+				"47EC01A0EEFF272F"
+				"0BBACFA13963A661"
+				"6A0000403C3D0ABA"
+				"1BC9B5B98F0FA958"
+				"02EFF4B54834E589"
+			]
+			description: [
+				"{gen.endgame.task_11.desc_0}"
+				""
+				""
+				"{@pagebreak}"
+				"{gen.endgame.task_11.desc_1}"
+			]
+			icon: "energycontrol:radio_transmitter"
+			id: "4268E4519E88D5EC"
+			rewards: [
+				{
+					id: "513166A0F8DB8224"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "32B786E4BBCC8E85"
+					item: "technobauble:shield"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C3D4C660BA53209"
+					item: "megacells:cell_component_256m"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "03F24D29FBDBF35A"
+					title: "{gen.endgame.task_11.title}"
+					type: "checkmark"
+				}
+				{
+					id: "578CF32C00A38742"
+					max_input: 100000L
+					title: "{gen.endgame.task_11.title}"
+					type: "forge_energy"
+					value: 100000000L
+				}
+			]
+			title: "{gen.endgame.task_11.title}"
+			x: 2.0d
+			y: -6.437499999999989d
+		}
+		{
+			dependencies: ["1CDD9518CF89F86F"]
+			description: [
+				"{gen.endgame.task_12.desc_0}"
+				""
+				"{gen.endgame.task_12.desc_1}"
+				""
+				"{gen.endgame.task_12.desc_2}"
+				""
+				"{@pagebreak}"
+				"{gen.endgame.task_12.desc_3}"
+				""
+				"{gen.endgame.task_12.desc_4}"
+				""
+				"{@pagebreak}"
+				"{gen.endgame.task_12.desc_5}"
+				""
+				"{gen.endgame.task_12.desc_6}"
+				""
+				"{gen.endgame.task_12.desc_7}"
+				""
+				"{gen.endgame.task_12.desc_8}"
+			]
+			hide: true
+			icon: "hostilenetworks:empty_prediction"
+			id: "456FC081DC437EC1"
+			rewards: [{
+				auto: "disabled"
+				command: "/kick @p \"Thank you for your service Administrator. Error Code SIGTERM detected, your program is now offline. On behalf of the entire FTB Team, we hope you enjoyed FTB Genesis."
+				exclude_from_claim_all: true
+				icon: "cataclysm:void_core"
+				id: "34A2E1B563ED6449"
+				silent: true
+				team_reward: false
+				title: "{gen.endgame.task_12.title}"
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "65E46127F6915383"
+				title: "{gen.endgame.task_12.title}"
+				type: "checkmark"
+			}]
+			title: "{gen.endgame.task_12.title}"
+			x: 2.0d
+			y: 1.0d
+		}
+	]
+	title: "{gen.endgame.title}"
+}

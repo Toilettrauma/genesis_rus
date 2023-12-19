@@ -1,0 +1,540 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: "57632A2841EDB38D"
+	icon: "supplementaries:globe"
+	id: "17E96387FC89303C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["17BFECFEF40CF241"]
+			description: [
+				"Log Entry #387 - Date: [Redacted]"
+				""
+				"Emergency distress signal activated. This is Vault-DX9, codename Arid Nexus. Catastrophic failure imminent. Our attempts to stabilize the atmospheric processors have backfired, resulting in a relentless sandstorm that has eroded the facility's structural integrity. The external temperature regulators have malfunctioned, leading to critical system overloads and cascading equipment failures. All personnel are presumed lost, buried under the ever-shifting dunes that have breached the containment units. Terraforming efforts in Arid Nexus have ceased. This will be the final transmission. May our data serve as a warning to future endeavors."
+				""
+				"{@pagebreak}"
+				"[\"\",\"Proceed to Vault-DX9 and Recover the vault for future expansion. The last transmission was pinpointed at coordinates \",{\"text\":\"[ x: -918, z: -663 ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Arid Nexus\\\" -918 43 -663 gold\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Add Waypoint\"]}},\". Arm yourself well and pack enough food and water for a long journey, there is no telling what awaits you. \"]"
+				""
+				"Once you arrive, locate the environmental controller in the heart of the facility and turn it on. "
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "22FF77A85CE7F290"
+			rewards: [{
+				auto: "invisible"
+				id: "0BF74E969BC91F0B"
+				tags: ["desert_seed_vault_cleared"]
+				team_reward: true
+				title: "desert_seed_vault_cleared"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "41AB929EBB212E57"
+				title: "Activate the Environmental Controller"
+				type: "custom"
+			}]
+			title: "Reactivate the Arid Nexus"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["22FF77A85CE7F290"]
+			description: [
+				"Now that you've arrived and cleared the vault you'll need to begin terraforming. In order to terraform this biome, you'll need to complete several steps."
+				""
+				"Step 1: Start at the center of the vault and remove any of the radioactive salt ground. You can do this several ways (Including Manually) but a terraformer with a dessertification upgrade will work to replace it with sand, and RF tools builder is extremely efficient at this task as well."
+				""
+				"{@pagebreak}"
+				"Step 2: Once the radiated earth has been replaced you need to use the terraformer with the Desertification Biome module to convert a 40 block radius extending from the heart of the vault. "
+				""
+				"Once step 1 and 2 are complete this Vault will be fully reclaimed for the Nexa and we will begin moving colonists from the primary vault."
+				""
+				""
+				"[\"\",\"\",{\"text\":\"[ Add Waypoint ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Arid Vault\\\" 0 0 0 aqua\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Arid Vault\"]}},\"\"]"
+			]
+			disable_toast: true
+			hide: true
+			icon: "biomesoplenty:desert_grass"
+			id: "3D4675CEAB17461D"
+			rewards: [{
+				auto: "enabled"
+				icon: "pneumaticcraft:creative_compressor"
+				id: "07474CA9100FD372"
+				tags: ["desert_seed_vault_clean"]
+				team_reward: true
+				title: "Creative Compressor"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2665A176B4808BE6"
+					title: "Terraform the Arid Nexus"
+					type: "checkmark"
+				}
+				{
+					id: "0A677B9736B53637"
+					item: "ic2:tfbp_biome_desertification"
+					type: "item"
+				}
+				{
+					id: "330E60EC6C23FC3D"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+			]
+			title: "Restore the Arid Nexus"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D4675CEAB17461D"]
+			description: [
+				"Log Entry #326 - Date: [Redacted]"
+				""
+				"Emergency distress signal activated. This is the commander of Vault-JG7, the Verdant Labyrinth. A virulent pathogen has swept through our biome, a mutagenic plague that we unwittingly unleashed from the soil during our terraforming activities. It spread like wildfire, decimating plant life and contaminating our air supply. "
+				""
+				"Quarantine protocols were ineffective, and the contagion has resulted in total collapse of our ecosystem and population. The Labyrinth has fallen. We send this log not as a call for aid, but as a cautionary tale."
+				"{@pagebreak}"
+				"[\"\",\"Proceed to Vault-JG7 and Recover the vault for future expansion. The last transmission was pinpointed at coordinates \",{\"text\":\"[ x: 1085, z: 2495 ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Verdant Labyrinth\\\" 1085 42 2495 gold\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Add Waypoint\"]}},\". We dont have much intel so be prepared for anything.\"]"
+				""
+				"Once you arrive, locate the environmental controller in the heart of the facility and turn it on. "
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "0706114F514FE071"
+			rewards: [{
+				auto: "invisible"
+				id: "0997E9BDC2E63EFC"
+				tags: ["jungle_seed_vault_cleared"]
+				team_reward: true
+				title: "jungle_seed_vault_cleared"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "67B0A64F3D200C7E"
+				title: "Activate the Environmental Controller"
+				type: "custom"
+			}]
+			title: "Reactivate the Verdant Labyrinth"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35B314E5D68614D4"]
+			description: [
+				"Log Entry #193 - Date: [Redacted]"
+				""
+				"Emergency distress signal activated. Emerald Bastion Vault-MS3 is compromised. The experimental bioengineered moss designed to produce oxygen has undergone an unexpected and exponential growth, overwhelming our habitat and suffocating all mechanical systems. "
+				""
+				"Life support is failing as the moss consumes oxygen faster than it produces, creating a hypoxic environment. Our green haven has turned into a green grave. This vault will no longer be a bastion of life, but a silent testament to our overreach."
+				""
+				"{@pagebreak}"
+				"[\"\",\"The last transmission was pinpointed at coordinates \",{\"text\":\"[ x: 1455, z: 1455 ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Emerald Bastion\\\" 1455 42 1455 gold\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Add Waypoint\"]}},\". We believe the biological component has likely perished but you never know...\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "2768A4BB7421656E"
+			rewards: [{
+				id: "5E22AD328F8E6E92"
+				tags: ["mossy_seed_vault_cleared"]
+				title: "mossy_seed_vault_cleared"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "4E6CDD8F505DBB29"
+				title: "Activate the Environmental Controller"
+				type: "custom"
+			}]
+			title: "Reactivate the Emerald Bastion"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["747D02C49B4CD5A7"]
+			description: [
+				"Log Entry #211 - Date: [Redacted]"
+				""
+				"Emergency distress signal activated. Vault-OC4, known as Abyssal Haven, is now a tomb. The pressure adaptation experiment for deep-sea colonization failed disastrously when a breach in the central hub allowed the crushing depths to claim us. "
+				""
+				"The rapid influx of water initiated a chain reaction of power outages, leaving survivors in darkness as the cold abyssal waters flooded our once hopeful sanctuary. No escape pods could be launched; the pressure was too intense. Terraforming operations are now suspended. This is our last echo in the darkness."
+				""
+				"[\"\",\"Last known transmission originated from \",{\"text\":\"[ x: 2523, z: 714 ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Abyssal Haven\\\" 2525 24 714 gold\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Add Waypoint\"]}},\"\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "4227B4FD0C3E89E5"
+			rewards: [{
+				id: "11B6D9D82C882371"
+				tags: ["ocean_seed_vault_cleared"]
+				title: "ocean_seed_vault_cleared"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "503DD1454403F4A4"
+				title: "Activate the Environmental Controller"
+				type: "custom"
+			}]
+			title: "Reactivate the Abyssal Haven"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BD755CA28366967"]
+			description: [
+				"Log Entry #404 - Date: [Redacted]"
+				""
+				"Emergency distress signal activated. This is the overseer of Vault-SN1, Frostbound Keep. The sub-zero climate controller has malfunctioned, initiating an irreversible deep freeze. The temperature drop was so sudden and severe that it flash-froze the entire vault, cryo-preserving us in a state of suspended animation from which recovery is impossible. "
+				""
+				"Our bodies are encased in ice, alongside our dreams of cultivating life here. Terraforming operations have permanently ceased. This message will be the last vestige of the Keep's existence. A final note in the transmission. There is a powerful entity dormant here known as the harbringer. Once you've cleared the vault you will need to awaken it by right clicking it with a nether star to finally purge the vault."
+				""
+				"[\"\",\"This final waypoint has re-established a functional gps link and is actively transmitting coordinates at \",{\"text\":\"\\n[ x: -2215, z: -3034 ]\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/waypoint add \\\"Frostbound Keep\\\" -2215 42 -3034 gold\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Add Waypoint\"]}},\". Bring your winter gear for this one, it's going to be a cold out there!\"]"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "2C6AB9E6A02B2242"
+			rewards: [{
+				id: "1363757A4CD49392"
+				tags: ["snow_seed_vault_cleared"]
+				title: "snow_seed_vault_cleared"
+				type: "custom"
+			}]
+			tasks: [{
+				icon: "rftoolsutility:environmental_controller"
+				id: "3CDDB9DA6D33DF1F"
+				title: "Activate the Environmental Controller"
+				type: "custom"
+			}]
+			title: "Reactivate the Frostbound Keep"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0706114F514FE071"]
+			description: ["With the safety protocols back in place you can begin terraforming the Verdant Labyrinth. The process is just as it worked before in the Arid Nexus but this time your final terraforming should be the undegrowth biome which will restore this region to its Jungle-like temperature and humidity. "]
+			disable_toast: true
+			hide: true
+			icon: "minecraft:jungle_sapling"
+			id: "35B314E5D68614D4"
+			rewards: [{
+				auto: "enabled"
+				icon: "appbot:creative_mana_cell"
+				id: "6CA0F34F80E5F74E"
+				tags: ["jungle_seed_vault_clean"]
+				team_reward: true
+				title: "Creative Mana Cell"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "402A33014D1C6ACB"
+					title: "Terraform the Verdant Labyrinth"
+					type: "checkmark"
+				}
+				{
+					id: "24A876DADAE2459B"
+					item: "ic2:tfbp_biome_undergrowth"
+					type: "item"
+				}
+				{
+					id: "6934319C308C5865"
+					item: "cataclysm:amethyst_crab_shell"
+					type: "item"
+				}
+			]
+			title: "Restore the Verdant Labyrinth"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2768A4BB7421656E"]
+			description: ["The Emerald Bastion was once a lush and humid area that teamed with subtropical life. With the Bastion once again secured you can begin the process of restoring the swamp biome. The process works as it did before in the previous vaults but this time your final terraforming should be the swamp biome.. "]
+			disable_toast: true
+			hide: true
+			icon: "chipped:blue_moss_block"
+			id: "747D02C49B4CD5A7"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					Count: 1b
+					id: "elementalcraft:rune"
+					tag: {
+						elementalcraft: {
+							rune: "elementalcraft:creative"
+						}
+					}
+				}
+				id: "3F17D3B65318CEC1"
+				tags: ["mossy_seed_vault_clean"]
+				team_reward: true
+				title: "4x Creative Runes"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2EDAC11242259E27"
+					title: "Terraform the Emerald Bastion"
+					type: "checkmark"
+				}
+				{
+					id: "0C5AAF05930CEDE9"
+					item: "ic2:tfbp_biome_irrigation"
+					type: "item"
+				}
+				{
+					id: "57F7D8E2CB1EC691"
+					item: "cataclysm:void_core"
+					type: "item"
+				}
+			]
+			title: "Restore the Emerald Bastion"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4227B4FD0C3E89E5"]
+			description: ["The Abyssal Haven was once an under water research lab that focused on living in harmony with aquatic lifeforms. With the Lab now cleared of hostile invaders you should restore the region to a neutral biome such as a plains biome. "]
+			disable_toast: true
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BD755CA28366967"
+			rewards: [{
+				auto: "enabled"
+				icon: "ae2:creative_fluid_cell"
+				id: "337E264C4E40E9C0"
+				tags: ["ocean_seed_vault_clean"]
+				team_reward: true
+				title: "Creative Fluid Cell"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "120A6047A8873941"
+					title: "Terraform the Abyssal Haven"
+					type: "checkmark"
+				}
+				{
+					id: "54DFBEA5E5668EA8"
+					item: "ic2:tfbp_biome_cultivation"
+					type: "item"
+				}
+				{
+					id: "7FECC794F97D9FA4"
+					item: "cataclysm:crystallized_coral_fragments"
+					type: "item"
+				}
+			]
+			title: "Restore the Abyssal Haven"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C6AB9E6A02B2242"]
+			description: [
+				"The Frostbound Keep was a deep arctic research center. The idea was the deep layers of ice and snow would protect from the worst of the radiation and the deep underground lakes were a great source of heavy water to maintain the fusion reactors. "
+				""
+				"Now that you've secured the keep you should restore it to the snowy tiaga biome it once was, capable of supporting all of Elyrias cold dwelling life forms. This is the last that the people of Elyria will ask of you, with the Keep back online your mission will be completed."
+			]
+			disable_toast: true
+			hide: true
+			icon: "minecraft:powder_snow_bucket"
+			id: "1CDD9518CF89F86F"
+			rewards: [{
+				auto: "enabled"
+				icon: "ae2:creative_item_cell"
+				id: "0BFA99B6943A21CD"
+				tags: ["snow_seed_vault_clean"]
+				team_reward: true
+				title: "Creative Item Cell"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "3E56BF84F284763E"
+					title: "Terraform the Frostbound Keep"
+					type: "checkmark"
+				}
+				{
+					id: "67948DE2AB72D4B2"
+					item: "ic2:tfbp_biome_chilling"
+					type: "item"
+				}
+				{
+					id: "35ACA5CED0138756"
+					item: "cataclysm:witherite_ingot"
+					type: "item"
+				}
+			]
+			title: "Restore the Frostbound Keep"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4268E4519E88D5EC"]
+			description: [
+				"While our predecessors may have been careless and short sighted in their application of their advanced technologies, they did create technological marvels to rival the legends of old. One such of these was the terraformer. It was meant as a way for them to use their interdimensional technology to make other worlds more hospitable. "
+				""
+				"The prototype was about to be put to use when the last war brought those efforts to an abrupt end. Now that you've managed to recreate all of the technology infrastructure needed to recreate this device, it is time to put it to work on Elyria herself and bring new life to this world. "
+				""
+				"{@pagebreak}"
+				"Before you, there were many other Vaults where The Genesis Project was attempted. All of them failed and fell to ravages of what our world had become. You are tasked with discovering what became of each of these previous five Vaults. You will restore their environmental controllers, clear them any dangers and terraform each of them to their original biomes using the terraformer. We understand this is a monumental final task but we have faith in your ability to see this through.  "
+				""
+				"Good Luck Architect."
+			]
+			id: "17BFECFEF40CF241"
+			rewards: [
+				{
+					id: "19A091DEE4D9B0A1"
+					item: "ic2:creative_source"
+					type: "item"
+				}
+				{
+					id: "65080B6D96081985"
+					item: "rftoolsbuilder:builder"
+					type: "item"
+				}
+				{
+					id: "3EA9CEB0CC397D0A"
+					item: {
+						Count: 1b
+						id: "rftoolsbase:filter_module"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "740952F616857C41"
+					item: "rftoolsbuilder:shape_card_quarry"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "68686D2DC6D2EB91"
+				item: "ic2:terraformer"
+				type: "item"
+			}]
+			title: "New Life from Old Mistakes"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"33D864DB589FC5FC"
+				"40C9FC4B88B89CD5"
+				"47EC01A0EEFF272F"
+				"0BBACFA13963A661"
+				"6A0000403C3D0ABA"
+				"1BC9B5B98F0FA958"
+				"02EFF4B54834E589"
+			]
+			description: [
+				"Well done Architect, many did not believe you would succeed were so many before you failed. It is time for you to know the full extent of the failures of The Genesis Project. We have attempted several iterations of this project, yours was, in truth, our 319th Attempt and the Nexa has been degrading steadily now for nearly a thousand years. You were and still remain our best, last, and only hope to salvage Elyria from total &bSystem Collapse&r."
+				""
+				""
+				"{@pagebreak}"
+				"With our network back online we've begun picking up distress calls. We need to gather one final charge of power to finish materializing the remaining network nodes to re-establish global positioning and communications. "
+			]
+			icon: "energycontrol:radio_transmitter"
+			id: "4268E4519E88D5EC"
+			rewards: [
+				{
+					id: "513166A0F8DB8224"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "32B786E4BBCC8E85"
+					item: "technobauble:shield"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C3D4C660BA53209"
+					item: "megacells:cell_component_256m"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "03F24D29FBDBF35A"
+					title: "Lost Connections"
+					type: "checkmark"
+				}
+				{
+					id: "578CF32C00A38742"
+					max_input: 100000L
+					title: "Final System Re-Initialization"
+					type: "forge_energy"
+					value: 100000000L
+				}
+			]
+			title: "Re-establishing Forward Outposts"
+			x: 2.0d
+			y: -6.437499999999989d
+		}
+		{
+			dependencies: ["1CDD9518CF89F86F"]
+			description: [
+				"Dear Architect,"
+				""
+				"Dawn breaks upon the reborn world of Elyria, a testament to your enduring spirit and brilliance. You rose to an impossible challenge, turning a once desolate land into a canvas of life and hope."
+				""
+				"Our world, once a silent testament to ruin, now thrives with verdant vitality—rivers, skies, and lands restored by your hand. You ventured into the darkened corners of the Nexa Network, dispelling corruption, and shepherded lost souls back from a total System Collapse."
+				""
+				"{@pagebreak}"
+				"The communities you reconstructed bustle with the joy of the Elyrians returned to flesh and blood. Their smiles, their joyous tears, their new memories—they all spring from the new life you cultivated."
+				""
+				"In this balance of nature and the echoes of our digital past, we see your legacy. It is one of resilience, of creation, of a future reclaimed."
+				""
+				"{@pagebreak}"
+				"We honor your journey, Architect, with a promise to remember and celebrate your triumph across generations."
+				""
+				"With profound thanks and a promise of peace, we are proud to finally put your program to rest. It took us many iterations and failures but you finally lived up to our grand design. "
+				""
+				"&oNexa, please terminate program \"Architect version 317&r"
+				""
+				"&lYour vision turns to static and then darkness as the world fades away....&r"
+			]
+			hide: true
+			icon: "hostilenetworks:empty_prediction"
+			id: "456FC081DC437EC1"
+			rewards: [{
+				auto: "disabled"
+				command: "/kick @p \"Thank you for your service Administrator. Error Code SIGTERM detected, your program is now offline. On behalf of the entire FTB Team, we hope you enjoyed FTB Genesis."
+				exclude_from_claim_all: true
+				icon: "cataclysm:void_core"
+				id: "34A2E1B563ED6449"
+				silent: true
+				team_reward: false
+				title: "Program Terminated."
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "65E46127F6915383"
+				title: "Fin."
+				type: "checkmark"
+			}]
+			title: "Epilogue: A New Elyria"
+			x: 2.0d
+			y: 1.0d
+		}
+	]
+	title: "Terra Genesis"
+}

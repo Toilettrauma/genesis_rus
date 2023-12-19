@@ -1,0 +1,498 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_dangerous_path"
+	group: "656523BED7FBA32A"
+	icon: "ic2:armor_hazmat_helmet"
+	id: "02AA52903B65967E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{gen.a_dangerous_path.task_0.desc}"]
+			icon: "ic2:armor_hazmat_helmet"
+			id: "1CCB2C3866E32F15"
+			rewards: [
+				{
+					id: "651021366880700B"
+					item: "ic2:armor_hazmat_helmet"
+					type: "item"
+				}
+				{
+					id: "2046AFF4A909050C"
+					item: "mekanism:dosimeter"
+					type: "item"
+				}
+				{
+					id: "2279E239C32B794F"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7509DAD50458903E"
+					item: "ic2:armor_hazmat_chest"
+					type: "item"
+				}
+				{
+					id: "22090F6D0CCA3876"
+					item: "ic2:armor_hazmat_leggings"
+					type: "item"
+				}
+				{
+					id: "01AD6C356FCE3BDF"
+					item: "ic2:armor_hazmat_boots"
+					type: "item"
+				}
+			]
+			title: "{gen.a_dangerous_path.task_0.title}"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1CCB2C3866E32F15"]
+			description: ["{gen.a_dangerous_path.task_1.desc}"]
+			id: "3A0056B2B1389E1D"
+			rewards: [
+				{
+					id: "3058C68EC2EC573A"
+					item: "engineersdecor:sign_radioactive"
+					type: "item"
+				}
+				{
+					id: "12C4B68D7CFD2E85"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				id: "5D17AE6087506305"
+				item: "mekanism:dosimeter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1CCB2C3866E32F15"]
+			description: [
+				"[\"\", {\"translate\": \"gen.a_dangerous_path.task_2.desc_0.format.text_0\"}, {\"color\": \"gold\", \"translate\": \"gen.a_dangerous_path.task_2.desc_0.format.format_0\"}, {\"translate\": \"gen.a_dangerous_path.task_2.desc_0.format.text_1\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Copper Signature\\\" -233 70 -120 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.a_dangerous_path.task_2.desc_0.format.format_1\"}, {\"translate\": \"gen.a_dangerous_path.task_2.desc_0.format.text_2\"}, \"\"]"
+				""
+				"{gen.a_dangerous_path.task_2.desc_1}"
+			]
+			icon: "minecraft:copper_block"
+			id: "35CAFE13E82C256A"
+			rewards: [
+				{
+					count: 12
+					id: "4A252E2F11E5F759"
+					item: "ic2:copper_insulated_cable_item"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22FD62D9902FD617"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+							Purity: 3
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "237BD86E1371B792"
+					item: "minecraft:copper_block"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:overworld"
+					id: "4CAC14814D715C87"
+					ignore_dimension: true
+					position: [I;
+						-239
+						65
+						-127
+					]
+					size: [I;
+						15
+						15
+						15
+					]
+					title: "{gen.a_dangerous_path.task_2.title}"
+					type: "location"
+				}
+			]
+			title: "{gen.a_dangerous_path.task_2.title}"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1CCB2C3866E32F15"]
+			description: [
+				"{gen.a_dangerous_path.task_3.desc_0}"
+				""
+				"[\"\", {\"translate\": \"gen.a_dangerous_path.task_3.desc_1.format.text_0\"}, {\"color\": \"light_purple\", \"underlined\": true, \"clickEvent\": {\"action\": \"change_page\", \"value\": \"75D3D46C5B2854B0\"}, \"translate\": \"gen.a_dangerous_path.task_3.desc_1.format.format_0\"}, \"\"]"
+				""
+				"{gen.a_dangerous_path.task_3.desc_2}"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "308EF169B51EB98B"
+			rewards: [
+				{
+					id: "36F08108018206FB"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 4
+					id: "2969FF24D6875AEB"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2FA8618FF43D391C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7309B4CC8BDF21CD"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "18DEDEC252698BCA"
+					item: "minecraft:iron_bars"
+					type: "item"
+				}
+				{
+					id: "79ADA3CB6BA28EFE"
+					item: "minecraft:redstone_torch"
+					type: "item"
+				}
+			]
+			title: "{gen.a_dangerous_path.task_3.title}"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1CCB2C3866E32F15"]
+			description: [
+				"{gen.a_dangerous_path.task_4.desc_0}"
+				""
+				"{gen.a_dangerous_path.task_4.desc_1}"
+			]
+			icon: "minecraft:blaze_powder"
+			id: "050B8E274C6EFF09"
+			rewards: [{
+				id: "55C20AD0888AD91F"
+				item: "engineersdecor:sign_firehazard"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00C6B76D6B54D78E"
+				item: {
+					Count: 1b
+					id: "cyclic:fire_killer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{gen.a_dangerous_path.task_4.title}"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"050B8E274C6EFF09"
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: [
+				"{gen.a_dangerous_path.task_5.desc_0}"
+				""
+				"{gen.a_dangerous_path.task_5.desc_1}"
+			]
+			icon: "ae2:spatial_storage_cell_128"
+			id: "199CB94FA4710B30"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					icon: "ae2:spatial_cell_component_128"
+					id: "2AEAB005ED4A109C"
+					tags: ["prefab_nether"]
+					team_reward: true
+					title: "{gen.a_dangerous_path.task_5.title}"
+					type: "custom"
+				}
+				{
+					id: "4AE6E511DEEDD5D9"
+					item: "ae2:spatial_storage_cell_128"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "71DE7CBC65E8CADA"
+					max_input: 10000L
+					title: "{gen.a_dangerous_path.task_5.title}"
+					type: "forge_energy"
+					value: 250000L
+				}
+				{
+					dimension: "minecraft:overworld"
+					icon: "ae2:spatial_pylon"
+					id: "38602754D7AB4455"
+					ignore_dimension: true
+					position: [I;
+						-15
+						44
+						56
+					]
+					size: [I;
+						7
+						5
+						7
+					]
+					title: "{gen.a_dangerous_path.task_5.title}"
+					type: "location"
+				}
+			]
+			title: "{gen.a_dangerous_path.task_5.title}"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["199CB94FA4710B30"]
+			description: ["{gen.a_dangerous_path.task_6.desc}"]
+			id: "164573AC2309E853"
+			rewards: [{
+				count: 8
+				id: "6F655F49061F65F7"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: {
+					Count: 1b
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:blaze"
+						}
+					}
+				}
+				id: "56900FB2785268D4"
+				title: "{gen.a_dangerous_path.task_6.title}"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{gen.a_dangerous_path.task_6.title}"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["164573AC2309E853"]
+			description: [
+				"{gen.a_dangerous_path.task_7.desc_0}"
+				"{gen.a_dangerous_path.task_7.desc_1}"
+				""
+				"{gen.a_dangerous_path.task_7.desc_2}"
+			]
+			id: "429864AA36718C26"
+			rewards: [
+				{
+					count: 3
+					id: "16379256DE27E3B2"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "4580B3983F22134F"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "3A30D60BD0CFD68A"
+				item: "minecraft:brewing_stand"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["199CB94FA4710B30"]
+			description: [
+				"{gen.a_dangerous_path.task_8.desc_0}"
+				""
+				"{gen.a_dangerous_path.task_8.desc_1}"
+			]
+			id: "38277B1121025792"
+			rewards: [{
+				count: 4
+				id: "31F7F33F4D41A83D"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:magma_cube"
+				icon: {
+					Count: 1b
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:magma_cube"
+						}
+					}
+				}
+				id: "64AF155C7D13EE46"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{gen.a_dangerous_path.task_8.title}"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"429864AA36718C26"
+				"38277B1121025792"
+			]
+			description: ["{gen.a_dangerous_path.task_9.desc}"]
+			id: "5ADC8EED783FDB02"
+			rewards: [
+				{
+					count: 2
+					id: "5349BDC7A2F9BB47"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:crimson_fungus"
+							gain: 5
+							growth: 5
+							resistance: 5
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68FAE506F2D071B0"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1482202EFAC1EF07"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5ADC8EED783FDB02"]
+			description: [
+				"{gen.a_dangerous_path.task_10.desc_0}"
+				""
+				"{gen.a_dangerous_path.task_10.desc_1}"
+			]
+			id: "161B07957EAB6307"
+			rewards: [
+				{
+					advancement: "restrictedportals:nether"
+					auto: "enabled"
+					criterion: ""
+					id: "1F0635C914FC6C8B"
+					type: "advancement"
+				}
+				{
+					id: "03656227815A0A5B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [{
+				id: "0CBEF520AC11F0DA"
+				max_input: 10000L
+				title: "{gen.a_dangerous_path.task_10.title}"
+				type: "forge_energy"
+				value: 500000L
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1CCB2C3866E32F15"]
+			description: [
+				"{gen.a_dangerous_path.task_11.desc_0}"
+				""
+				"{gen.a_dangerous_path.task_11.desc_1}"
+			]
+			hide_dependency_lines: true
+			id: "7EB5B4A73F91B026"
+			rewards: [
+				{
+					id: "2D24714230DD642F"
+					item: "apotheosis:sightshelf_t2"
+					type: "item"
+				}
+				{
+					id: "6034BA2B5CCC7A3C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					auto: "enabled"
+					description: ""
+					icon: "cyclic:fireball_dark"
+					id: "756488A2148C2703"
+					team_reward: true
+					title: "{gen.a_dangerous_path.task_11.title}"
+					type: "toast"
+				}
+			]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "0BAD48F1C41A8A3E"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "{gen.a_dangerous_path.task_11.title}"
+			x: -2.5d
+			y: -4.5d
+		}
+	]
+	title: "{gen.a_dangerous_path.title}"
+}

@@ -1,0 +1,923 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "synthetic_aquisitions"
+	group: "4C0075272E2F720D"
+	icon: "electrodynamics:creativepowersource"
+	id: "75D3D46C5B2854B0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0D4BA302A3BCAA07"]
+			description: ["{gen.synthetic_aquisitions.task_0.desc}"]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:amadron_tablet"
+				tag: {
+					"pneumaticcraft:air": 30000
+				}
+			}
+			id: "0A1D85EEA4EC1076"
+			rewards: [{
+				id: "26C05CBA81E13375"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:amadron_tablet"
+					tag: {
+						"pneumaticcraft:air": 30000
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "50E76053A076A47E"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_0.title}"
+				type: "forge_energy"
+				value: 75000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_0.title}"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A1D85EEA4EC1076"]
+			description: ["{gen.synthetic_aquisitions.task_1.desc}"]
+			icon: "pneumaticcraft:pressure_gauge"
+			id: "40F9928D1653DBCD"
+			rewards: [{
+				id: "76E7494EB0D8E493"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:amadron_tablet"
+					tag: {
+						"pneumaticcraft:air": 30000
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2857F03F59792386"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:amadron_tablet"
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1A7BA67D25D1B331"
+					max_input: 1000L
+					title: "{gen.synthetic_aquisitions.task_1.title}"
+					type: "forge_energy"
+					value: 2500L
+				}
+			]
+			title: "{gen.synthetic_aquisitions.task_1.title}"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A791F59DB3D67E8"]
+			description: ["{gen.synthetic_aquisitions.task_2.desc}"]
+			hide_dependency_lines: true
+			icon: { Count: 16b, id: "ic2:fertilizer" }
+			id: "2D31286DA9F09298"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7447548E743DB503"
+				item: "ic2:fertilizer"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "21724AE9F7C6A6D1"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_2.title}"
+				type: "forge_energy"
+				value: 16000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_2.title}"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A791F59DB3D67E8"]
+			description: ["{gen.synthetic_aquisitions.task_3.desc}"]
+			hide_dependency_lines: true
+			icon: "ic2:hydration_cell"
+			id: "682A8A9484389996"
+			optional: true
+			rewards: [{
+				id: "2DF7EDA802A3AAD3"
+				item: "ic2:hydration_cell"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A953B7479E62F0A"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_3.title}"
+				type: "forge_energy"
+				value: 50000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_3.title}"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0D4BA302A3BCAA07"]
+			description: ["{gen.synthetic_aquisitions.task_4.desc}"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "ic2:re_battery"
+				tag: {
+					charge: 10000
+				}
+			}
+			id: "78590962168C50FA"
+			optional: true
+			rewards: [{
+				id: "76096763BD6DA10B"
+				item: {
+					Count: 1b
+					id: "ic2:re_battery"
+					tag: {
+						charge: 10000
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "16F08C80D4AF7870"
+				max_input: 5000L
+				title: "{gen.synthetic_aquisitions.task_4.title}"
+				type: "forge_energy"
+				value: 120000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_4.title}"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["78590962168C50FA"]
+			description: ["{gen.synthetic_aquisitions.task_5.desc}"]
+			icon: "ic2:re_battery"
+			id: "3F00ADF8F37F8745"
+			rewards: [{
+				id: "22B28A07D0F6B297"
+				item: {
+					Count: 1b
+					id: "ic2:re_battery"
+					tag: {
+						charge: 10000
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4448B8386471A885"
+					max_input: 1000L
+					title: "{gen.synthetic_aquisitions.task_5.title}"
+					type: "forge_energy"
+					value: 40000L
+				}
+				{
+					consume_items: true
+					id: "6AD672DFF05A6CCE"
+					item: {
+						Count: 1b
+						id: "ic2:re_battery"
+						tag: { }
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "{gen.synthetic_aquisitions.task_5.title}"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D4BA302A3BCAA07"]
+			description: ["{gen.synthetic_aquisitions.task_6.desc}"]
+			hide_dependency_lines: true
+			icon: { Count: 16b, id: "minecraft:sand" }
+			id: "6A189AFB7149E16D"
+			rewards: [{
+				count: 16
+				id: "12DB67B7C2032C7E"
+				item: "minecraft:sand"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "24A1C4E621D58A9C"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_6.title}"
+				type: "forge_energy"
+				value: 16000L
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38277B1121025792"]
+			description: ["{gen.synthetic_aquisitions.task_7.desc}"]
+			icon: "minecraft:magma_cream"
+			id: "23721B3FA9A168DD"
+			rewards: [{
+				id: "0728A915164DA1A3"
+				item: "minecraft:magma_cream"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "679EC1E356FB45BE"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_7.title}"
+				type: "forge_energy"
+				value: 10000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_7.title}"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D4BA302A3BCAA07"]
+			description: ["{gen.synthetic_aquisitions.task_8.desc}"]
+			icon: {
+				Count: 1b
+				id: "ic2:precision_wrench"
+				tag: {
+					charge: 40000
+				}
+			}
+			id: "0C70A435AE48129C"
+			optional: true
+			rewards: [{
+				id: "45A419E0DF1575DE"
+				item: {
+					Count: 1b
+					id: "ic2:precision_wrench"
+					tag: {
+						charge: 40000
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F8CA3A59C9C9F7C"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_8.title}"
+				type: "forge_energy"
+				value: 160000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_8.title}"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"0D4BA302A3BCAA07"
+				"3A840CC82DE6048A"
+			]
+			description: ["{gen.synthetic_aquisitions.task_9.desc}"]
+			hide_dependency_lines: true
+			icon: "minecraft:gunpowder"
+			id: "03BD7E2641F6BCB9"
+			rewards: [{
+				id: "234B3AB5ABB9DD80"
+				item: "quark:gunpowder_sack"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "25181FE332F38A68"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_9.title}"
+				type: "forge_energy"
+				value: 40000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_9.title}"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{gen.synthetic_aquisitions.task_10.desc_0}"
+				""
+				"{gen.synthetic_aquisitions.task_10.desc_1}"
+			]
+			id: "3A840CC82DE6048A"
+			subtitle: "{gen.synthetic_aquisitions.task_10.subtitle}"
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "nameless_trinkets:creeper_sense"
+				id: "7658A87284D0B3B2"
+				title: "{gen.synthetic_aquisitions.task_10.title}"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			description: ["{gen.synthetic_aquisitions.task_11.desc}"]
+			icon: {
+				Count: 1b
+				id: "akashictome:tome"
+				tag: {
+					"akashictome:data": {
+						ae2: {
+							Count: 1b
+							id: "ae2:guide"
+						}
+						alexsmobs: {
+							Count: 1b
+							id: "alexsmobs:animal_dictionary"
+						}
+						apotheosis: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "apotheosis:apoth_chronicle"
+							}
+						}
+						botania: {
+							Count: 1b
+							id: "botania:lexicon"
+						}
+						chromaticarsenal: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "chromaticarsenal:guide"
+							}
+						}
+						chromaticarsenal_0: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"akashictome:definedMod": "chromaticarsenal_0"
+								"akashictome:displayName": {
+									text: "{\"translate\":\"Cosmic Journal\"}"
+								}
+								"akashictome:is_morphing": 1b
+								display: {
+									Name: "{\"translate\": \"akashictome.sudo_name\", \"with\": [{\"color\": \"green\", \"translate\": \"Cosmic Journal\"}]}"
+								}
+								"patchouli:book": "chromaticarsenal:lore"
+							}
+						}
+						cyclic: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "cyclic:cyclic_guide_book"
+							}
+						}
+						electrodynamics: {
+							Count: 1b
+							id: "electrodynamics:guidebook"
+						}
+						elementalcraft: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "elementalcraft:element_book"
+							}
+						}
+						engineersdecor: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "engineersdecor:engineersdecor_manual"
+							}
+						}
+						ftbquests: {
+							Count: 1b
+							id: "ftbquests:book"
+						}
+						ic2: {
+							Count: 1b
+							id: "ic2:wiki_item"
+						}
+						immersiveengineering: {
+							Count: 1b
+							id: "immersiveengineering:manual"
+						}
+						industrialforegoing: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "industrialforegoing:industrial_foregoing"
+							}
+						}
+						laserio: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "laserio:laseriobook"
+							}
+						}
+						mysticalagriculture: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "mysticalagriculture:guide"
+							}
+						}
+						pneumaticcraft: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "pneumaticcraft:book"
+							}
+						}
+						productivebees: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "productivebees:guide"
+							}
+						}
+						rftoolsbase: {
+							Count: 1b
+							id: "rftoolsbase:manual"
+						}
+						sebastrnlib: {
+							Count: 1b
+							id: "patchouli:guide_book"
+							tag: {
+								"patchouli:book": "sebastrnlib:sebastrn_mods_guide_book"
+							}
+						}
+						theoneprobe: {
+							Count: 1b
+							id: "theoneprobe:probenote"
+						}
+					}
+					"akashictome:is_morphing": 1b
+				}
+			}
+			id: "431A85437EE45C88"
+			optional: true
+			rewards: [{
+				id: "3C8E4174CE2913C8"
+				item: {
+					Count: 1b
+					id: "akashictome:tome"
+					tag: {
+						"akashictome:data": {
+							ae2: {
+								Count: 1b
+								id: "ae2:guide"
+							}
+							alexsmobs: {
+								Count: 1b
+								id: "alexsmobs:animal_dictionary"
+							}
+							apotheosis: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "apotheosis:apoth_chronicle"
+								}
+							}
+							botania: {
+								Count: 1b
+								id: "botania:lexicon"
+							}
+							chromaticarsenal: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "chromaticarsenal:guide"
+								}
+							}
+							chromaticarsenal_0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"akashictome:definedMod": "chromaticarsenal_0"
+									"akashictome:displayName": {
+										text: "{\"translate\":\"Cosmic Journal\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\": \"akashictome.sudo_name\", \"with\": [{\"color\": \"green\", \"translate\": \"Cosmic Journal\"}]}"
+									}
+									"patchouli:book": "chromaticarsenal:lore"
+								}
+							}
+							cyclic: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "cyclic:cyclic_guide_book"
+								}
+							}
+							electrodynamics: {
+								Count: 1b
+								id: "electrodynamics:guidebook"
+							}
+							elementalcraft: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "elementalcraft:element_book"
+								}
+							}
+							engineersdecor: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "engineersdecor:engineersdecor_manual"
+								}
+							}
+							ftbquests: {
+								Count: 1b
+								id: "ftbquests:book"
+							}
+							ic2: {
+								Count: 1b
+								id: "ic2:wiki_item"
+							}
+							immersiveengineering: {
+								Count: 1b
+								id: "immersiveengineering:manual"
+							}
+							industrialforegoing: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "industrialforegoing:industrial_foregoing"
+								}
+							}
+							laserio: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "laserio:laseriobook"
+								}
+							}
+							mysticalagriculture: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "mysticalagriculture:guide"
+								}
+							}
+							pneumaticcraft: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "pneumaticcraft:book"
+								}
+							}
+							productivebees: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "productivebees:guide"
+								}
+							}
+							rftoolsbase: {
+								Count: 1b
+								id: "rftoolsbase:manual"
+							}
+							sebastrnlib: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "sebastrnlib:sebastrn_mods_guide_book"
+								}
+							}
+							theoneprobe: {
+								Count: 1b
+								id: "theoneprobe:probenote"
+							}
+						}
+						"akashictome:is_morphing": 1b
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6A7F9FAC140D940F"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_11.title}"
+				type: "forge_energy"
+				value: 1000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_11.title}"
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"51EDAF02F1D3449A"
+				"0D4BA302A3BCAA07"
+			]
+			description: ["{gen.synthetic_aquisitions.task_12.desc}"]
+			hide_dependency_lines: true
+			icon: "minecraft:spider_eye"
+			id: "19572195823265A4"
+			rewards: [{
+				id: "1E215F73F2BF13FC"
+				item: "minecraft:spider_eye"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "26F103A1490CF964"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_12.title}"
+				type: "forge_energy"
+				value: 10000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_12.title}"
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"5D66C5EF1CEE41EF"
+				"0D4BA302A3BCAA07"
+			]
+			description: ["{gen.synthetic_aquisitions.task_13.desc}"]
+			hide_dependency_lines: true
+			icon: "minecraft:rotten_flesh"
+			id: "5CF83209B54217DB"
+			rewards: [{
+				count: 8
+				id: "738040F96AED9F38"
+				item: "minecraft:rotten_flesh"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "008D62209125DB08"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_13.title}"
+				type: "forge_energy"
+				value: 10000L
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:zombie"
+					}
+				}
+			}
+			id: "5D66C5EF1CEE41EF"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "56FF04BE029BC07C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:spider"
+					}
+				}
+			}
+			id: "51EDAF02F1D3449A"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "7C3DBD426D5846E7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["78590962168C50FA"]
+			description: ["{gen.synthetic_aquisitions.task_14.desc}"]
+			icon: {
+				Count: 1b
+				id: "ic2:re_battery"
+				tag: {
+					charge: 10000
+				}
+			}
+			id: "2BF6724FAD6B2B58"
+			rewards: [{
+				id: "75CA217FCB800143"
+				item: {
+					Count: 1b
+					id: "ic2:re_battery"
+					tag: {
+						charge: 10000
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "44C0764031AE7E20"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_14.title}"
+				type: "forge_energy"
+				value: 120000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_14.title}"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A791F59DB3D67E8"]
+			description: ["{gen.synthetic_aquisitions.task_15.desc}"]
+			icon: "minecraft:feather"
+			id: "11EDEA5E64C48118"
+			rewards: [{
+				count: 8
+				id: "79F6DC2FF30A6458"
+				item: "minecraft:feather"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "7208A75F08BECC2F"
+				max_input: 1000L
+				title: "{gen.synthetic_aquisitions.task_15.title}"
+				type: "forge_energy"
+				value: 16000L
+			}]
+			title: "{gen.synthetic_aquisitions.task_15.title}"
+			x: -5.464285714285715d
+			y: -0.5178571428571459d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"47EC01A0EEFF272F"
+				"0D4BA302A3BCAA07"
+			]
+			description: ["{gen.synthetic_aquisitions.task_16.desc}"]
+			icon: "boundlessflux:loosely_entangled_matter"
+			id: "3099119482D7F9BE"
+			rewards: [{
+				id: "0B9A7CAB8E41969D"
+				item: "boundlessflux:loosely_entangled_matter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "24694B0E638FF945"
+					item: "ic2:uumatter"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "575FC2AEF6248829"
+					item: "hostilenetworks:empty_prediction"
+					type: "item"
+				}
+			]
+			title: "{gen.synthetic_aquisitions.task_16.title}"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3F4F18C438028976"]
+			description: [
+				"{gen.synthetic_aquisitions.task_17.desc_0}"
+				""
+				"{gen.synthetic_aquisitions.task_17.desc_1}"
+				""
+				"{gen.synthetic_aquisitions.task_17.desc_2}"
+			]
+			icon: "botanicadds:flowers/energizera"
+			id: "0F8056C837499321"
+			rewards: [{
+				id: "0BFD9B180E3C85D1"
+				item: "botanicadds:flowers/energizera"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "33B1F2D12228AC90"
+					item: "botania:red_petal"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6B7D212632EA67BA"
+					item: "botania:green_petal"
+					type: "item"
+				}
+				{
+					id: "147DEC67B8AC3DAF"
+					item: {
+						Count: 1b
+						id: "electrodynamics:battery"
+						tag: {
+							joules: 1666666.0d
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{gen.synthetic_aquisitions.task_17.title}"
+			x: -3.75d
+			y: -1.25d
+		}
+		{
+			can_repeat: true
+			description: ["{gen.synthetic_aquisitions.task_18.desc}"]
+			icon: {
+				Count: 1b
+				id: "ic2:crop_analyzer"
+				tag: {
+					charge: 50000
+				}
+			}
+			id: "22F4E03747FA096B"
+			rewards: [{
+				id: "16011FCF565578B4"
+				item: {
+					Count: 1b
+					id: "ic2:crop_analyzer"
+					tag: {
+						charge: 50000
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "62D81D8E9D42791A"
+					max_input: 10000L
+					title: "{gen.synthetic_aquisitions.task_18.title}"
+					type: "forge_energy"
+					value: 200000L
+				}
+				{
+					consume_items: true
+					id: "32782D175F52F860"
+					item: {
+						Count: 1b
+						id: "ic2:crop_analyzer"
+						tag: { }
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 0.5d
+		}
+	]
+	title: "{gen.synthetic_aquisitions.title}"
+}

@@ -1,0 +1,74 @@
+{
+	icon: {
+		Count: 1b
+		ForgeCaps: {
+			Parent: {
+				air: 100000
+				earth: 100000
+				fire: 100000
+				water: 100000
+			}
+		}
+		id: "elementalcraft:pure_element_holder"
+		tag: {
+			air: 100000
+			earth: 100000
+			fire: 100000
+			water: 100000
+		}
+	}
+	id: "354749DBDA774DD3"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "elementalcraft:receptacle"
+				tag: {
+					element_type: "water"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "elementalcraft:receptacle"
+				tag: {
+					element_type: "fire"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "elementalcraft:receptacle"
+				tag: {
+					element_type: "earth"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "elementalcraft:receptacle"
+				tag: {
+					element_type: "air"
+				}
+			}
+		}
+	]
+	title: "Element Holder"
+}

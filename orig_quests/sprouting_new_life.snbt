@@ -1,0 +1,785 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sprouting_new_life"
+	group: "5D5DBBFEECA45FAB"
+	icon: "chipped:corrupted_nether_sprouts"
+	id: "5BC9FBEF227BFD06"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C9B4FAC40207AF3"]
+			description: [
+				"Most of the earth has been devastated by radiation. You'll need to find some &6water&r within the protected zone "
+				"to rehydrate some soil. Look out front and listen for the sound of flowing water. Dig down and you should find"
+				"a reservoir or underground aquifers. Place some &6dried salt blocks&r into the water to transform them to &bdirt&r."
+				""
+				"{image:ftbgenesis:textures/quests/salt.png width:246 height:210 align:1 fit:true}"
+			]
+			id: "08F47B1BBD53A2FB"
+			rewards: [
+				{
+					count: 16
+					id: "4DFB750792EEAABD"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "3F346391B9076912"
+					item: "cyclic:emerald_carrot_jump"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "487ACE2BEB9C1311"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "Suitable Soil"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["08F47B1BBD53A2FB"]
+			description: ["Now that you've prepared some &6dirt&r, place it within 4 blocks of &6water&r to keep it hydrated, and make sure there is plenty of light for the plants to grow. Once you have prepared your growing area, right click the dirt with a hoe to convert it to &bfarmland&r."]
+			id: "3FE01D30B9CCDAE7"
+			rewards: [
+				{
+					id: "145EE73DF61378BD"
+					item: "cyclic:apple_bone"
+					type: "item"
+				}
+				{
+					id: "1A78FFDF03A1A90A"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				icon: "minecraft:farmland"
+				id: "0FA6CA2AC0908973"
+				stage: "hoe"
+				title: "Attempt to hoe dirt"
+				type: "gamestage"
+			}]
+			title: "Ground Zero Farming"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3FE01D30B9CCDAE7"]
+			description: [
+				"Terrible discovery! It seems the environment is still far too harsh to support life. This is dire news indeed. We're going to have to attempt to bootstrap your agricultural expansion utilizing the simulation matrix. "
+				""
+				"Using the Simulation Matrix we can materialize pre-encoded biome slivers we digitized before the fall. The only problem is the overload has rendered the quantum bridge to the Nexa inoperable! Head over to the Emergency Repairs chapter to initiate repairs."
+			]
+			icon: "electrodynamics:wrench"
+			id: "5AAF867A034F38A3"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "1A23A83052420357"
+				title: "Emergency Repairs"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FE01D30B9CCDAE7"]
+			description: [
+				"Well, it may not be suitable for farmland but this soil does seem hardy enough to at least support trees. You"
+				" could make a patch of dirt out here to make a small Tree Farm in order to get planks and charcoal. "
+			]
+			id: "0E918A86AF7C4154"
+			rewards: [
+				{
+					id: "4207D14EAAFE8605"
+					item: "cyclic:apple_honey"
+					type: "item"
+				}
+				{
+					id: "7EC646321B4257F3"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 16
+					id: "3DB9921D2526F35F"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "3B92E0409DEBEA4F"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E918A86AF7C4154"]
+			description: ["There does seem to be some gravel around, although scarce. You can dig up some flint, and make shears to get leaves. This is optional but once you have an abundance of saplings, shearing the leaves makes useful compost for a renewable source of bone meal."]
+			icon: {
+				Count: 1b
+				id: "cyclic:shears_flint"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "39905924DD3241C2"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "1E578C752928EECF"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "78319FA3CFF4D03E"
+					item: {
+						Count: 1b
+						id: "cyclic:shears_flint"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A9448DF5E1BC284"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3FE01D30B9CCDAE7"
+				"1E42CE6EF1709417"
+			]
+			description: [
+				"With this new inferium essence that we've extracted from &6The Nether&r, we've been able to create radiation resistant soils to freely plant anywhere. Create some of this &benhanced farmland&r and expand your farms!"
+				""
+				"&nNote:&r This enhanced farmlands &lonly works with SEEDs&r. It does not work with cropsticks. Cropstick plants require a more tightly regulated environment and as such can only be grown in the simulation chamber or biomes that have been transformed to something other than wasteland."
+			]
+			id: "2A81959DAAAA8747"
+			rewards: [
+				{
+					count: 16
+					id: "0B2A107A540E8665"
+					item: "mysticalagriculture:inferium_farmland"
+					type: "item"
+				}
+				{
+					id: "1A15EEC63AEB0738"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "1D1D7EE26F1E3672"
+				item: "mysticalagriculture:inferium_farmland"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3FE01D30B9CCDAE7"]
+			description: ["Anticipating some species of flora being particularly strained in the environment, our scientists devised miniature biospheres called garden cloches. You should find a growing array towards the back of the agricultural wing. You'll need to arrange for some power to be provided to them but they should be piped with a small reservoir of water already. "]
+			id: "39652D887AD79660"
+			rewards: [
+				{
+					count: 12
+					id: "53F1196C71231687"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "40EB6A0FFEDD8639"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5CC608571F1B9469"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "immersiveengineering:cloche"
+				id: "6D679289E6FE8301"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:cloche"
+				type: "observation"
+			}]
+			title: "Miniature Biospheres"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2A81959DAAAA8747"
+				"382BF7E488CD1A8C"
+				"52B8017AA5460439"
+			]
+			description: ["With the infused botanics of the &6petal apothecary&r and the newly acquired &6inferium&r we can begin engineering seeds capable of thriving in this environment and even helping to rebuild the biosphere. Start by creating &bwater&r and &bdirt seeds&r to make &bclay&r and many other materials. You should also be able to make &bfire&r and &bstone&r seeds as well for even more possibilities."]
+			icon: "minecraft:clay_ball"
+			id: "41C71732A2A91BC7"
+			rewards: [
+				{
+					count: 3
+					id: "621EA38C7C132288"
+					item: "mysticalagriculture:water_seeds"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4F587AB941AF15B3"
+					item: "mysticalagriculture:dirt_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "00A85F9239AA708A"
+					item: "mysticalagriculture:water_seeds"
+					type: "item"
+				}
+				{
+					id: "1F63D496D39F4092"
+					item: "mysticalagriculture:dirt_seeds"
+					type: "item"
+				}
+				{
+					id: "24368C155B70845F"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			title: "Totally Balanced Flora"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A81959DAAAA8747"]
+			description: ["By combining the &bprosperity&r essence you found in the &6Nether&r realm with mundane seeds we've determined it will create a mutable protein structure that can bind to the &6inferium&r essences and a spectrum of biological and inorganics to form the basis of new, resource producing plant life."]
+			id: "75D65FA326BCEC5D"
+			rewards: [
+				{
+					count: 8
+					id: "5650A7078E123C1A"
+					item: "mysticalagriculture:prosperity_shard"
+					type: "item"
+				}
+				{
+					id: "721A79F4A92F7D96"
+					item: {
+						Count: 1b
+						id: "mysticalagriculture:inferium_watering_can"
+						tag: {
+							Active: 0b
+							Water: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "41B36C9E1F84F2B7"
+				item: "mysticalagriculture:prosperity_seed_base"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			description: ["Some bonemeal would make this process go a lot faster. Gather some wood slabs and get a composter going to make some."]
+			id: "6E593B488E17EFD5"
+			rewards: [
+				{
+					count: 16
+					id: "105124CAABD77420"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "665E5E3BDD134FD3"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				id: "1F24846D8D2872BD"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E593B488E17EFD5"]
+			description: ["Bone meal isn't enough. But we can turn it into fertilizer. Maybe with fertilizer, we can make better growing compounds and really get our plant production going. "]
+			id: "18DB1E6AAABAEC48"
+			rewards: [
+				{
+					count: 8
+					id: "493A64A812265936"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "07925825D335AFC8"
+					type: "xp"
+					xp: 4
+				}
+			]
+			tasks: [{
+				id: "5D7FD4B7B6D19A06"
+				item: "ic2:fertilizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18DB1E6AAABAEC48"]
+			description: ["Overgrowth fertilizer is both amazing and destructive. For 5 minutes it will immensely increase the growth rate of your plant allowing you to harvest huge yields of product. At the end of that 5 minutes though it leaves the soil completely dead and your plant unable to ever grow in it again. Use carefully."]
+			id: "7FCBCE1E6AF2E894"
+			rewards: [
+				{
+					id: "49132B80A0C923AC"
+					item: "botania:overgrowth_seed"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "28F136ED558E7BA9"
+					item: "biomesoplenty:jacaranda_sapling"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4ACDA38C475686E3"
+				item: "ic2:overgrowth_fertilizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FCBCE1E6AF2E894"]
+			description: ["After the soil has been decimated by overgrowth fertilizer the only way to bring it back is with restoring fertilizer. These two fertilizers can not be used on the soil at the same time however."]
+			id: "6F521AFC6B2EC4AB"
+			rewards: [
+				{
+					count: 16
+					id: "629DC48233C34ACF"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "4E6F3564FDC10D0B"
+					item: "ic2:solar_panel_lv_compressed"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0E50DA2B645248FB"
+				item: "ic2:restoring_fertilizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"18DB1E6AAABAEC48"
+				"2E062D8806B2E42D"
+			]
+			description: ["By infusing mundane fertilizer with earth essence you can create a floral powder that is capable of generating the mutagenic flora known as mystic flowers. According to the designs for a biotechnological energy source they will be required."]
+			id: "29AEC83FDA1960E6"
+			rewards: [
+				{
+					id: "561389DA0F20EE0B"
+					item: {
+						Count: 1b
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3978FD4938C37F2A"
+					item: "botania:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "31B43C8230B01DB7"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"18DB1E6AAABAEC48"
+				"1202373D0B88B941"
+			]
+			description: ["After creating a concentrated source of bioelectrical energy the fertilizer can now be infused with this mana and transformed into a seed enhancer. These seed enhancers can be combiend with any IC2 seed to automatically convert them into a 5/5/5 variant of the same seed."]
+			id: "2B1722929ABABC2B"
+			rewards: [
+				{
+					count: 4
+					id: "0940EE3583995DC5"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					id: "2046E303DC52B848"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				id: "0DE54C41CC541A56"
+				item: "ftbgenesis:seed_enhancer_basic"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B1722929ABABC2B"]
+			description: ["By enhancing floral fertilizer further with a mana infusion you can now create a seed enhancer that will mutate any ic2 crop into a powerful 15/15/15 variant of the same seed. Remember that each plant that spreads from this will maintain these new stats!"]
+			id: "73E27061D4B2B51A"
+			rewards: [
+				{
+					count: 4
+					id: "5F5AA45928210E96"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					id: "36D96F9F540C1CA5"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				id: "3CAC4D8E63FCE200"
+				item: "ftbgenesis:seed_enhancer_improved"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73E27061D4B2B51A"]
+			description: ["By combining the powerful mystic essence and a tremendous amount of mana our scientists have devised a method of perfecting these crop seeds. This enhancer will automatically boost any seed you combine it with to a 25/25/25 stat."]
+			id: "4D3E5D52A08A3813"
+			rewards: [
+				{
+					count: 4
+					id: "29F986F92D666015"
+					item: "ftbgenesis:seed_enhancer_supreme"
+					type: "item"
+				}
+				{
+					id: "575CD22385BAFBA2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "300FA7144915AF75"
+				item: "ftbgenesis:seed_enhancer_supreme"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2B1722929ABABC2B"
+				"7C8227EB5A0F102F"
+			]
+			description: ["By infusing the seed enhancer with pure elemental energy you can create a fertilizer that resonates with a similar quantum signature that the Alfheim inhabitants do. This physics-warped fertilizer is capable of instantly growing even the prosperity-infused life seeds of Mystical Agriculture. "]
+			id: "5A59C9F19D95BF55"
+			rewards: [
+				{
+					count: 16
+					id: "78F5C332A4FF4452"
+					item: "mysticalagriculture:mystical_fertilizer"
+					type: "item"
+				}
+				{
+					id: "434F9F76E310FD1A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "0B89DA2BB30ED5A9"
+					item: "supplementaries:candy"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "633AC16625FD2326"
+				item: "mysticalagriculture:mystical_fertilizer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"75D65FA326BCEC5D"
+				"382BF7E488CD1A8C"
+				"1E42CE6EF1709417"
+			]
+			description: [
+				"The elemntal seeds are foundational seeds which can be used to produce several useful mundane blocks from dirt to sand. They are also required in higher end crafting, awakening rituals and a few other applications. "
+				""
+				"The seed quests that branch from here are optional, but recommended. Remember you can grow your mystic seeds in cloches with farmland that is matching or above the seed tier."
+			]
+			id: "0B6D7352F11F9D77"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "2C4E062BAF9C2356"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "5B0ECC8536B64290"
+					type: "xp"
+					xp: 4
+				}
+				{
+					count: 4
+					id: "49CADBC58C7F8A3E"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "06FB0162F13AA81B"
+					item: "mysticalagriculture:fire_seeds"
+					type: "item"
+				}
+				{
+					id: "0FE0517646751233"
+					item: "mysticalagriculture:water_seeds"
+					type: "item"
+				}
+				{
+					id: "6B0037EE33740EFC"
+					item: "mysticalagriculture:earth_seeds"
+					type: "item"
+				}
+				{
+					id: "04012D4A90CA13D0"
+					item: "mysticalagriculture:air_seeds"
+					type: "item"
+				}
+			]
+			title: "Elemental Seeds"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "5ABCA0D5131B01AF"
+			optional: true
+			rewards: [
+				{
+					id: "6C3269BA1E9CC9DE"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+				{
+					id: "7DD313C761333319"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "767A2393293F323D"
+				item: "mysticalagriculture:certus_quartz_seeds"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "4892810492150D5D"
+			optional: true
+			rewards: [
+				{
+					id: "5DC76B466B6CFC4B"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+				{
+					id: "343460821A5309C8"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5708154F53B2A939"
+				item: "mysticalagriculture:iron_seeds"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "1097B2D8BCCAE560"
+			optional: true
+			rewards: [
+				{
+					id: "616AC3BAF8DBFFDC"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "6E6B596B837A2567"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "463F7E5A78FEEF16"
+				item: "mysticalagriculture:nether_seeds"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "46AD369524E69673"
+			optional: true
+			rewards: [
+				{
+					id: "4F177C4B1EB6E1C7"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "1FC55E75BD497AD3"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "660B87FCF94B0B2C"
+				item: "mysticalagriculture:nature_seeds"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "4CF401B7C6A43E4C"
+			optional: true
+			rewards: [
+				{
+					id: "3A0485871C895761"
+					item: "mysticalagriculture:imperium_essence"
+					type: "item"
+				}
+				{
+					id: "6024725F9B470F80"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "193E5772CE4AFB00"
+				item: "mysticalagriculture:gold_seeds"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "29E2FBD8A8A32B19"
+			optional: true
+			rewards: [
+				{
+					id: "10B604BA1FD491FC"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+				{
+					id: "45E14213604609DF"
+					item: "mysticalagriculture:imperium_essence"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6F7A8283CABDFCEC"
+				item: "mysticalagriculture:experience_seeds"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B6D7352F11F9D77"]
+			id: "64FA31E910F3A0EB"
+			optional: true
+			rewards: [
+				{
+					id: "7DE736434C63B418"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+				{
+					id: "1548D859E9E0CEFF"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6F9C2FB094E4AB58"
+				item: "mysticalagriculture:amethyst_seeds"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+	]
+	title: "Sprouting New Life"
+}

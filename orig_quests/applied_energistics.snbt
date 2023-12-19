@@ -1,0 +1,562 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: "4C0075272E2F720D"
+	icon: "ae2:fluix_crystal"
+	id: "0728E6A480590763"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["Now, with some materials, we can begin to rebuild the connection to the digital storage within Nexa. A charger will be required, and we can also provide you with an Entropy Manipulator. Once charged, this device can manipulate the world's temporal energy using AE Energy. "]
+			id: "125174EB6034391C"
+			rewards: [{
+				id: "2D262EE59E86CD0C"
+				item: "ae2:entropy_manipulator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "756A20E1BEA08063"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"11084B5355F27820"
+				"125174EB6034391C"
+			]
+			description: ["Certus quartz is the refined, energy stable variant of quartz that has the unique properties needed to contain endless amounts of data-as-energy. You'll need to create these in your molecular transformer to get started but may later find more efficient means of production. "]
+			id: "000EE3C686CBB34C"
+			rewards: [
+				{
+					count: 3
+					id: "30ED067185107B01"
+					item: "ae2:flawless_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "733F6F34F8E8F675"
+					item: "ae2:certus_quartz_wrench"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "647EA0E96E4B4CBA"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["000EE3C686CBB34C"]
+			description: ["After creating the Certus quartz you'll need to charge it in a charger. This energized version readily binds with quartz crystal and redstone to form an entirey new internal crystaling structure capable of multimodal polarity shifting, the key stabilizing factor in the energistics manufacturing."]
+			id: "5796BE0DEBF1AF0E"
+			rewards: [{
+				count: 8
+				id: "4AB52AB734C57197"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "617B773E3154171B"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5796BE0DEBF1AF0E"]
+			description: ["The fluix crystal is made by allowing the quartz, charged certus and redstone to combine in a liquid medium such as water. The reaction is relatively fast, resulting in the entire new crystal type as the constituent parts are consumed."]
+			id: "498B2E123C3ADF6F"
+			rewards: [
+				{
+					count: 16
+					id: "11F08CB921F5E9B1"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4B2C8970F37EF12C"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+				{
+					id: "26BC9FA2D6DC769D"
+					item: {
+						Count: 1b
+						id: "ae2:dense_energy_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "207575B548340A21"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["125174EB6034391C"]
+			description: ["The inscriber is used to prepare the basic processors by form cutting the required materials for each processor in the inscriber with their molds. "]
+			id: "66E9D332512B525A"
+			rewards: [
+				{
+					count: 8
+					id: "767AF6D4CBBBB966"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0133A429528C72EC"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6BA2919C197FB437"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["66E9D332512B525A"]
+			description: ["The raw printed circuits can be molded in the inscriber along with the appropriate press and a silicon printed circuit design. This will imprint the type of processor you wish to create on the raw silicon base layer. "]
+			id: "074F27A5B7F53548"
+			rewards: [
+				{
+					count: 16
+					id: "2C85B8871D3AED14"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "755F2F483FBDCE61"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "27B1411E9CE6FA0A"
+					item: "ae2things:advanced_inscriber"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "54FE94AB7CE9C350"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "19EE3978ED2FBEDE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:printed_logic_processor"
+								}
+								{
+									Count: 1b
+									id: "ae2:printed_calculation_processor"
+								}
+								{
+									Count: 1b
+									id: "ae2:printed_engineering_processor"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"074F27A5B7F53548"
+				"586B3283715D58FA"
+			]
+			description: ["The final step in refining new processors is to take the raw printed circuits and pass them through a laser assembly table. This will apply the precision machining and etching required to finalize the circuits which become the basis of all our advanced matter to enery technologies."]
+			id: "40C9FC4B88B89CD5"
+			rewards: [
+				{
+					count: 4
+					id: "761CC4FB9D351D93"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A3DD5979980230E"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "69E93C33E2225147"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "069B3E9BBE1D86A4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:logic_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:calculation_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:engineering_processor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Create Applied Energistics Processors"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"498B2E123C3ADF6F"
+				"40C9FC4B88B89CD5"
+			]
+			description: ["With the crafting terminal reinstalled the system is back online fully. You're ready to expand digital storage rapidly by including autocrafters, storage drive bays and wireless terminals. "]
+			id: "3D30228110B84291"
+			rewards: [
+				{
+					id: "351E3E905C0AEB3D"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "2F80B1DA6F8B7C81"
+					item: "ae2:conversion_monitor"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0FDB7CAF130E48CC"
+					item: "ae2:cable_anchor"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1B9D1A4CE6160566"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "Back online at last!"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["These storage cells come in many different sizes and are the digital storage core for all of Elyria. We store everything from simple stone to the complexity of an Elyrian's neural pattern, allowing them to live out their simulated life within the Nexa."]
+			id: "339F20F9289DDD5F"
+			rewards: [{
+				id: "5CB5DD8E295634DD"
+				item: "megacells:bulk_cell_component"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5896CB7FE9AD1C03"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			title: "Storage Components"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["339F20F9289DDD5F"]
+			description: ["The basic crafting unit on its own does nothing but it is the basis for coprocessing and crafting storage. Combined with a storage component, it becomes a crafting storage capable of complex calculations for nested crafting operations."]
+			id: "7C1BCBBDB26EDE25"
+			rewards: [{
+				id: "2C076A2740B39E1D"
+				item: "ae2:4k_crafting_storage"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2A830E14F25518C8"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["The pattern provider accepts encoded patterns and transfers the data to nearby molecular assemblers or processing machines in order to perform real world, on demand production. "]
+			id: "1549DB527B4688C6"
+			rewards: [{
+				id: "679D7888C7A130B4"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			tasks: [{
+				id: "421E25CF5490274D"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["These molecular assemblers can digitally assemble crafted components and deliver the physical items back to the requesting interface. They make up the simple shape crafting components of our automation networks."]
+			id: "7EA74A97328DCB26"
+			rewards: [{
+				count: 4
+				id: "5E169A5C83ED71A0"
+				item: "ae2:speed_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52E383EB5C01E5D4"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C1BCBBDB26EDE25"]
+			description: ["The crafting coprocessor allows for multiple crafting operations to take place simultaneously in the production flow, potentially speeding up the overall processing time of complex operations substantially."]
+			id: "094FFF692A172AD8"
+			rewards: [{
+				id: "0D996A013EFC662A"
+				item: "megacells:mega_crafting_accelerator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AA78C87F4709FF6"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["Import and Export buses are the heart of the automation for the Nexa network.They allow you to automatically import from attached storages to the Nexa Network or Export from the Nexa network to attached inventories and machines."]
+			id: "6F2DEF2DA0E71A65"
+			rewards: [
+				{
+					count: 8
+					id: "557D3B39A48DB4A9"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "219B704ADDE4D248"
+					item: "ae2:level_emitter"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7111489284E6362D"
+					item: "ae2:redstone_card"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3333CD3869968A06"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:import_bus"
+							}
+							{
+								Count: 1b
+								id: "ae2:export_bus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "IO Virtualized"
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["The storage bus will allow you to use physical storage and give indexing and digitization capabilities to it via the Nexa network. Attach this to any inventory and connect it to your network to be able to access it as part of your network."]
+			id: "13CA79D4F4094E17"
+			rewards: [{
+				count: 3
+				id: "356595C041F53810"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2152AF8B8097734E"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["339F20F9289DDD5F"]
+			description: ["The matter condesor converts liquid or matter into an energy dense state. Once enough has accumulated it can become super dense and form a microsingularity. "]
+			id: "4735156D8D012737"
+			rewards: [
+				{
+					id: "682FA9AD46E699D8"
+					item: "ae2:cell_component_64k"
+					type: "item"
+				}
+				{
+					id: "044C3C2748DADCB6"
+					item: "cookingforblockheads:sink"
+					title: "Wait, you can pump in fluids?!"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6792B9BC5ADC0A93"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4735156D8D012737"]
+			description: ["These singularities can then be compressed with an explosion and ender pearls to create a stable entanglement between them. These entangled pair make the bridge for our quantum network."]
+			id: "5CE85CD6B61F0A7E"
+			rewards: [
+				{
+					id: "0975685221A97173"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "16DC7D5C6574963A"
+					item: "ae2:tiny_tnt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2151FC1D8A3D441C"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["The security terminals will determine who has access to the Nexa Network. You can insert a blank biometric card with all permissions to allow anyone access. If you'd like to be more selective you can add individual biometric ids."]
+			id: "0842493BFAE57E6C"
+			rewards: [{
+				id: "19031F9611590F63"
+				item: "ae2:biometric_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FC59FC533548F88"
+				item: "ae2:security_station"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0842493BFAE57E6C"]
+			description: ["The wireless crafting terminal will allow you to access your wireless Nexa Network. Combining it with the other terminals can create a superior Universal terminal to access all your Nexa fluids, crafting and items remotely!"]
+			id: "18EDA84840067CB2"
+			rewards: [{
+				id: "501A9A5ED64B5EB4"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "333DBBF215EF483A"
+				item: {
+					Count: 1b
+					id: "ae2:wireless_crafting_terminal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0842493BFAE57E6C"]
+			description: ["The wireless access point will broadcast your Nexa network connection wireless to all wireless terminals in range. More ugprades to range will increase how far away it will operate."]
+			id: "3FB8F0028B41F4E9"
+			rewards: [{
+				count: 8
+				id: "293B41202C676BE6"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11EF829174285568"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0842493BFAE57E6C"
+				"18EDA84840067CB2"
+				"5CE85CD6B61F0A7E"
+			]
+			description: ["The quantum bridge card will allow you to insert an entangled singularity into your wireless crafting terminal. This will allow you access to the Nexa Network anywhere from any location."]
+			id: "60519EF12D45C54D"
+			tasks: [{
+				id: "1299B516DE1A2247"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+	]
+	title: "Applied Energistics"
+}

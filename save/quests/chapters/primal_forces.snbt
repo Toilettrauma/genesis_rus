@@ -1,0 +1,791 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "primal_forces"
+	group: "57632A2841EDB38D"
+	icon: {
+		Count: 1b
+		ForgeCaps: {
+			Parent: {
+				air: 0
+				earth: 0
+				fire: 0
+				water: 0
+			}
+		}
+		id: "elementalcraft:pure_element_holder"
+	}
+	id: "4A829D91B3F83760"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"44C9C2D26B558D74"
+				"53777A21C6B4D796"
+			]
+			description: ["{gen.primal_forces.task_0.desc}"]
+			id: "3E8961E7F7A6ACBB"
+			rewards: [{
+				id: "7F5D421CB0B08035"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FC7DFD137AA6C3F"
+				item: "elementalcraft:contained_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			description: ["{gen.primal_forces.task_1.desc}"]
+			id: "44C9C2D26B558D74"
+			rewards: [
+				{
+					count: 8
+					id: "077532A4E27FBE6C"
+					item: "elementalcraft:inert_crystal"
+					type: "item"
+				}
+				{
+					id: "3CC5F5E4B191926F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "31B88ADFAEA3D713"
+				item: "elementalcraft:inert_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3E8961E7F7A6ACBB"
+				"6E528F924EB04FD4"
+			]
+			description: [
+				"{gen.primal_forces.task_2.desc_0}"
+				"{@pagebreak}"
+				"{gen.primal_forces.task_2.desc_1}"
+				""
+				"{gen.primal_forces.task_2.desc_2}"
+			]
+			icon: "elementalcraft:extractor"
+			id: "2785F8A7A0357F0A"
+			rewards: [
+				{
+					count: 4
+					id: "660E7F3E1A567AE7"
+					item: "elementalcraft:small_container"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4E508C57323F0C87"
+					item: "elementalcraft:elementpipe_impaired"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3AD10A930A8E19B5"
+					item: "elementalcraft:extractor"
+					type: "item"
+				}
+				{
+					id: "3E3B365153969F8C"
+					item: "elementalcraft:small_container"
+					type: "item"
+				}
+			]
+			title: "{gen.primal_forces.task_2.title}"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3E8961E7F7A6ACBB"
+				"2785F8A7A0357F0A"
+			]
+			description: ["{gen.primal_forces.task_3.desc}"]
+			icon: "elementalcraft:infuser"
+			id: "2E062D8806B2E42D"
+			rewards: [
+				{
+					id: "1E14C880F1C2B189"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:alumen"
+							gain: 15
+							growth: 15
+							resistance: 15
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6C4EE71EF0F37915"
+					item: "minecraft:blackstone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "02D3D8400468B24D"
+				item: "elementalcraft:infuser"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44C9C2D26B558D74"]
+			description: ["{gen.primal_forces.task_4.desc}"]
+			icon: "elementalcraft:source"
+			id: "563DF70EA444D08A"
+			rewards: [{
+				id: "1F7627BCEBE47FB1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "759B8910520D4B59"
+				title: "{gen.primal_forces.task_4.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["563DF70EA444D08A"]
+			description: ["[\"\", \"\", {\"translate\": \"gen.primal_forces.task_5.desc_0.format.text_0\"}, {\"color\": \"dark_red\", \"translate\": \"gen.primal_forces.task_5.desc_0.format.format_0\"}, {\"translate\": \"gen.primal_forces.task_5.desc_0.format.text_1\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Fire Element\\\" 62 63 -185 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.primal_forces.task_5.desc_0.format.format_1\"}, {\"translate\": \"gen.primal_forces.task_5.desc_0.format.text_2\"}, \"\"]"]
+			id: "3C9912D51B0C4090"
+			rewards: [
+				{
+					count: 4
+					id: "1D1BEFA091405F88"
+					item: "elementalcraft:fire_shard"
+					type: "item"
+				}
+				{
+					id: "4B58C7A7EC3FFA5B"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							element_amount: 10000
+							element_capacity: 10000
+							element_type: "fire"
+						}
+					}
+					id: "elementalcraft:element_holder_fire"
+					tag: {
+						Damage: 0
+						element_amount: 10000
+					}
+				}
+				id: "69FE4D9C09D0C8D6"
+				ignore_dimension: true
+				position: [I;
+					58
+					60
+					-189
+				]
+				size: [I;
+					10
+					10
+					10
+				]
+				title: "{gen.primal_forces.task_5.title}"
+				type: "location"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["563DF70EA444D08A"]
+			description: ["[\"\", \"\", {\"translate\": \"gen.primal_forces.task_6.desc_0.format.text_0\"}, {\"color\": \"aqua\", \"translate\": \"gen.primal_forces.task_6.desc_0.format.format_0\"}, {\"translate\": \"gen.primal_forces.task_6.desc_0.format.text_1\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Air Element\\\" 111 63 49 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.primal_forces.task_6.desc_0.format.format_1\"}, {\"translate\": \"gen.primal_forces.task_6.desc_0.format.text_2\"}, \"\"]"]
+			id: "38F073A62F37DE49"
+			rewards: [
+				{
+					count: 4
+					id: "33699AA7C3540A14"
+					item: "elementalcraft:air_shard"
+					type: "item"
+				}
+				{
+					id: "27DC6E9FA9BAA5E3"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							element_amount: 10000
+							element_capacity: 10000
+							element_type: "air"
+						}
+					}
+					id: "elementalcraft:element_holder_air"
+					tag: {
+						Damage: 0
+						element_amount: 10000
+					}
+				}
+				id: "408401336495309D"
+				ignore_dimension: true
+				position: [I;
+					106
+					63
+					46
+				]
+				size: [I;
+					10
+					10
+					10
+				]
+				title: "{gen.primal_forces.task_6.title}"
+				type: "location"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["563DF70EA444D08A"]
+			description: ["[\"\", \"\", {\"translate\": \"gen.primal_forces.task_7.desc_0.format.text_0\"}, {\"color\": \"blue\", \"translate\": \"gen.primal_forces.task_7.desc_0.format.format_0\"}, {\"translate\": \"gen.primal_forces.task_7.desc_0.format.text_1\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Water Element\\\" 262 63 -148 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.primal_forces.task_7.desc_0.format.format_1\"}, {\"translate\": \"gen.primal_forces.task_7.desc_0.format.text_2\"}, \"\"]"]
+			id: "22FC581D2CADD7CC"
+			rewards: [
+				{
+					count: 4
+					id: "0271238B93EB679C"
+					item: "elementalcraft:water_shard"
+					type: "item"
+				}
+				{
+					id: "71FFE1D48AD764BD"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							element_amount: 10000
+							element_capacity: 10000
+							element_type: "water"
+						}
+					}
+					id: "elementalcraft:element_holder_water"
+					tag: {
+						Damage: 0
+						element_amount: 10000
+					}
+				}
+				id: "2ED998744DE140C7"
+				ignore_dimension: true
+				position: [I;
+					257
+					62
+					-153
+				]
+				size: [I;
+					15
+					15
+					15
+				]
+				title: "{gen.primal_forces.task_7.title}"
+				type: "location"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"22FC581D2CADD7CC"
+				"3C9912D51B0C4090"
+				"38F073A62F37DE49"
+				"3738DB0E2E5B974F"
+			]
+			description: ["{gen.primal_forces.task_8.desc}"]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						air: 100000
+						earth: 100000
+						fire: 100000
+						water: 100000
+					}
+				}
+				id: "elementalcraft:pure_element_holder"
+				tag: {
+					air: 100000
+					earth: 100000
+					fire: 100000
+					water: 100000
+				}
+			}
+			id: "6E528F924EB04FD4"
+			rewards: [
+				{
+					id: "0B54429B880EFC53"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "15EF6A33BDA68EA6"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20FB6758B573B653"
+					table_id: 3839118415968554451L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "419E8C6A0B6BB02D"
+				title: "{gen.primal_forces.task_8.title}"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2E062D8806B2E42D"
+				"4DA89AED6EA9C07B"
+			]
+			description: ["{gen.primal_forces.task_9.desc}"]
+			id: "68646EA914E28BD8"
+			rewards: [
+				{
+					count: 8
+					id: "518D151E710F28C1"
+					item: "ic2:ingot_aluminium"
+					type: "item"
+				}
+				{
+					id: "1EA07862406DABA2"
+					item: "elementalcraft:container"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7468A3EFB5ED3D71"
+				item: "elementalcraft:drenched_iron_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2E062D8806B2E42D"
+				"17083DB226A62972"
+			]
+			description: ["{gen.primal_forces.task_10.desc}"]
+			id: "1EA4D87AFED77C58"
+			rewards: [
+				{
+					count: 4
+					id: "1E51C251DC7E5CE7"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2CEDB16D797C3489"
+					item: "minecraft:blackstone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "183E03358B6D0759"
+					item: "elementalcraft:whiterock"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E3D3EC9D2A66D2E"
+				item: "elementalcraft:whiterock"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"68646EA914E28BD8"
+				"1EA4D87AFED77C58"
+			]
+			description: ["{gen.primal_forces.task_11.desc}"]
+			id: "584B21E47DAC19FC"
+			rewards: [
+				{
+					count: 4
+					id: "30A2CE9D6CE5956C"
+					item: "elementalcraft:contained_crystal"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "32211C5E47AF7F03"
+					item: "elementalcraft:whiterock"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3EA13487A12ADBCA"
+				item: "elementalcraft:binder"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E062D8806B2E42D"]
+			description: ["{gen.primal_forces.task_12.desc}"]
+			id: "2CC11360789BD0A4"
+			rewards: [
+				{
+					id: "2066916C77392D7E"
+					item: "elementalcraft:firecrystal"
+					type: "item"
+				}
+				{
+					id: "06CAB83D4BECF28C"
+					item: "elementalcraft:watercrystal"
+					type: "item"
+				}
+				{
+					id: "1CABE53B67D0EADD"
+					item: "elementalcraft:aircrystal"
+					type: "item"
+				}
+				{
+					id: "484E7F11179E4960"
+					item: "elementalcraft:earthcrystal"
+					type: "item"
+				}
+				{
+					id: "7BBE376D81B5976F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "61B159C6D997CFA1"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "elementalcraft:firecrystal"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:watercrystal"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:aircrystal"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:earthcrystal"
+							}
+						]
+					}
+				}
+				title: "{gen.primal_forces.task_12.title}"
+				type: "item"
+			}]
+			title: "{gen.primal_forces.task_12.title}"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["584B21E47DAC19FC"]
+			description: ["{gen.primal_forces.task_13.desc}"]
+			id: "5B939FEB1DB46CA8"
+			rewards: [
+				{
+					id: "08CECAC120EF34FB"
+					item: "elementalcraft:springaline_block"
+					type: "item"
+				}
+				{
+					id: "453908A41BF87B52"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "73A217D6C914883E"
+				item: "elementalcraft:springaline_shard"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B939FEB1DB46CA8"]
+			description: ["{gen.primal_forces.task_14.desc}"]
+			id: "1BC9B5B98F0FA958"
+			rewards: [
+				{
+					id: "23317D68238DD199"
+					item: {
+						Count: 1b
+						id: "chromaticarsenal:super_golden_heart"
+						tag: {
+							counter: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F19A70EB0D735AE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "1AADC58298491C60"
+				item: "elementalcraft:solar_prism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68646EA914E28BD8"]
+			description: ["{gen.primal_forces.task_15.desc}"]
+			id: "4EC6387874BF29B9"
+			rewards: [{
+				id: "562548C141112B3F"
+				item: "elementalcraft:container"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "3A148633AB203644"
+				item: "elementalcraft:elementpipe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"68646EA914E28BD8"
+				"2CC11360789BD0A4"
+			]
+			description: ["{gen.primal_forces.task_16.desc}"]
+			id: "2B42B92F4A085DBA"
+			rewards: [
+				{
+					id: "2FA102A3F144C2D8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 16
+					id: "20C667DAACEBA6DE"
+					item: "elementalcraft:elementpipe_improved"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "56D7E253D92D2207"
+				item: "elementalcraft:swift_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2B42B92F4A085DBA"
+				"5B939FEB1DB46CA8"
+			]
+			description: ["{gen.primal_forces.task_17.desc}"]
+			id: "67E90FA7452D68CD"
+			rewards: [
+				{
+					count: 4
+					id: "39ADCCA61354CAC5"
+					item: "elementalcraft:contained_crystal"
+					type: "item"
+				}
+				{
+					id: "00AB406C7503B52A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3F9ADCB53B787528"
+					item: "ic2:glass_iced_tea"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6A66804C0F3F04EA"
+				item: "elementalcraft:strongly_contained_crystal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["67E90FA7452D68CD"]
+			description: [
+				"{gen.primal_forces.task_18.desc_0}"
+				""
+				"{gen.primal_forces.task_18.desc_1}"
+			]
+			id: "7C8227EB5A0F102F"
+			rewards: [
+				{
+					id: "15B49D0F3A3ED61C"
+					item: "elementalcraft:pedestal_fire"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "67AB04494BA28A68"
+					item: "elementalcraft:pedestal_water"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "1F80B6159D908731"
+					item: "elementalcraft:pedestal_earth"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "021886CF26AA5B21"
+					item: "elementalcraft:pedestal_air"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "34FFAE4CBEF1245A"
+				item: "elementalcraft:pureinfuser"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["563DF70EA444D08A"]
+			description: ["[\"\", \"\", {\"translate\": \"gen.primal_forces.task_19.desc_0.format.text_0\"}, {\"color\": \"green\", \"translate\": \"gen.primal_forces.task_19.desc_0.format.format_0\"}, {\"translate\": \"gen.primal_forces.task_19.desc_0.format.text_1\"}, {\"color\": \"gold\", \"clickEvent\": {\"action\": \"run_command\", \"value\": \"/waypoint add \\\"Earth Element\\\" -279 63 369 gold\"}, \"hoverEvent\": {\"action\": \"show_text\", \"contents\": [\"Add Waypoint\"]}, \"translate\": \"gen.primal_forces.task_19.desc_0.format.format_1\"}, {\"translate\": \"gen.primal_forces.task_19.desc_0.format.text_2\"}, \"\"]"]
+			id: "3738DB0E2E5B974F"
+			rewards: [
+				{
+					count: 4
+					id: "1D7DD979A6DA02BF"
+					item: "elementalcraft:earth_shard"
+					type: "item"
+				}
+				{
+					id: "290A71F4D63A58F1"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							element_amount: 10000
+							element_capacity: 10000
+							element_type: "earth"
+						}
+					}
+					id: "elementalcraft:element_holder_earth"
+					tag: {
+						Damage: 0
+						element_amount: 10000
+					}
+				}
+				id: "27CEBEEB8E750823"
+				ignore_dimension: true
+				position: [I;
+					-279
+					63
+					369
+				]
+				size: [I;
+					1
+					1
+					1
+				]
+				title: "{gen.primal_forces.task_19.title}"
+				type: "location"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7C8227EB5A0F102F"]
+			description: ["{gen.primal_forces.task_20.desc}"]
+			id: "6A6F6442D04FC357"
+			rewards: [
+				{
+					count: 2
+					id: "3E744A44FD6C219A"
+					item: "elementalcraft:purecrystal"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35E879F0AD5D99F1"
+					table_id: 3839118415968554451L
+					type: "choice"
+				}
+			]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "1ED43BC7E23C6542"
+				item: "elementalcraft:purecrystal"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+	]
+	title: "{gen.primal_forces.title}"
+}

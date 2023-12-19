@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "project_genesis"
+	group: ""
+	icon: "botania:world_seed"
+	id: "6D19531971495779"
+	images: [
+		{
+			alpha: 100
+			click: ""
+			corner: false
+			dev: false
+			height: 32.0d
+			hover: [ ]
+			image: "ftbgenesis:textures/quests/vaultfront.png"
+			order: -1
+			rotation: 0.0d
+			width: 60.0d
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.5d
+			hover: [ ]
+			image: "ftbgenesis:textures/quests/welcome.png"
+			order: 1
+			rotation: 0.0d
+			width: 8.0d
+			x: -8.0d
+			y: 1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"{gen.project_genesis.task_0.desc_0}"
+			""
+			"{gen.project_genesis.task_0.desc_1}"
+			""
+			"{@pagebreak}"
+			"{gen.project_genesis.task_0.desc_2}"
+			""
+			"{gen.project_genesis.task_0.desc_3}"
+			""
+			"{gen.project_genesis.task_0.desc_4}"
+		]
+		id: "184A9C8DCC6AAB6B"
+		rewards: [
+			{
+				id: "29EB622D2E399F3E"
+				type: "xp"
+				xp: 10
+			}
+			{
+				id: "3EBAB97C5FCF3C80"
+				item: "farmersdelight:roasted_mutton_chops"
+				type: "item"
+			}
+		]
+		shape: "pentagon"
+		size: 2.0d
+		tasks: [{
+			icon: {
+				Count: 1b
+				id: "gag:hearthstone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50826BE5689481D4"
+			structure: "ftbteamdimensions:start"
+			title: "{gen.project_genesis.task_0.title}"
+			type: "structure"
+		}]
+		x: -8.0d
+		y: 4.0d
+	}]
+	title: "{gen.project_genesis.title}"
+}

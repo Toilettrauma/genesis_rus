@@ -1,0 +1,20 @@
+line 30: precision, matter to enery
+line 12: Arid Nexus Invaders
+line 69: keynode
+line 86: experentia
+line 96: Daisy if you Do
+line 106: curios
+line 147: Steeling
+line 154: MicroCrafting BeGone!
+line 166: removed {@pagebreak}
+line 167: TL;DR
+
+a_dangerous_path.snbt: line 80: Add Waypoint, Copper Signature
+
+
+
+Advanced solars (patch)
+AE2 (patch)
+AE2WTLib
+ElementalCraft
+EUConverters

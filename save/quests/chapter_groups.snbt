@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "5D5DBBFEECA45FAB", title: "A World Reborn" }
+		{ id: "656523BED7FBA32A", title: "Reconnaissance" }
+		{ id: "494B330CF50C8720", title: "Rehabilitation" }
+		{ id: "17B287771C7EC060", title: "Resurgence" }
+		{ id: "4C0075272E2F720D", title: "Reconnection" }
+		{ id: "57632A2841EDB38D", title: "Rebirth" }
+	]
+}

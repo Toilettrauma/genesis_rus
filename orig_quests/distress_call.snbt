@@ -1,0 +1,383 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "distress_call"
+	group: "4C0075272E2F720D"
+	hide_quest_details_until_startable: true
+	icon: "supplementaries:enderman_head"
+	id: "5C368E171FD8F3E3"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["297BE049D34390C0"]
+			description: ["As you delve into the depths of Elyria's restoration, an urgent, fragmented signal pierces through the static of the Nexa Network. The Enderlings, a once-mysterious alien species known for their enigmatic but peaceful nature and advanced technology, are calling for help. Their world, caught in the grip of a malevolent force, is on the brink of collapse. The signal, long suppressed by the corrupted data sectors of the Nexa Network, speaks of a dire situation: a monstrous dragon and otherworldly horrors consuming their realm. As the Architect of Elyria, you must extend your mission of salvation beyond your world. Our allies salvation may be our own as well!"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "cyclic:ender_eye_reuse"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "37D18A71D69915F7"
+			rewards: [
+				{
+					id: "45DFD97D1C213935"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "615D2955A0DDE2D5"
+					item: "apotheosis:endshelf"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0666ED0FB0854BCF"
+				type: "checkmark"
+			}]
+			title: "Extradimensional Transmission"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37D18A71D69915F7"]
+			description: ["The communication array, a relic of the pre-war era, holds the key to understanding the Enderlings' plight. You'll need to fabricate a few pieces of technology in order to repair the old communication array to receive the Enderlings' full message."]
+			hide: true
+			icon: "ic2:glowtronic_crystal"
+			id: "4BEA4CF75F7A5208"
+			rewards: [{
+				id: "34DC3173DFB4023E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "72A5E2B8555098D8"
+					item: "ic2:glowtronic_crystal"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "5C8C2CE34FB6454A"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Signal Amplifier"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BEA4CF75F7A5208"]
+			description: ["Collect corrupted data fragments from various biomes to reconstruct the Enderling's message. These fragments contain vital information but are scattered across the world, tainted by the same corruption that plagued Nexa. The simluation matrix should be able to rebuild some of the data."]
+			hide: true
+			icon: "ae2:wireless_receiver"
+			id: "7D57B73F8A8913E4"
+			rewards: [
+				{
+					id: "1CFC19C59FA1F649"
+					item: "ae2:spatial_storage_cell_128"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05A10670CC552AEB"
+					item: "megacells:bulk_cell_component"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "321098BFC138F6A6"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:enderman"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "005F59154D0E6A89"
+					item: "megacells:decompression_module"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "77EFA9B208728BD8"
+					item: "computercraft:wireless_modem_advanced"
+					type: "item"
+				}
+			]
+			title: "Gathering the Fragments"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D57B73F8A8913E4"]
+			description: ["The Enderling language, complex and intertwined with their unique technology, required an advanced decoder to understand their plea. After re-establishing it they've updated their dimensional coordinates and provided data to reconstruct the planetary surfaces of their world, as well as a portal device that utilizes ender energies to transport you. Make sure the simulation is clear and proceed to initiate the load in when ready."]
+			hide: true
+			icon: "ae2:spatial_storage_cell_128"
+			id: "77055307D75F4691"
+			rewards: [
+				{
+					icon: "ae2:spatial_cell_component_128"
+					id: "53CCEC40EBA189C5"
+					tags: ["prefab_end"]
+					team_reward: true
+					title: "Activate the Simulation"
+					type: "custom"
+				}
+				{
+					count: 2
+					id: "129A90E8AB51D974"
+					item: "ic2:colossal_base_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "310D132C146228BE"
+					max_input: 10000L
+					title: "Echoes from the Void"
+					type: "forge_energy"
+					value: 10000000L
+				}
+				{
+					dimension: "minecraft:overworld"
+					icon: "ae2:spatial_pylon"
+					id: "59B229A7FD0F882A"
+					ignore_dimension: true
+					position: [I;
+						-11
+						44
+						59
+					]
+					size: [I;
+						1
+						1
+						1
+					]
+					title: "Goto the Simulation Chamber"
+					type: "location"
+				}
+			]
+			title: "Echoes from the Void"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77055307D75F4691"]
+			description: ["The portal represents a bridge between worlds, a beacon of hope for the Enderlings, and a testament to your growing mastery over Elyria's resources. The portal is bridged but we'll need a few more exotic materials to adapt a protective bubble for the transportation between dimensions to ensure you arent demolecularized by the void during transit.  Once you're ready, submit the required materials and the portal traversal will become available to you."]
+			hide: true
+			icon: "ic2:plasma_core"
+			id: "6589BD83AAA50E84"
+			rewards: [
+				{
+					advancement: "restrictedportals:end"
+					criterion: ""
+					id: "56C583EF3E6429BD"
+					type: "advancement"
+				}
+				{
+					id: "785906352A98B59A"
+					item: "apotheosis:infused_breath"
+					type: "item"
+				}
+				{
+					id: "2ED76E4D5CE8CBFD"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "6963E2552880A0B9"
+					item: "ic2:plasma_core"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "industrialforegoing:ether_gas"
+					id: "533C04663B135EAF"
+					title: "Breaching the Barrier"
+					type: "fluid"
+				}
+			]
+			title: "Breaching the Barrier"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6589BD83AAA50E84"]
+			description: [
+				"The situation is dire indeed. There seems to be no sign of the enderlings at all! Their distress calls all seem to be automated and we fear for the worst for their society. The darkness still remains and the void as spread throughout what was once a thriving subtropical paradise world. End the threat of the dragon and salvage what you can."
+				""
+				"This battle is not just a fight for the Enderlings' legacy but a stand against the darkness that threatens all life, a culmination of your journey as the Architect."
+			]
+			id: "0C9DB0FD63F62AEA"
+			rewards: [
+				{
+					count: 8
+					id: "11B46A45BEA3C91B"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "0B10E87291B07A4C"
+					item: "nameless_trinkets:dragons_eye"
+					type: "item"
+				}
+				{
+					id: "43BD6F4D4BFA8A66"
+					item: "mysticalagriculture:dragon_egg_seeds"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "093C4D149C6E40AA"
+					item: "mysticalagradditions:dragon_egg_crux"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "0D568EEEB8ED6B58"
+				title: "Kill the Ender Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Confronting the Darkness"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0C9DB0FD63F62AEA"]
+			description: ["Around the primary dragon island there appears to be teleportation arrays. These beacons will not only provide much-needed energy to transport great distance but also serve as lighthouses against the encroaching darkness in the future. Locate one of these and throw an ender pearl into it."]
+			icon: "supplementaries:enderman_head"
+			id: "398E80C69FEB5FCE"
+			rewards: [
+				{
+					count: 4
+					id: "11F80E555AD41CE9"
+					item: "ic2:upgrade_quantum_overclocker"
+					type: "item"
+				}
+				{
+					id: "10B834D283409C95"
+					item: {
+						Count: 1b
+						id: "mysticalagriculture:imperium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "422FE23B50CC2B91"
+					item: {
+						Count: 1b
+						id: "productivebees:spawn_egg_configurable_bee"
+						tag: {
+							EntityTag: {
+								type: "productivebees:radioactive"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: "minecraft:recovery_compass"
+				id: "76D872FF9702A8C5"
+				structure: "#minecraft:end_city"
+				title: "Locate an End City"
+				type: "structure"
+			}]
+			title: "Find the remnants of the enderlings"
+			x: 1.5714285714285623d
+			y: 2.946428571428555d
+		}
+		{
+			dependencies: ["398E80C69FEB5FCE"]
+			description: ["Within the Enderling's ancient ruins there seems to be incredibly powerful weapons and armor fortified with Imperium. While we cant seem to replicate this material in our world we can further enhance it with supremium and then awaken it futher. Should you wish, work towards creating a set of the Ultimate armor and weapons. "]
+			id: "339AAB6154E64808"
+			optional: true
+			rewards: [
+				{
+					id: "7C795E597BB13377"
+					item: "mysticalagriculture:supremium_bow"
+					type: "item"
+				}
+				{
+					id: "6A2CF60A57DC19C5"
+					item: "mysticalagriculture:supremium_crossbow"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "673515F1D2F30E7C"
+				item: "mysticalagriculture:awakened_supremium_sword"
+				type: "item"
+			}]
+			title: "Awakening the Ultimate"
+			x: 3.4999999999999787d
+			y: 2.982142857142847d
+		}
+		{
+			dependencies: ["398E80C69FEB5FCE"]
+			description: ["With the draconic essence and a bit of genetic engineering we can use the draconic dust to enhance your genome to it's final step. Once the modification is complete you'll finally be able to withstand the environmental effects of all known environments without protective gear. "]
+			id: "240F6F453AF34A66"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "engineersdecor:sign_danger"
+					id: "2F85D20C8F643CF9"
+					ignore_reward_blocking: true
+					stage: "witherless"
+					title: "Update Personal Genome"
+					type: "gamestage"
+				}
+				{
+					id: "02407A99555C3023"
+					type: "xp_levels"
+					xp_levels: 300
+				}
+				{
+					count: 4
+					id: "73A65131C58AAA91"
+					item: "apotheosis:superior_sigil_of_socketing"
+					type: "item"
+				}
+			]
+			subtitle: "It's Over 9000!"
+			tasks: [{
+				id: "21E20EF0A7EFA414"
+				item: "productivebees:draconic_dust"
+				type: "item"
+			}]
+			title: "Dragon, Dragon, Fight the Dragon."
+			x: 2.5d
+			y: 1.5d
+		}
+	]
+	title: "Distress Call"
+}

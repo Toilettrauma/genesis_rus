@@ -1,0 +1,855 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "electrodynamic_theory"
+	group: "17B287771C7EC060"
+	icon: "electrodynamics:motorcomplex"
+	id: "0E82B470F61BE718"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["Wires are the primary means of transporting electricity in and outside of machinery. You can craft this very basic &6wire&r inefficiently but you'll want to get the wire mill going as soon as possible to create all of the other variants. "]
+			id: "38D8A9FF51A211FC"
+			rewards: [{
+				count: 8
+				id: "3370214105256550"
+				item: "ic2:copper_cable_item"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D8C6B8FAA8B8ECC"
+				item: "ic2:copper_cable_item"
+				type: "item"
+			}]
+			title: "Birds on a ..."
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["&bPlates&r can be crafted inefficiently in your inventory with an &6Engineer's Hammer&r but you'll want to move on to making them with a metal press or mineral crusher as soon as you're able."]
+			icon: "immersiveengineering:plate_iron"
+			id: "01B1E5DFF409A8DC"
+			rewards: [
+				{
+					count: 4
+					id: "15F69FC8CDEF0223"
+					item: "immersiveengineering:plate_iron"
+					type: "item"
+				}
+				{
+					id: "2702E1651CBDED3C"
+					item: "alexsmobs:banana"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7EAC597042EEEF89"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersiveengineering:plate_copper"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:plate_iron"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Plates! No Not Those Kind"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["The basic &belectronic circuit&r is the foundation for almost all electric-based machinery. You'll use these everywhere so it's worth setting up the recipes in an &eIC2&r &6Industrial Worktable&r to handle the crafting for you until you have fully automated crafting available."]
+			id: "3060AA799E83C6EC"
+			rewards: [
+				{
+					id: "14FDFB295ABEF2F2"
+					item: "ic2:circuit"
+					type: "item"
+				}
+				{
+					id: "52D9D4DC0C38689C"
+					item: "electrodynamics:circuitbreaker"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "694CE44E3D7A15C0"
+					item: "minecraft:cobbled_deepslate"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2AF21BA5BE9339E6"
+				item: "ic2:circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["&bCopper gears&r are a soft enough metal they can be formed by hand unlike most gears which require machining. You'll use these in lower tier mechanical processing."]
+			id: "601F7AB804743970"
+			rewards: [
+				{
+					count: 8
+					id: "3C5879D4BD41CB2B"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "3A5ED3BD6B2EE0F3"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "288AA926EB05BA19"
+				item: "electrodynamics:gearcopper"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["An &belectric motor&r is a device that converts electrical energy into mechanical energy. It works by using electromagnetism, which shows that a force is applied when an electric current is present in a magnetic field."]
+			id: "208DF98B0D3E3688"
+			rewards: [
+				{
+					id: "26E416893C657278"
+					item: {
+						Count: 1b
+						id: "ic2:glass_beer"
+						tag: {
+							data: 301
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "46337434B547CCF7"
+					item: "apotheosis:explosive_arrow"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "551F73A59AF33C41"
+				item: "electrodynamics:motor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"208DF98B0D3E3688"
+				"601F7AB804743970"
+				"3060AA799E83C6EC"
+				"38D8A9FF51A211FC"
+				"01B1E5DFF409A8DC"
+				"1A47727629BA70FD"
+			]
+			description: ["Welcome to your first Electrodynmics processing machine! The &bwiremill&r will take raw material ingots and create wires for crafting or building contraptions. This wire mill is a 120V version, make sure not to overvoltage it!"]
+			id: "124BEFCF532CC2C6"
+			rewards: [
+				{
+					count: 8
+					id: "63E48684B6EAA572"
+					item: "electrodynamics:wirehighlyinsulatedtin"
+					type: "item"
+				}
+				{
+					id: "242833194B855170"
+					item: "electrodynamics:batterybox"
+					type: "item"
+				}
+				{
+					id: "7A0E55F697DE2BF3"
+					item: "electrodynamics:multimeter"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0325520D2559D771"
+				item: "electrodynamics:wiremill"
+				type: "item"
+			}]
+			title: "Weaving Gold and Copper"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["124BEFCF532CC2C6"]
+			description: ["The &blathe&r is used to make rods of varying materials, especially tougher materials that can't be made by hand."]
+			id: "4DFE9DFE203AF2CA"
+			rewards: [
+				{
+					id: "7DC61B89AD3E2381"
+					item: "electrodynamics:upgradeitemoutput"
+					type: "item"
+				}
+				{
+					id: "7C73A241F1554BDD"
+					item: "electrodynamics:upgradeiteminput"
+					type: "item"
+				}
+				{
+					id: "5E7C3399FB27D966"
+					item: "electrodynamics:thermoelectricgenerator"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0EFEED18007B8243"
+				item: "electrodynamics:lathe"
+				type: "item"
+			}]
+			title: "Spun Metal"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["124BEFCF532CC2C6"]
+			description: ["The basic &bmineral grinder&r will grind raw ores and ingots into dusts as well as several other inputs such as cobble, stone and gravel."]
+			id: "13D2CFC78A03EA40"
+			rewards: [
+				{
+					count: 3
+					id: "6A856757BFBF60A8"
+					item: "electrodynamics:upgradebasicspeed"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08716106E9EA6B1F"
+					item: "electrodynamics:wireinsulatedtin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "58C6EA6841AE9D43"
+				item: "electrodynamics:mineralgrinder"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"133F655D8C7DFDD3"
+				"6F2DF65384D17561"
+			]
+			description: ["This mid-tier &balloyer&r can make all but the strongest and most heat-resistant alloys. This device requires an input voltage of 480V to operate."]
+			id: "0A5F3C6E85BC0DDB"
+			rewards: [
+				{
+					id: "1CDFF4478DD854E3"
+					item: "electrodynamics:upgradebasiccapacity"
+					type: "item"
+				}
+				{
+					id: "0F99B673E67CACD6"
+					item: "electrodynamics:upgradebasicspeed"
+					type: "item"
+				}
+				{
+					id: "12D17E058B530410"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "51F03AF5D49DBFB4"
+				item: "electrodynamics:energizedalloyer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			description: ["The &bcoal generator&r is the first power source. Luckily we had one in storage for you but you'll need more. &6Electrodynamics&r focuses on creating networks of power producers like a real power station. Your basic generators will all be 120V but you can wire them together and use transformers and battery buffers to build out your network to provide greater throughput to all of your machines. "]
+			id: "1A47727629BA70FD"
+			rewards: [
+				{
+					count: 32
+					id: "71ACE68907B057AE"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "756D6EAA48D58400"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "electrodynamics:coalgenerator"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [ ]
+							burnTime: 0
+							heat: 27.0d
+							id: "electrodynamics:coalgenerator"
+							itemproperty_size: 1
+							joules: 0.0d
+							maxBurnTime: 1600
+							maxJoules: 0.0d
+							multiplier: 1.0d
+							voltage: 120.0d
+						}
+					}
+				}
+				id: "4A0F1CABA9A2185F"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a coal generator"
+				to_observe: "electrodynamics:coalgenerator"
+				type: "observation"
+			}]
+			title: "Primitive Power Generation"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A47727629BA70FD"]
+			description: [
+				"The &bcombustion generator&r runs off of liquid fuels such as raw &6oil, ethanol&r and more efficiently off of better fuels such as &6diesel, biodiesel, gasoline and LPG fuels&r. With a little infrastructure you will find these easier to power than the coal generators. "
+				""
+				"&eNote: &rThe questline here diverges as you can either work towards refining oil directly, later utilizing bees or fluid drills. Alternatively, you can renewably create biodiesel now, depending on your preference."
+			]
+			id: "64E5B1DD45672DDC"
+			rewards: [
+				{
+					count: 8
+					id: "5434FEA8114EBEAD"
+					item: "pneumaticcraft:small_tank"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "62D2E626FAC9D9E2"
+					item: "pneumaticcraft:reinforced_stone_slab"
+					type: "item"
+				}
+				{
+					id: "509DFAE1C7CB2EE0"
+					item: "electrodynamics:multimeterblock"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3D2D1F0D7368091D"
+				item: "electrodynamics:combustionchamber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["124BEFCF532CC2C6"]
+			description: [
+				"When it's time to get into machines that require more than 120V you'll need to start combining your voltage sources and using transformers to step up the voltage. The &bupgrade transformer&r will turn 2 or more of the previous tier voltages into one step higher. For example two 120V combustion generators can be run into an upgrade transformer for a 240V power source. &6Downgrade transformers&r work the same but in reverse."
+				""
+				"Important: Remember to never use higher than 120V power sources on machines that can't accept them or machines that require FE energy!"
+			]
+			id: "133F655D8C7DFDD3"
+			rewards: [
+				{
+					id: "53DDAEA29FAA551F"
+					item: "electrodynamics:downgradetransformer"
+					type: "item"
+				}
+				{
+					id: "2C99CDFF62C49D4D"
+					item: {
+						Count: 1b
+						id: "electrodynamics:lithiumbattery"
+						tag: {
+							joules: 0.0d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4A68C8014ECD64F6"
+				item: "electrodynamics:upgradetransformer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06146F17FEEF0E7F"]
+			description: ["&bTitanium&r is required for most advanced machines. It can be obtained by creating a titanium seed through the use of biotechnology."]
+			id: "6F2DF65384D17561"
+			rewards: [
+				{
+					id: "476A4C83EAD4DD7A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "40987F957DA545D8"
+					item: "electrodynamics:titaniumheatcoil"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "202F57247578226C"
+				item: "electrodynamics:ingottitanium"
+				type: "item"
+			}]
+			x: -4.375d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"133F655D8C7DFDD3"
+				"43DD2E397A5249D9"
+				"7A9DFEC31081145F"
+			]
+			description: [
+				"The &bQuarry&r. Tried and true friend from times past. Ancient technicians known as buildcrafters used to use these things to bore giant holes in the earth that filled with lava and water as they strip mined every last bit of material. "
+				""
+				"We wouldn't dare use these devices on Elyria anymore, but denizens of the Nether dimension seem less than friendly anyway so we'll take what we can."
+			]
+			icon: "electrodynamics:quarry"
+			id: "5B535B3E152591A0"
+			rewards: [
+				{
+					count: 4
+					id: "1C1F94C682F53C7D"
+					item: "electrodynamics:seismicmarker"
+					type: "item"
+				}
+				{
+					id: "560D9A260677CDD7"
+					item: "electrodynamics:coolantresavoir"
+					type: "item"
+				}
+				{
+					id: "2EA37A0C5DCE4506"
+					item: "electrodynamics:lithiumbatterybox"
+					type: "item"
+				}
+				{
+					id: "724F9059A2ED9D6B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "717BD018A5F1D537"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3334140B78ACCDB8"
+					item: "electrodynamics:quarry"
+					type: "item"
+				}
+				{
+					id: "2C834805C2BBDDE3"
+					item: "electrodynamics:seismicrelay"
+					type: "item"
+				}
+				{
+					id: "58277C18E97B4AB3"
+					item: "electrodynamics:motorcomplex"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B535B3E152591A0"]
+			description: ["You must supply a drill to the quarry for it to work. &bSteel&r is the weakest of all drill heads and you'll burn through them quite quickly. &6Titanium&r should be the workhorse of your drilling operations and when you can make &6carbide&r, they will never break. The quarry can also be quite slow at first, it can get much faster with upgrades and even add fortune, voiding and other enhancements at the cost of increased power consumption."]
+			id: "214ECCE7A0AE0383"
+			progression_mode: "linear"
+			rewards: [
+				{
+					count: 3
+					id: "1A75B48114243FD9"
+					item: "electrodynamics:upgradebasicspeed"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0777153BC40882B4"
+					item: "electrodynamics:upgradeadvancedspeed"
+					type: "item"
+				}
+				{
+					id: "18F94FECB57BE8E9"
+					item: {
+						Count: 1b
+						id: "electrodynamics:drillheadtitaniumcarbide"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "05131A9262047EFB"
+				item: {
+					Count: 1b
+					id: "electrodynamics:drillheadsteel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A5F3C6E85BC0DDB"]
+			description: ["The highest tier, and most energy intensive of the energized alloyers. The &bReinforced alloyer&r can make highly industrialized metals like HSLA, Carbide and Osmium ingots for the most advanced technological applications. Make sure you've got your power transformers and cables ready!"]
+			id: "0BBACFA13963A661"
+			rewards: [
+				{
+					count: 4
+					id: "30F94BA7DC5E8B45"
+					item: "electrodynamics:wirehighlyinsulatedtin"
+					type: "item"
+				}
+				{
+					id: "7229A0FEC5EAF9AE"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 8
+					id: "33A719EB8CD93417"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "57934EE8F9142078"
+				item: "electrodynamics:reinforcedalloyer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3060AA799E83C6EC"]
+			description: ["Although the Nexa link may be down we can still use some basic circuitry to create some basic digital storage for ourselves. After creating a few circuits this should be a breeze and solve most of our &bstorage&r needs for now."]
+			id: "45786EE4B8F7B028"
+			progression_mode: "flexible"
+			rewards: [{
+				id: "6E33769DEFA036A1"
+				item: "rftoolsstorage:storage_module3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57FCAF599F3DBE7B"
+				item: "rftoolsstorage:modular_storage"
+				type: "item"
+			}]
+			title: "Portable Digital Storage"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"64E5B1DD45672DDC"
+				"151DD8DC2F237690"
+			]
+			description: ["The &bThermopneumatic processing plant&r uses temperature differentials to produce chemical changes on the items inside it. You'll need several of these setup to process a renewable fuel source. We'll start with a basic yeast culture. Provide any fungal mass, preferably a renewable source of mushrooms and water to create the yeast. "]
+			icon: "pneumaticcraft:thermopneumatic_processing_plant"
+			id: "0165D41000E0A3E1"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "6F6C23360CFF2503"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:brown_mushroom"
+							gain: 15
+							growth: 15
+							resistance: 15
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C822CF17AA23032"
+					item: "cookingforblockheads:sink"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "06AC6EB558B2DC9A"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "7ECC1DB16AF629B9"
+					item: "pneumaticcraft:yeast_culture_bucket"
+					type: "item"
+				}
+			]
+			title: "Feast of Yeast"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0165D41000E0A3E1"]
+			description: [
+				"To make the &bvegetable oil&r you'll want another processing plant. It requires no input fluid but will need to be provided with seeds. Melon seeds work well here."
+				""
+				"The heat requirements for this process are low and should operate fine at room temperature."
+			]
+			id: "074ACDA12B881839"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "59004AFFB1CD0897"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "1EAEDC269EDA56A9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "082F1413BF4C3494"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0165D41000E0A3E1"]
+			description: ["To create the &bethanol&r you'll need to combine the &6yeast&r you created previously with plant crops. &6Melons&r can work here. The chemicals will react at room temperature to create ethanol. This is can be a decent fuel source but can be further refined in a fuel mixer."]
+			id: "1EAB92B18607ED0A"
+			optional: true
+			rewards: [
+				{
+					id: "2A6F5D72EBD50430"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					id: "3D11CDB6BA80E88F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "787D7AC8F75D2056"
+				item: "pneumaticcraft:ethanol_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1EAB92B18607ED0A"
+				"074ACDA12B881839"
+			]
+			description: ["By mixing the ethanol and plant oil in the &bfluid mixer&r you can combine them into biodiesel. This reaction has no temperature requirements but will require a constant supply of air pressure to perform the work."]
+			id: "085B3F2D81CC615C"
+			optional: true
+			rewards: [
+				{
+					id: "34F17AC53FA0C3E8"
+					item: "farmersdelight:mixed_salad"
+					type: "item"
+				}
+				{
+					id: "4D76271CD88D12C8"
+					item: "chromaticarsenal:duality_rings"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4D7FD4ED805E74EE"
+				item: "pneumaticcraft:fluid_mixer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"085B3F2D81CC615C"
+				"68CA067EF1069538"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The next step in refining is &bkerosene&r. This is twice as effecient as biodiesel alone. These further refining steps will require both air pressure and at least 300 degrees temperature. You can achieve this with a torch as a heat source."]
+			id: "223B868127953D52"
+			rewards: [
+				{
+					id: "0F1430D6765CCA15"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+				{
+					id: "2D1AC589BC73DF1A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3DC0E85B700CE450"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "22B8DDB866AE4201"
+				item: "pneumaticcraft:kerosene_bucket"
+				type: "item"
+			}]
+			title: "Kerosene Fuel"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["223B868127953D52"]
+			description: ["&bGaslone&r is refined from &6kerosene&r in the same way as Kersone was from the &6biodiesel&r. This further enrichment stage increases the energy density of the product."]
+			id: "7BAD8EC620DBA974"
+			rewards: [
+				{
+					id: "1CA71B2560857ACA"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+				{
+					id: "7E8B776537EE504D"
+					item: {
+						Count: 1b
+						id: "rftoolsutility:fluidplus_module"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6165902594F8B298"
+					item: "rftoolsutility:creative_screen"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "234AC666D7B0A1D4"
+				item: "pneumaticcraft:gasoline_bucket"
+				type: "item"
+			}]
+			title: "Gasoline Fuel"
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7BAD8EC620DBA974"]
+			description: ["The end stage refinement of your fuel is &bLPG Fuel&r. You can get a whopping 70KW of power for each bucket. Running combustion generators on LPG will carry your energy needs through most of rebuilding process as you can simply scale up as needed."]
+			id: "3EA741BB2CB22D48"
+			rewards: [
+				{
+					id: "794BF4444DE03BA2"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1D4E4B0BC77DDFD8"
+					item: "enderstorage:ender_tank"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7D1A73B7499FBBB6"
+				item: "pneumaticcraft:lpg_bucket"
+				type: "item"
+			}]
+			title: "LPG Fuel"
+			x: 0.8928571428571388d
+			y: 7.473214285714285d
+		}
+		{
+			dependencies: ["64E5B1DD45672DDC"]
+			description: ["&bCrude oil&r can be found all around in the wastelands or traded via the amdron network. later you can engineer bees to produce it or use a laser fluid drill."]
+			id: "68CA067EF1069538"
+			optional: true
+			rewards: [{
+				id: "7B47AE9556371964"
+				item: "alexsmobs:boiled_emu_egg"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79836D57A4D1FF02"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+	]
+	title: "Electrodynamic Theory"
+}

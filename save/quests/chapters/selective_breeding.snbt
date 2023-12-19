@@ -1,0 +1,1578 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "selective_breeding"
+	group: "494B330CF50C8720"
+	icon: {
+		Count: 1b
+		id: "ic2:crop_analyzer"
+		tag: {
+			breed: 1b
+			charge: 49910
+			inv: {
+				items: [{
+					Count: 1b
+					id: "ic2:crop_seed"
+					slots: [B;
+						0b
+						1b
+						2b
+						3b
+					]
+					tag: {
+						crop: "ic2:sugarcane"
+						gain: 0b
+						growth: 0b
+						resistance: 0b
+						scan: 1b
+						visible: 1b
+					}
+				}]
+			}
+			results: {
+				offset: 0
+			}
+			water: 0b
+		}
+	}
+	id: "5F10C0CE1202E28C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2A791F59DB3D67E8"
+				"0E1E50CE55AC915A"
+			]
+			description: [
+				"{gen.selective_breeding.task_0.desc_0}"
+				""
+				"{gen.selective_breeding.task_0.desc_1}"
+				""
+				"{gen.selective_breeding.task_0.desc_2}"
+				""
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_0.desc_3}"
+				"{gen.selective_breeding.task_0.desc_4}"
+				""
+				"{gen.selective_breeding.task_0.desc_5}"
+				"{gen.selective_breeding.task_0.desc_6}"
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_0.desc_7}"
+			]
+			id: "1A37CB048C146362"
+			rewards: [
+				{
+					count: 4
+					id: "39D9192FA2100D70"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:stickreed"
+							gain: 25b
+							growth: 25b
+							resistance: 25b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "360C1B926BBE2E29"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:cactus"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0539FCC622C28C3E"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:sweet_berry_bush"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "28E5805975119292"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:bamboo"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3380C1F1C96E60E7"
+				item: "ic2:sticky_resin"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A791F59DB3D67E8"]
+			description: [
+				"{gen.selective_breeding.task_1.desc_0}"
+				""
+				"{gen.selective_breeding.task_1.desc_1}"
+				""
+				"{gen.selective_breeding.task_1.desc_2}"
+			]
+			id: "0E1E50CE55AC915A"
+			rewards: [
+				{
+					id: "4AEA93D60684C0E3"
+					item: {
+						Count: 1b
+						id: "ic2:re_battery"
+						tag: {
+							charge: 10000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AC19267BDDC3330"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "31EE9DC0C3165F69"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F37835C4DB6A26F"
+				item: {
+					Count: 1b
+					id: "ic2:crop_analyzer"
+					tag: {
+						charge: 49910
+						items: [{
+							Count: 1b
+							id: "ic2:crop_seed"
+							slot: 1b
+							tag: {
+								crop: "ic2:sugarcane"
+								gain: 1b
+								growth: 1b
+								resistance: 1b
+								scan: 4b
+							}
+						}]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"{gen.selective_breeding.task_2.desc_0}"
+				""
+				"{gen.selective_breeding.task_2.desc_1}"
+				""
+				"{@pagebreak}"
+				""
+				"{gen.selective_breeding.task_2.desc_2}"
+				""
+				"{gen.selective_breeding.task_2.desc_3}"
+				""
+				"{@pagebreak}"
+				""
+				"{gen.selective_breeding.task_2.desc_4}"
+				""
+				"{gen.selective_breeding.task_2.desc_5}"
+				"{gen.selective_breeding.task_2.desc_6}"
+				"{gen.selective_breeding.task_2.desc_7}"
+				"{gen.selective_breeding.task_2.desc_8}"
+			]
+			icon: {
+				Count: 1b
+				id: "ic2:crop_analyzer"
+				tag: {
+					breed: 1b
+					charge: 49910
+					inv: {
+						items: [{
+							Count: 1b
+							id: "ic2:crop_seed"
+							slots: [B;
+								0b
+								1b
+								2b
+								3b
+							]
+							tag: {
+								crop: "ic2:sugarcane"
+								gain: 0b
+								growth: 0b
+								resistance: 0b
+								scan: 1b
+								visible: 1b
+							}
+						}]
+					}
+					results: {
+						offset: 0
+					}
+					water: 0b
+				}
+			}
+			id: "4FAEDCB30D64369F"
+			rewards: [
+				{
+					id: "466082DAAD99FBE2"
+					item: "minecraft:snow_block"
+					title: "{gen.selective_breeding.task_2.title}"
+					type: "item"
+				}
+				{
+					id: "603880DC8B9DD0FD"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 16
+					id: "4AA51717C42714E5"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "63CC9BE244785060"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5190B8BE3ECDCCE7"
+				title: "{gen.selective_breeding.task_2.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["{gen.selective_breeding.task_3.desc}"]
+			icon: "botania:dice"
+			id: "094619523F5BD9A9"
+			optional: true
+			rewards: [
+				{
+					id: "466A5FE599700581"
+					item: "ic2:sticky_resin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34260C141946FE98"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:stickreed"
+							gain: 25b
+							growth: 25b
+							resistance: 25b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "7BCD9CF0C0EE250A"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "346609467773DF40"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "746A3ED47630FEE4"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1A6CE3F1FE1E7374"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:sweet_berries"
+								}
+								{
+									Count: 1b
+									id: "minecraft:bamboo"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cactus"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{gen.selective_breeding.task_3.title}"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"199CB94FA4710B30"
+				"0E1E50CE55AC915A"
+			]
+			description: ["{gen.selective_breeding.task_4.desc}"]
+			hide_dependency_lines: false
+			id: "52A5C61CC1621B61"
+			rewards: [
+				{
+					count: 4
+					id: "33087E3BB5FFC869"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					id: "30EA187EF12C0365"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C8A9ED2192B3D23"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: [
+				"{gen.selective_breeding.task_5.desc_0}"
+				""
+				"{gen.selective_breeding.task_5.desc_1}"
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_5.desc_2}"
+				"{gen.selective_breeding.task_5.desc_3}"
+			]
+			id: "22D44A27340C84DC"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					id: "3CBCC7F8FDC7893D"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					id: "6D6624C63BDE3302"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 2
+					id: "042D1EBA72EDFBD8"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:terrawart"
+							gain: 5
+							growth: 5
+							resistance: 5
+							scan: 3
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F3DD422AC784BE1"
+				item: "ic2:terrawart"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_5.title}"
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: [
+				"{gen.selective_breeding.task_6.desc_0}"
+				""
+				"{@pagebreak}"
+				""
+				"{gen.selective_breeding.task_6.desc_1}"
+			]
+			icon: "minecraft:redstone"
+			id: "2FAA7BF3C0A3CED1"
+			rewards: [
+				{
+					count: 4
+					id: "2D420AB1AF4BE6C7"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BEA89C230001FAE"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1561B9E38FE8B471"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:red_wheat"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_6.title}"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: ["{gen.selective_breeding.task_7.desc}"]
+			icon: "minecraft:glowstone_dust"
+			id: "154CD9B720685905"
+			rewards: [
+				{
+					count: 4
+					id: "5487BDCE3D99B0F2"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:glowshroom"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D672254C4FB91EC"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "07D60E74CCC4393B"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B9927C9A3899FF2"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:glowshroom"
+						}
+					}
+				}
+				match_nbt: true
+				title: "{gen.selective_breeding.task_7.title}"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_7.title}"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2FAA7BF3C0A3CED1"]
+			description: [
+				"{gen.selective_breeding.task_8.desc_0}"
+				""
+				"{gen.selective_breeding.task_8.desc_1}"
+			]
+			icon: "minecraft:lapis_lazuli"
+			id: "0A731167C2195782"
+			rewards: [
+				{
+					count: 4
+					id: "33E7F84A8E24FA97"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "694C456DF6D3A61B"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F2BF39B0085476B"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:blue_wheat"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_8.title}"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["{gen.selective_breeding.task_9.desc}"]
+			id: "3E354D0F83B62BAE"
+			rewards: [{
+				count: 4
+				id: "31A59013C126B3F5"
+				item: {
+					Count: 1b
+					id: "ic2:crop_seed"
+					tag: {
+						crop: "ic2:wheat"
+						gain: 5.0d
+						growth: 5.0d
+						resistance: 5.0d
+						scan: 4b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "431CE57F5D84FD8F"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_9.title}"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["{gen.selective_breeding.task_10.desc}"]
+			id: "68A0EA9C26BB16B4"
+			rewards: [
+				{
+					count: 4
+					id: "00F2E69FC489312A"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:cactus"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "76B645944159598A"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "741444DACCD7FF94"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_10.title}"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"{gen.selective_breeding.task_11.desc_0}"
+				""
+				""
+				"{gen.selective_breeding.task_11.desc_1}"
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_11.desc_2}"
+				"{gen.selective_breeding.task_11.desc_3}"
+			]
+			icon: {
+				Count: 1b
+				id: "ae2:fluix_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "42FF46D223B296BC"
+			rewards: [
+				{
+					count: 8
+					id: "06C89F938B1A6DC9"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "204ECA6D55A12AB8"
+					type: "xp"
+					xp: 12
+				}
+			]
+			tasks: [{
+				id: "0F5C6C378A13C36A"
+				title: "{gen.selective_breeding.task_11.title}"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"{gen.selective_breeding.task_12.desc_0}"
+				""
+				"{gen.selective_breeding.task_12.desc_1}"
+			]
+			icon: "minecraft:wheat"
+			id: "243960E27D2ED148"
+			rewards: [
+				{
+					count: 6
+					id: "760F069A2EB3F143"
+					item: "ic2:copper_insulated_cable_item"
+					type: "item"
+				}
+				{
+					id: "56A790A7CC807B6A"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "219DCEC299CD33AA"
+				title: "{gen.selective_breeding.task_12.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["{gen.selective_breeding.task_13.desc}"]
+			id: "68D405257D61DA90"
+			rewards: [
+				{
+					count: 4
+					id: "0475088F74527119"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:beetroot"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4131487B868CDEC6"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:lily_of_the_valley"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1DDA5DF006F5ECB9"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_13.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: ["{gen.selective_breeding.task_14.desc}"]
+			id: "18907A119BFF4333"
+			rewards: [
+				{
+					count: 4
+					id: "673F26731AA09CA2"
+					item: "minecraft:warped_fungus"
+					type: "item"
+				}
+				{
+					id: "05E5D82EAD6F7CDD"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "0DC84481D7CC5682"
+				item: "minecraft:crimson_fungus"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["18907A119BFF4333"]
+			description: ["{gen.selective_breeding.task_15.desc}"]
+			id: "2DAEF1E03B1D621A"
+			rewards: [
+				{
+					id: "5282492F4928F5BC"
+					item: "farmersdelight:mushroom_rice"
+					type: "item"
+				}
+				{
+					id: "587AA8CF94D6A9A9"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "6AB2377AD637A96E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:red_mushroom"
+							}
+							{
+								Count: 1b
+								id: "minecraft:brown_mushroom"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_15.title}"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"{gen.selective_breeding.task_16.desc_0}"
+				""
+				"{gen.selective_breeding.task_16.desc_1}"
+			]
+			id: "66492BF1038C0031"
+			rewards: [
+				{
+					id: "2769F20B5378B453"
+					item: "ic2:crop_harvester"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "03DA42BEBD983D4B"
+					item: "ic2:basic_field_expansion_pad_upgrade"
+					type: "item"
+				}
+				{
+					id: "2EC48E3027251C04"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6550F46D3BD18FCB"
+				item: "ic2:cropmatron"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["{gen.selective_breeding.task_17.desc}"]
+			id: "38ED4A2BC5F0AB95"
+			rewards: [
+				{
+					id: "346232772151BE35"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "41ADE1D4DFAA4569"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E46466E1D3F1193"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:pumpkin"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5D3A01FC92A51919"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38ED4A2BC5F0AB95"]
+			description: ["{gen.selective_breeding.task_18.desc}"]
+			icon: "ic2:hemp"
+			id: "60FCAD344525FBD6"
+			rewards: [
+				{
+					count: 4
+					id: "50B5CFF3AAD86E49"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:hemp"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0FD729C99266052E"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5E0F483688978381"
+					item: "immersiveengineering:hemp_fiber"
+					type: "item"
+				}
+			]
+			subtitle: "{gen.selective_breeding.task_18.subtitle}"
+			tasks: [{
+				id: "36EB9B946C190B82"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:hemp"
+						}
+					}
+				}
+				title: "{gen.selective_breeding.task_18.title}"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_18.title}"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["{gen.selective_breeding.task_19.desc}"]
+			icon: "minecraft:dandelion"
+			id: "25A1E95E9742C91E"
+			rewards: [
+				{
+					id: "7E471A42D4747ECA"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "264A730B6126559A"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29B3F89F8DA12249"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F98943D3EAF02C3"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:dandelion"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_19.title}"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"68D405257D61DA90"
+				"25A1E95E9742C91E"
+			]
+			description: ["{gen.selective_breeding.task_20.desc}"]
+			icon: "minecraft:glow_berries"
+			id: "78177F4A149190EB"
+			rewards: [
+				{
+					count: 4
+					id: "6270C9D8C9BAB674"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:glow_berry"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2C6C74CA72DD7F0E"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05A338F79FB56D89"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53CE32FE6E09F381"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:melon"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0E931161332ECE70"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:glow_berry"
+						}
+					}
+				}
+				match_nbt: true
+				title: "{gen.selective_breeding.task_20.title}"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_20.title}"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60FCAD344525FBD6"]
+			description: ["{gen.selective_breeding.task_21.desc}"]
+			icon: "ic2:tea_leaf"
+			id: "15A0BFCED48FF8B2"
+			rewards: [
+				{
+					count: 4
+					id: "6ECE2CB2A65939BD"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:hops"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15225F5DDC534DDC"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:tea"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3744EDC239CF4859"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "27A1AF1A8EEE20B1"
+					item: "ic2:glass_fruit_tea"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EB037446AC3D166"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										crop: "ic2:tea"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										crop: "ic2:hops"
+									}
+								}
+							}
+						]
+					}
+				}
+				match_nbt: true
+				title: "{gen.selective_breeding.task_21.title}"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_21.title}"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15A0BFCED48FF8B2"]
+			description: ["{gen.selective_breeding.task_22.desc}"]
+			icon: "ic2:coffee_beans"
+			id: "462CB21FACE053A9"
+			rewards: [
+				{
+					count: 4
+					id: "2CAD302C4D235643"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:coffee"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D5FD4BEDED4570"
+					item: "ic2:mug_dark_coffee"
+					type: "item"
+				}
+				{
+					id: "70B01445CDF56B3A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4B502D37DEDD09C8"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:coffee"
+						}
+					}
+				}
+				match_nbt: true
+				title: "{gen.selective_breeding.task_22.title}"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_22.title}"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2FAA7BF3C0A3CED1"]
+			description: [
+				"{gen.selective_breeding.task_23.desc_0}"
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_23.desc_1}"
+				""
+				"{gen.selective_breeding.task_23.desc_2}"
+			]
+			id: "729561E0448A0B05"
+			rewards: [
+				{
+					id: "6018B6C321BD0BDE"
+					item: "ftbgenesis:seed_enhancer_supreme"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0E897CC9F27EAA50"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "223BE91B288953DC"
+					item: "ic2:overgrowth_fertilizer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "4177FA6398D5970A"
+					item: "ic2:restoring_fertilizer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "408B1421C8A03FF8"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			tasks: [{
+				icon: "ic2:dust_iron"
+				id: "4E7F79C1F600C641"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:ferru"
+						}
+					}
+				}
+				match_nbt: true
+				title: "{gen.selective_breeding.task_23.title}"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{gen.selective_breeding.task_23.title}"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["{gen.selective_breeding.task_24.desc}"]
+			id: "1BE87214BE69F49C"
+			rewards: [
+				{
+					id: "6A80870C457E2A03"
+					item: "ic2:simple_crop_library"
+					type: "item"
+				}
+				{
+					id: "5815F39A1C9D7007"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "433E678A866610C0"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05E661344172289B"
+				item: "ic2:crop_analyzer_block"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["{gen.selective_breeding.task_25.desc}"]
+			icon: "biomesoplenty:willow_sapling"
+			id: "56EB13FBFEB313A8"
+			rewards: [
+				{
+					id: "0587F2D4A133ECC1"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2502EC4C3E77D885"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1883F7F613F40B65"
+					table_id: 4051331422368155271L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "3749CB9CD8749A06"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_25.title}"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"{gen.selective_breeding.task_26.desc_0}"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"{gen.selective_breeding.task_26.desc_1}"
+				""
+				"{gen.selective_breeding.task_26.desc_2}"
+			]
+			id: "5465F54374F3B3F8"
+			rewards: [
+				{
+					count: 64
+					id: "1F0847EFDD66EA05"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0546DC0B29936AD1"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3370E36F7751DB22"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			title: "{gen.selective_breeding.task_26.title}"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"25A4DE0F0F614D31"
+				"1F7D1E1C9275B3C8"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{gen.selective_breeding.task_27.desc_0}"
+				""
+				"{@pagebreak}"
+				"{gen.selective_breeding.task_27.desc_1}"
+			]
+			id: "15C138BB91C77B44"
+			optional: true
+			rewards: [
+				{
+					icon: "ae2:spatial_cell_component_128"
+					id: "29FC78CEB7D53DF1"
+					tags: ["prefab_farm2"]
+					title: "{gen.selective_breeding.task_27.title}"
+					type: "custom"
+				}
+				{
+					id: "38D03B0C100B64A8"
+					item: "ae2:spatial_storage_cell_128"
+					type: "item"
+				}
+				{
+					id: "1FA98FC946A8B201"
+					item: "ae2:spatial_storage_cell_128"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7FED8DE61D4886CD"
+					item: "mekanism:advanced_universal_cable"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ae2:spatial_pylon"
+				id: "04BF15F1C8BB130B"
+				ignore_dimension: true
+				position: [I;
+					-12
+					44
+					59
+				]
+				size: [I;
+					1
+					1
+					1
+				]
+				title: "{gen.selective_breeding.task_27.title}"
+				type: "location"
+			}]
+			title: "{gen.selective_breeding.task_27.title}"
+			x: -0.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["22D44A27340C84DC"]
+			description: ["{gen.selective_breeding.task_28.desc}"]
+			id: "25A4DE0F0F614D31"
+			optional: true
+			rewards: [{
+				id: "688E87A92BF577D7"
+				item: "ae2:spatial_storage_cell_128"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "12952D43AAE082C7"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\": \"yellow\", \"translate\": \"item.minecraft.beetroot_seeds\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: true
+					id: "734FCC4143E0D01B"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\": \"gold\", \"translate\": \"gen.selective_breeding.task_28.reward_1.display_name\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "28685A97E472077F"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\": \"red\", \"translate\": \"item.minecraft.beetroot_seeds\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "{gen.selective_breeding.task_28.title}"
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["22D44A27340C84DC"]
+			description: ["{gen.selective_breeding.task_29.desc}"]
+			id: "1F7D1E1C9275B3C8"
+			optional: true
+			rewards: [{
+				id: "30B9072FA43F029F"
+				item: "ae2:spatial_storage_cell_128"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "46CEF3DFB916EF20"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\": false, \"italic\": false, \"underlined\": false, \"strikethrough\": false, \"obfuscated\": false, \"color\": \"red\", \"translate\": \"gen.selective_breeding.task_29.reward_0.display_name\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "59058753685465E0"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\": false, \"italic\": false, \"underlined\": false, \"strikethrough\": false, \"obfuscated\": false, \"color\": \"yellow\", \"translate\": \"gen.selective_breeding.task_29.reward_1.display_name\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7C6AC084E45A63D8"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\": false, \"italic\": false, \"underlined\": false, \"strikethrough\": false, \"obfuscated\": false, \"color\": \"gold\", \"translate\": \"gen.selective_breeding.task_29.reward_2.display_name\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{gen.selective_breeding.task_29.title}"
+			x: -1.5d
+			y: -10.0d
+		}
+	]
+	title: "{gen.selective_breeding.title}"
+}

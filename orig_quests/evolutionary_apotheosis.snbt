@@ -1,0 +1,407 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "evolutionary_apotheosis"
+	group: "17B287771C7EC060"
+	icon: "apotheosis:boss_summoner"
+	id: "21DE03DA10DDC9B0"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7EB5B4A73F91B026"]
+			description: [
+				"Bookshelves help focus the energy of the enchanting table. The type of empowerment you will gain depends on the amount of power you put in."
+				"Eterna is the primary enchanting stat, each point increases the base enchanting level by 2 levels. Different blocks will provide varying amounts."
+				"The base power is how much experientia you invest, Quanta and Rectification modify your base power to reach higher enchant levels."
+				"Quanta increases the power but also the variance in what type of enchants you'll get whereas rectification stabilizes this energy. "
+				"More rectification is never a bad thing, whereas too much quanta may yield undesirable results. "
+				""
+				""
+				"You can search Quanta, Eterna, Arcana, and Rectification in JEI to see which blocks provide those stats for you."
+			]
+			id: "659860F8B573A138"
+			rewards: [
+				{
+					id: "1BC04D9ECD046090"
+					item: "minecraft:amethyst_cluster"
+					type: "item"
+				}
+				{
+					id: "0C201B6EC368F449"
+					item: "minecraft:skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "7C92256FF9B63660"
+					item: "minecraft:candle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "77911D222C0F1688"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5F21B4C571DB61B2"
+				item: "apotheosis:melonshelf"
+				type: "item"
+			}]
+			title: "Quantized Experentia"
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			dependencies: ["659860F8B573A138"]
+			description: [
+				"To go beyond level 30, you'll need to make some hellshelves. Five of them will get your enchanting up to level 45."
+				""
+				"Once you've done that, you'll need to enchant each to become infused variants; doing this will get you up to level 60."
+			]
+			id: "340953DF1F233A84"
+			rewards: [
+				{
+					id: "2033979A2B803DDD"
+					item: "apotheosis:infused_hellshelf"
+					type: "item"
+				}
+				{
+					id: "7298966B3738FE73"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2F5DC0DF9647B1DF"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "6D8BB676E108555B"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			title: "Infernal Energies"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["340953DF1F233A84"]
+			description: ["To go beyond level 60, you'll need to invest in deep shelves and further infuse them, similar to hell shelves. You can use some of the deep dark materials fabricated from a loot fabricator to create the stat variants for these as well."]
+			id: "71D23BA013F5C24B"
+			rewards: [
+				{
+					count: 16
+					id: "43436594C35939D9"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1692CFFDA8193B04"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3F7E1BD953262ADB"
+				item: "apotheosis:dormant_deepshelf"
+				type: "item"
+			}]
+			title: "Power from the Deep"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["71D23BA013F5C24B"]
+			description: ["The final tier to take you to level 100+ enchanting for the most potent imbuements possible, you'll need to craft the end shelves. Ultimate power, infused by dragons and resonating with zero-point energies, is now at your disposal."]
+			id: "23B9E62D9418D632"
+			rewards: [
+				{
+					id: "2DDC59FFA263283E"
+					item: "apotheosis:draconic_endshelf"
+					type: "item"
+				}
+				{
+					id: "77EC38FAA896AEA8"
+					item: "apotheosis:pearl_endshelf"
+					type: "item"
+				}
+				{
+					id: "2EF2ABF6DA5028D6"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+				{
+					id: "4A7525775CD8C652"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "apotheosis:long_knowledge"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1ACC4C9B5F8CF981"
+				item: "apotheosis:endshelf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7EB5B4A73F91B026"]
+			description: ["This basic gem dust can be obtained by finding apotheosis gems in the world and smashing them by dropping an anvil onto them. Once you have a few, you can make this process easier by utilizing the salvaging table."]
+			id: "787AC930E200D9F4"
+			rewards: [
+				{
+					count: 8
+					id: "1788FDCEE4B533F4"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					id: "2699F86B89433CCF"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:scavenger"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "34EA3BEE2A7F5D57"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["787AC930E200D9F4"]
+			description: ["The salvaging table allows you to break gems down into dusts and a few other mostly useless items as well for more useful components."]
+			id: "256D7C684A06542A"
+			optional: true
+			rewards: [
+				{
+					id: "07DAC994DF345E21"
+					item: "minecraft:iron_horse_armor"
+					type: "item"
+				}
+				{
+					id: "66E9D58A40EE90C1"
+					item: "minecraft:golden_horse_armor"
+					type: "item"
+				}
+				{
+					id: "555B91C200B2C15F"
+					item: "minecraft:leather_horse_armor"
+					type: "item"
+				}
+				{
+					id: "30419F57F1BD5771"
+					item: {
+						Count: 1b
+						id: "justhammers:diamond_impact_hammer"
+						tag: {
+							Damage: 5000
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 5s
+								}
+								{
+									id: "minecraft:efficiency"
+									lvl: 3s
+								}
+							]
+							RepairCost: 3
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Mikey's Used Ban Hammer\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "22AE4EAA39AECE44"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			title: "Smashing Things for Fun and Profit"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["787AC930E200D9F4"]
+			description: ["Gems are random in nature, depending on the circumstances under which they grew. Using the gem cutting table, you can refine them and upgrade them into more perfect variations."]
+			id: "6ED544D82F4F3887"
+			optional: true
+			rewards: [
+				{
+					id: "3C9A48A63113166E"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/ballast"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2FEC83847F96E9D9"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/brawlers"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E568081D96972D7"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/breach"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77E14194EE881796"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/guardian"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7907711E076D6A19"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/lunar"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21AEC803077C5E65"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheosis:core/solar"
+							rarity: "common"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "143A28B17FE4968B"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["787AC930E200D9F4"]
+			description: ["The reforging table allows you to roll or re-roll apotheosis enchantments on any gear. This basic version is limited in the power of the affixes it can roll but comes at a cheaper price."]
+			id: "6B63C6EFA26C549E"
+			optional: true
+			rewards: [
+				{
+					count: 6
+					id: "771B98C26ABF2B64"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+				{
+					id: "4F8303A544DA9E92"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [{
+				id: "083C640E67391C10"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B63C6EFA26C549E"]
+			description: ["The Mythic reforging table allows for reforing up to Mythic levels. You can take all of your gear and bring it to the strongest possible variations."]
+			id: "47E9292784593221"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "5AB5279D3E002B68"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+				{
+					id: "6B751F9458D0ECFC"
+					item: "apotheosis:vial_of_extraction"
+					type: "item"
+				}
+				{
+					id: "65DAA5CC039246B8"
+					item: "apotheosis:vial_of_expulsion"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "29FCE643814B557F"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			title: "Forged in the Infinite"
+			x: -3.5d
+			y: 1.5d
+		}
+	]
+	title: "Evolutionary Apotheosis"
+}

@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "project_genesis"
+	group: ""
+	icon: "botania:world_seed"
+	id: "6D19531971495779"
+	images: [
+		{
+			alpha: 100
+			click: ""
+			corner: false
+			dev: false
+			height: 32.0d
+			hover: [ ]
+			image: "ftbgenesis:textures/quests/vaultfront.png"
+			order: -1
+			rotation: 0.0d
+			width: 60.0d
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.5d
+			hover: [ ]
+			image: "ftbgenesis:textures/quests/welcome.png"
+			order: 1
+			rotation: 0.0d
+			width: 8.0d
+			x: -8.0d
+			y: 1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"In an age long forgotten, the world of &6Elyria&r was a paradise, a bastion of civilization and unity. But human ambition and greed took over, and what once was a haven turned into a battleground. The cold war of ideologies spiraled out of control, resulting in a cataclysmic nuclear exchange. Elyria was scarred, forever changed."
+			""
+			"Skies darkened. Radiant blue oceans turned murky, as if the very soul of the world was tainted. The aftermath of the war led to rapid ecological decay. With the realization of the impending doom, survivors, with a melding of hope and desperation, turned to their advanced technology. The project named \"&dGenesis&r Protocol\" was initiated. They aimed to transfer their consciousness into a massive digital realm known as the \"&6Nexa Network&r\", hoping to outlive the decay and one day, return."
+			""
+			"{@pagebreak}"
+			"Time flowed differently inside the Nexa Network. While the world outside rotted, the digital denizens of Nexa experienced eons. But it was not a peaceful existence. Corruption, like a virulent disease, began to seep into the code. Strange, twisted digital entities emerged, spawning an eternal nightmare for the trapped souls."
+			""
+			"Eons passed, until a council was formed within the Nexa. Their sole aim was to put an end to the suffering and to find a way back to Elyria. From among them, you were chosen. As an \"Architect\", your role was to return to the physical world, assess the damage, and find a solution."
+			""
+			"By entering the portal you will be digitized into what remains of Elyria to begin the arduous task of rebuilding. The world is counting on you, but you will not be alone. Your civilization within the Nexa will provide assistance where you need it most."
+		]
+		id: "184A9C8DCC6AAB6B"
+		rewards: [
+			{
+				id: "29EB622D2E399F3E"
+				type: "xp"
+				xp: 10
+			}
+			{
+				id: "3EBAB97C5FCF3C80"
+				item: "farmersdelight:roasted_mutton_chops"
+				type: "item"
+			}
+		]
+		shape: "pentagon"
+		size: 2.0d
+		tasks: [{
+			icon: {
+				Count: 1b
+				id: "gag:hearthstone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50826BE5689481D4"
+			structure: "ftbteamdimensions:start"
+			title: "Download Initiated..."
+			type: "structure"
+		}]
+		x: -8.0d
+		y: 4.0d
+	}]
+	title: "Welcome"
+}

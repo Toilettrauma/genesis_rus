@@ -1,0 +1,536 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_extractions"
+	group: "656523BED7FBA32A"
+	icon: "minecraft:nether_gold_ore"
+	id: "0316FD9171640FAE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["161B07957EAB6307"]
+			description: ["You made it! We lost contact during the transit and feared the worst. Well done! Proceed with caution, our notes on this area are centuries old and we have no idea how things have changed. Seek out some of the local resources and bring them and yourself back safely. Godspeed!"]
+			id: "17083DB226A62972"
+			rewards: [
+				{
+					id: "73AB435E2349F6D8"
+					type: "xp"
+					xp: 2
+				}
+				{
+					description: ""
+					icon: "engineersdecor:sign_hotsurface"
+					id: "44D7393C3D0FFA53"
+					title: "We went deeper!"
+					type: "toast"
+				}
+				{
+					id: "3A829CFC468447B0"
+					item: "botania:spark_upgrade_dominant"
+					type: "item"
+				}
+				{
+					id: "781776D3D1FB4205"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "chipped:tall_shroomy_nether_sprouts"
+				id: "3FD51F441EC53C6D"
+				title: "Visit the Nether Realm"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bGold&r seems very scarce on Elyria after so many centuries of strip mining. Luckily, it seems plentiful in this realm, hopefully the pig-like creatures that live here won't mind our extractions."]
+			id: "53777A21C6B4D796"
+			rewards: [{
+				count: 8
+				id: "03CB3CB571D30669"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "minecraft:nether_gold_ore"
+				id: "1697DEFC0A2ADD2C"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:nether_gold_ore"
+				type: "observation"
+			}]
+			title: "Find Gold Ore"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: [
+				"This ore seems to be alive and has a metamorphic property to it. It's almost as if it wants to become something else."
+				"With the right guidance and binding materials we may be able to use this strange essence to sow fields of new research."
+			]
+			icon: "mysticalagradditions:nether_inferium_ore"
+			id: "1E42CE6EF1709417"
+			rewards: [{
+				count: 8
+				id: "0B3D7E35D8F8E114"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "mysticalagradditions:nether_inferium_ore"
+				id: "572103CCB07472B4"
+				observe_type: 0
+				timer: 0L
+				to_observe: "mysticalagradditions:nether_inferium_ore"
+				type: "observation"
+			}]
+			title: "Find Inferium Ore"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bSilver&r is used in some advanced electrical circuits and in electrum alloy. Still, it can't hurt to have some available now. "]
+			icon: "bno:nether_silver_ore"
+			id: "228A0318B4F673B8"
+			rewards: [{
+				count: 8
+				id: "1FF4C32C20A2E5D2"
+				item: "ic2:ingot_silver"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_silver_ore"
+				id: "7956945634B3D068"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_silver_ore"
+				type: "observation"
+			}]
+			title: "Find Silver Ore"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["Not a highly useful metal for our needs but you can probably create some moderately-sized batteries and a few other alloys with it such as constantan and invar."]
+			id: "3348809DEA6C5AF8"
+			rewards: [{
+				count: 8
+				id: "7F21754508F60039"
+				item: "immersiveengineering:ingot_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_nickel_ore"
+				id: "165DF789DB01C61B"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_nickel_ore"
+				type: "observation"
+			}]
+			title: "Find Nickel Ore"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["This strange crystal radiates with transdimensional energy. It may have several fascinating properties. We will begin research on it right away!"]
+			icon: "rftoolsbase:dimensionalshard_nether"
+			id: "7497B7C166A299C2"
+			rewards: [{
+				count: 4
+				id: "712BB05491CC5742"
+				item: "rftoolsbase:dimensionalshard"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "rftoolsbase:dimensionalshard"
+				id: "42EA86F6C1C7118E"
+				observe_type: 0
+				timer: 0L
+				to_observe: "rftoolsbase:dimensionalshard_nether"
+				type: "observation"
+			}]
+			title: "Find Dimensional Shard Ore"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bCassiterite&r, or &btin&r, is rather plentiful but works as both a carrier of electricity and a good alloying metal. I'm sure you will make use of all you can find."]
+			id: "6F86DE98DC830EA4"
+			rewards: [{
+				count: 8
+				id: "5B377D3CDEA27DF4"
+				item: "mekanism:ingot_tin"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_tin_ore"
+				id: "2023D3097383E617"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_tin_ore"
+				type: "observation"
+			}]
+			title: "Find Tin Ore"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["Lightweight non-ferrous metal with many industrial uses. This will go a long way towards opening new machining and efficient processing options."]
+			icon: "bno:nether_aluminum_ore"
+			id: "4DA89AED6EA9C07B"
+			rewards: [{
+				count: 8
+				id: "65A50C7A00D77E52"
+				item: "ic2:ingot_aluminium"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_aluminum_ore"
+				id: "27CB038BF7940A48"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_aluminum_ore"
+				type: "observation"
+			}]
+			title: "Find Aluminum Ore"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["This ore seems to be a bridge between organic and inorganic material. It readily binds to metals and cell structures alike forming biometallic alloys."]
+			id: "52B8017AA5460439"
+			rewards: [{
+				count: 8
+				id: "0E5356F6185314FA"
+				item: "mysticalagriculture:prosperity_shard"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "mysticalagradditions:nether_prosperity_ore"
+				id: "4E2C5A98ED1F1C2B"
+				observe_type: 0
+				timer: 0L
+				to_observe: "mysticalagradditions:nether_prosperity_ore"
+				type: "observation"
+			}]
+			title: "Find Prosperity Ore"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bOsmium&r is a rare metal, part of the platinum group and is an excellent material for advanced machinery. It requires very high heat to process. You'll need to build a Reinforced Alloyer  "]
+			icon: "bno:nether_osmium_ore"
+			id: "1F44969A2062439C"
+			rewards: [{
+				count: 8
+				id: "1C51ED1AACED6CCA"
+				item: "mekanism:dust_osmium"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_osmium_ore"
+				id: "33A2D76F2CD2B67F"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_osmium_ore"
+				type: "observation"
+			}]
+			title: "Find Osmium Ore"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bGlowstone&r seems to react as an enhancer for technology. This will allow you to create more advanced circuits without the sophisticated clean rooms our predecessors relied on. The quartz that grows here in great abundance has many electrochemical properties as well. Although it also exists in our world, it is in much greater abundance in the Nether."]
+			id: "0F80F933C30782C1"
+			rewards: [
+				{
+					id: "42E55F14B1E23495"
+					item: "farmersdelight:glow_berry_custard"
+					type: "item"
+				}
+				{
+					id: "5D26455D4AFBB7C4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2E631EAC83D784C9"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "5DF495EE7BED5328"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			title: "Dusts and Gems of the Nether"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bLead&r is a great radiation blocker. Our sources indicate it's plentiful in the Nether, and we suggest bringing some back with you."]
+			id: "096E9177832CC00E"
+			rewards: [{
+				count: 8
+				id: "3D77F64A7B83F76B"
+				item: "mekanism:ingot_lead"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_lead_ore"
+				id: "7B204B555FE9730F"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_lead_ore"
+				type: "observation"
+			}]
+			title: "Find Lead Ore"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bCopper&r used to be one of the most plentiful metals on Elyria but much was reformed and put into our technology and even buildings themselves. We're left now to scavenge for most of it so having a fresh source will help, especially with creating new circuitry."]
+			id: "35575DB93445FF46"
+			rewards: [{
+				count: 8
+				id: "593368AD4B385136"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bno:nether_copper_ore"
+				id: "2AAA79A515D10835"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_copper_ore"
+				type: "observation"
+			}]
+			title: "Find Copper Ore"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["&bUranium&r can become highly radioactive and an immense source of power in its refined state. &6Nuclear fission&r and eventually fusion was once the great source of power for the Elyrian empire. With this energy source now in our possession once again our faith lies in you to cleanly harness it."]
+			icon: "bno:nether_coal_ore"
+			id: "7504063593C8B163"
+			rewards: [
+				{
+					id: "28F0D56ED9761A07"
+					item: "ic2:ore_uranium"
+					title: "You do have your hazmat on right?"
+					type: "item"
+				}
+				{
+					id: "1D106C81237A4652"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				icon: "bno:nether_uranium_ore"
+				id: "2BA71A24E810A144"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bno:nether_uranium_ore"
+				type: "observation"
+			}]
+			title: "Find Uranium Ore"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6F86DE98DC830EA4"
+				"35575DB93445FF46"
+			]
+			description: ["Alloying tin and copper to make &bbronze&r will allow some more advanced metallurgical processes such as mixed metal ingots and advanced alloy plates. "]
+			id: "7C57DF91F329F3EB"
+			rewards: [
+				{
+					id: "4D2B4C0B252E52F4"
+					item: "ic2:bronze_shield"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "21E231F8F13554B8"
+					item: "mekanism:ingot_bronze"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "mekanism:ingot_bronze"
+				id: "279FA76C02B4327A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			title: "A New Alloy!"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["17083DB226A62972"]
+			description: ["Although most of the creatures in this realm seem outwardly hostile, there are a sentient group here who treasure gold very highly. If they see you are wearing gold they will likely not be hostile towards you. Of course this will cost you the normal protection of your radiation suit so you had better be prepared with some fire resistance. Trading with them can net some rare and important ingredients for furthering our aims. "]
+			id: "6EA50298B968C4D3"
+			rewards: [
+				{
+					count: 16
+					id: "1C5106AED34A8822"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "35573821D62EB098"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D6875365715D727"
+					item: "pneumaticcraft:gilded_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:zombified_piglin"
+						}
+					}
+				}
+				id: "211DFEB0E12DC666"
+				observe_type: 5
+				timer: 0L
+				title: "Meet a Piglin"
+				to_observe: "minecraft:piglin"
+				type: "observation"
+			}]
+			title: "Exploiting the Natives"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6EA50298B968C4D3"]
+			description: ["These oddly resonating pearls seem to have some similarity to the teleporting shadow creatures we've detected in the wastelands. Perhaps these could hold the key to unlocking the source of their teleportation."]
+			id: "7A2C135DCE972970"
+			rewards: [
+				{
+					id: "35AC543DDF977C62"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "69D075D6B9DABE2A"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					id: "7BB1CBB46A2CB791"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "797ACD78D0432AC3"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "71B76AF0F5CF5FA5"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6EA50298B968C4D3"]
+			description: ["The piglins seem to collect chunks of some blackened skeletal remains. See if you can collect a full sample for our xenoarcheologists. This may give insights into some of the other creatures of this realm and their hierarchy."]
+			id: "52C23A0CE4565BF0"
+			rewards: [{
+				id: "71EA932BC764E983"
+				item: {
+					Count: 1b
+					id: "alexsmobs:skelewag_sword"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "apotheosis:life_mending"
+								lvl: 3s
+							}
+							{
+								id: "apotheosis:scavenger"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+						]
+						RepairCost: 31
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Skelington's Revenge\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "371A52FBAE6781B3"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			title: "Spooky Scary Skeletons"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Thermal Extractions"
+}

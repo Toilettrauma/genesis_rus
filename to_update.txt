@@ -1,0 +1,9 @@
+# project genesis error line 175 (redwheat from ~Botania~ IC2)
+project_genesis_2.snbt : 175 (redwheat botania, красные семена)
+project_genesis_2.snbt : 205 bonsai
+project_genesis_2.snbt : 268 Lazer meme
+project_genesis_2.snbt : ? 372 Heavy scrap (Утильсырьё)
+
+RFToolsBase (Dimensional shard)
+ElementalCraft (Solar prism)
+Advanced Solars Classic (Molecular Transformer)

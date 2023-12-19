@@ -1,0 +1,478 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: "5D5DBBFEECA45FAB"
+	icon: "biomesoplenty:dried_salt"
+	id: "1B3084478EF0EA38"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{gen.getting_started.task_0.desc_0}"
+				""
+				"{gen.getting_started.task_0.desc_1}"
+			]
+			id: "58FC40BAC5CA05E2"
+			rewards: [
+				{
+					id: "6284A7E079657F60"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "4BCB691765E081F0"
+					item: "farmersdelight:sweet_berry_cheesecake_slice"
+					type: "item"
+				}
+				{
+					id: "0D36FD4ECD36EED1"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+							Purity: 3
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "1B085703462CDA64"
+					ignore_reward_blocking: true
+					stage: "ae2drives"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			tasks: [{
+				icon: "ae2:crafting_terminal"
+				id: "373DF584AC36AD48"
+				stage: "ae2drives"
+				title: "{gen.getting_started.task_0.title}"
+				type: "gamestage"
+			}]
+			title: "{gen.getting_started.task_0.title}"
+			x: -4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["58FC40BAC5CA05E2"]
+			description: [
+				"{gen.getting_started.task_1.desc_0}"
+				""
+				"{gen.getting_started.task_1.desc_1}"
+				""
+				"{gen.getting_started.task_1.desc_2}"
+			]
+			icon: "engineersdecor:sign_danger"
+			id: "28E8D0CD21DF5430"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "1AC021407B87B263"
+					type: "xp"
+					xp: 5
+				}
+				{
+					auto: "enabled"
+					description: ""
+					icon: "minecraft:tnt"
+					id: "1994E1A214BED1AA"
+					team_reward: true
+					title: "{gen.getting_started.task_1.title}"
+					type: "toast"
+				}
+			]
+			subtitle: "{gen.getting_started.task_1.subtitle}"
+			tasks: [
+				{
+					icon: "ae2:chest"
+					id: "5CB1B59FF518DC94"
+					stage: "ae2drives"
+					title: "{gen.getting_started.task_1.title}"
+					type: "gamestage"
+				}
+				{
+					id: "52B3B6F3E1E22158"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["28E8D0CD21DF5430"]
+			description: ["{gen.getting_started.task_2.desc}"]
+			id: "54E46E00BC687E3C"
+			rewards: [{
+				id: "430EF6A8F7D788B3"
+				item: {
+					Count: 1b
+					id: "farmersdelight:apple_cider"
+					tag: {
+						Purity: 3
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "121B264DEEC7A4F0"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "{gen.getting_started.task_2.title}"
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["54E46E00BC687E3C"]
+			description: ["{gen.getting_started.task_3.desc}"]
+			id: "446E61688AB46843"
+			rewards: [
+				{
+					count: 16
+					id: "476B7AE342B03BED"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "2659BD1A6AFD74C4"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "766EF0C2AB046D21"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{gen.getting_started.task_3.title}"
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["446E61688AB46843"]
+			description: ["{gen.getting_started.task_4.desc}"]
+			icon: "cyclic:workbench"
+			id: "20D5C75AD17DB78B"
+			rewards: [
+				{
+					id: "00330A6426708565"
+					item: "cyclic:workbench"
+					type: "item"
+				}
+				{
+					id: "68D28224050DFA23"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01BAAC165B3AB313"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "164B78258FE037AC"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "0D978F16AA3BD715"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "7E7AB434685395DC"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0F5A16006C0BA03E"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "{gen.getting_started.task_4.title}"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["28E8D0CD21DF5430"]
+			description: [
+				"{gen.getting_started.task_5.desc_0}"
+				""
+				"{gen.getting_started.task_5.desc_1}"
+			]
+			icon: "nameless_trinkets:creeper_sense"
+			id: "5F64968A15643883"
+			rewards: [{
+				id: "7286E84D52802DD6"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C016E55BB75A0F9"
+				type: "checkmark"
+			}]
+			title: "{gen.getting_started.task_5.title}"
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["20D5C75AD17DB78B"]
+			description: [
+				"{gen.getting_started.task_6.desc_0}"
+				""
+				"{gen.getting_started.task_6.desc_1}"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:wheat_seeds"
+				tag: {
+					display: {
+						Name: "{\"translate\": \"item.minecraft.wheat_seeds\", \"color\": \"green\"}"
+					}
+				}
+			}
+			id: "1C9B4FAC40207AF3"
+			rewards: [{
+				id: "49728B2B47D8A65B"
+				item: "ic2:overgrowth_fertilizer"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "63025C7743679372"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+				{
+					id: "11F79CBD93348080"
+					item: {
+						Count: 1b
+						id: "minecraft:wheat_seeds"
+						tag: {
+							display: {
+								Name: "{\"translate\": \"item.minecraft.wheat_seeds\", \"color\": \"green\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{gen.getting_started.task_6.title}"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20D5C75AD17DB78B"]
+			description: ["{gen.getting_started.task_7.desc}"]
+			id: "723A4300F36AD7D7"
+			rewards: [
+				{
+					id: "7C5BD0A012F17BB8"
+					item: "cookingforblockheads:heating_unit"
+					type: "item"
+				}
+				{
+					id: "590614B6F44A71C5"
+					item: "mekanism:block_charcoal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2DCC2FC6355E7711"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "{gen.getting_started.task_7.title}"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["723A4300F36AD7D7"]
+			description: ["{gen.getting_started.task_8.desc}"]
+			id: "686E2B537232B8EF"
+			rewards: [
+				{
+					count: 4
+					id: "1B64389C8F4B9A30"
+					item: "mekanism:block_charcoal"
+					type: "item"
+				}
+				{
+					id: "284FC21BBC45DD4D"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "527FC83D7FB695E1"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["54E46E00BC687E3C"]
+			description: [
+				"{gen.getting_started.task_9.desc_0}"
+				""
+				""
+				"{gen.getting_started.task_9.desc_1}"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:water"
+					Purity: -1
+				}
+			}
+			id: "27EF0B7B4A45F2EB"
+			rewards: [
+				{
+					count: 4
+					id: "421F9C5408E2F22E"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+							Purity: 3
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53E0B112995DC989"
+					type: "xp"
+					xp: 2
+				}
+			]
+			subtitle: "{gen.getting_started.task_9.subtitle}"
+			tasks: [
+				{
+					id: "75D1F9306AD03EFB"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					icon: "supplementaries:jar"
+					id: "7536B553F4581AD6"
+					observe_type: 0
+					timer: 0L
+					to_observe: "supplementaries:jar"
+					type: "observation"
+				}
+			]
+			title: "{gen.getting_started.task_9.title}"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["27EF0B7B4A45F2EB"]
+			description: ["{gen.getting_started.task_10.desc}"]
+			id: "4D035F303B0EC8A3"
+			rewards: [
+				{
+					id: "01F1B9240E4A4E50"
+					type: "xp"
+					xp: 2
+				}
+				{
+					auto: "enabled"
+					description: ""
+					icon: "minecraft:tall_grass"
+					id: "0A0D4BD8E0C70981"
+					team_reward: true
+					title: "{gen.getting_started.task_10.title}"
+					type: "toast"
+				}
+			]
+			tasks: [{
+				id: "51AA77ACC9186B7A"
+				title: "{gen.getting_started.task_10.title}"
+				type: "checkmark"
+			}]
+			title: "{gen.getting_started.task_10.title}"
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"723A4300F36AD7D7"
+				"308EF169B51EB98B"
+			]
+			description: ["{gen.getting_started.task_11.desc}"]
+			hide: true
+			id: "2BFEFBD857F0B4A6"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					count: 2
+					id: "099A9687724E1FFA"
+					item: "flowerseeds:tulip_orange_seed"
+					type: "item"
+				}
+				{
+					id: "782605F4DBD013A7"
+					type: "xp"
+					xp: 2
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "29D628D56852B726"
+				item: "ic2:ingot_refined_iron"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+	]
+	title: "{gen.getting_started.title}"
+}

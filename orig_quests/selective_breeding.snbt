@@ -1,0 +1,1578 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "selective_breeding"
+	group: "494B330CF50C8720"
+	icon: {
+		Count: 1b
+		id: "ic2:crop_analyzer"
+		tag: {
+			breed: 1b
+			charge: 49910
+			inv: {
+				items: [{
+					Count: 1b
+					id: "ic2:crop_seed"
+					slots: [B;
+						0b
+						1b
+						2b
+						3b
+					]
+					tag: {
+						crop: "ic2:sugarcane"
+						gain: 0b
+						growth: 0b
+						resistance: 0b
+						scan: 1b
+						visible: 1b
+					}
+				}]
+			}
+			results: {
+				offset: 0
+			}
+			water: 0b
+		}
+	}
+	id: "5F10C0CE1202E28C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2A791F59DB3D67E8"
+				"0E1E50CE55AC915A"
+			]
+			description: [
+				"The first, and most important crop you'll want to work towards breeding is the &bstickreed&r."
+				""
+				"The easiest way you breed crops is by placing 3 &6cropsticks&r in a row, and placing another cropstick on the middle one to create a \"breeding\" spot. Grow crops on the outer side and wait till they are mature. Over time, they will cross-breed into a new crop in the middle. "
+				""
+				"This new plant can be the same as the other parent plants with different strengths, resistances and growth values or if the conditions are right you can create an entirely new breed."
+				""
+				""
+				"{@pagebreak}"
+				"To breed stickreed you'll want to start by crossbreeding sugar cane until the new crop grows in between."
+				"You can end up with several different types of crops and it can take some time before you get stickreed. "
+				""
+				"This can be a slow process so &6it's recommended you create large fields&r of 3 rows of crops to cross breed for the selected crop quickly while minimizing rng."
+				"{image:ftbgenesis:textures/quests/crops.png width:150 height:100 align:1}"
+				""
+				"{@pagebreak}"
+				"&6A Warning:&r The seeds given in this quest are 25/25/25. They are extremely productive but they will require hydrated soil with good nutrients or they may die. Be sure to use a hydration cell on the soil and fertilizer to allow them to take root."
+			]
+			id: "1A37CB048C146362"
+			rewards: [
+				{
+					count: 4
+					id: "39D9192FA2100D70"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:stickreed"
+							gain: 25b
+							growth: 25b
+							resistance: 25b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "360C1B926BBE2E29"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:cactus"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0539FCC622C28C3E"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:sweet_berry_bush"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "28E5805975119292"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:bamboo"
+							gain: 1b
+							growth: 1b
+							resistance: 1b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3380C1F1C96E60E7"
+				item: "ic2:sticky_resin"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A791F59DB3D67E8"]
+			description: [
+				"The crop analyzer will help you determine the type and quality of seed you've bred. Keeping it on your hotbar will allow The One Probe to display a myriad of statistics for the soil and plant by simply looking at them. "
+				""
+				"Sneaking and right clicking a currently growing plant will scan it in place, giving you more information about it."
+				""
+				"Remember: Never run on your crops, never left click to obtian the seed pouch if they arent fully grown. "
+			]
+			id: "0E1E50CE55AC915A"
+			rewards: [
+				{
+					id: "4AEA93D60684C0E3"
+					item: {
+						Count: 1b
+						id: "ic2:re_battery"
+						tag: {
+							charge: 10000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AC19267BDDC3330"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "31EE9DC0C3165F69"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F37835C4DB6A26F"
+				item: {
+					Count: 1b
+					id: "ic2:crop_analyzer"
+					tag: {
+						charge: 49910
+						items: [{
+							Count: 1b
+							id: "ic2:crop_seed"
+							slot: 1b
+							tag: {
+								crop: "ic2:sugarcane"
+								gain: 1b
+								growth: 1b
+								resistance: 1b
+								scan: 4b
+							}
+						}]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"The crop analyzer can do much more than just identify the seed variants, if you hold its mode switch hotkey and right click you'll switch it into &bbreeding mode&r. In breeding mode you can input various crops into the breeding slots which represent the 4 adjacent crops next to your breeding cross sticks. It will then display your chances of getting each type of crop. "
+				""
+				"{image:ftbgenesis:textures/quests/analyzing.png width:200 height:125 align:1}"
+				""
+				"{@pagebreak}"
+				""
+				"{image:ftbgenesis:textures/quests/breeding.png width:180 height:100 align:1}"
+				""
+				"So if you switch to this mode and put 4 sugar cane in the inputs you can see what products you can create..."
+				""
+				"{@pagebreak}"
+				""
+				"{image:ftbgenesis:textures/quests/stickreed.png width:120 height:100 align:1}"
+				""
+				"Here we see the chance per breeding cycle of getting stickreed. Less than 2% chance! Not great!"
+				"Luckily you'll be getting a bunch of other useful crops along the way. You can greatly speed this process along"
+				"by filling your field with breeding rows and using lots of fertilizer. This is how you'll learn to create "
+				"many new seed variations to obtain a myriad of resources. "
+			]
+			icon: {
+				Count: 1b
+				id: "ic2:crop_analyzer"
+				tag: {
+					breed: 1b
+					charge: 49910
+					inv: {
+						items: [{
+							Count: 1b
+							id: "ic2:crop_seed"
+							slots: [B;
+								0b
+								1b
+								2b
+								3b
+							]
+							tag: {
+								crop: "ic2:sugarcane"
+								gain: 0b
+								growth: 0b
+								resistance: 0b
+								scan: 1b
+								visible: 1b
+							}
+						}]
+					}
+					results: {
+						offset: 0
+					}
+					water: 0b
+				}
+			}
+			id: "4FAEDCB30D64369F"
+			rewards: [
+				{
+					id: "466082DAAD99FBE2"
+					item: "minecraft:snow_block"
+					title: "Save this for later..."
+					type: "item"
+				}
+				{
+					id: "603880DC8B9DD0FD"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 16
+					id: "4AA51717C42714E5"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "63CC9BE244785060"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5190B8BE3ECDCCE7"
+				title: "Breeding Mode"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["Sometimes luck does not favor us. Luckily, with sufficient biodiversity we can synthesize the rubber. Obtain at least some plant matter from attempting to cross breed the &6stickreeds&r and we should be able to reproduce it for you more directly. "]
+			icon: "botania:dice"
+			id: "094619523F5BD9A9"
+			optional: true
+			rewards: [
+				{
+					id: "466A5FE599700581"
+					item: "ic2:sticky_resin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34260C141946FE98"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:stickreed"
+							gain: 25b
+							growth: 25b
+							resistance: 25b
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "7BCD9CF0C0EE250A"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "346609467773DF40"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "746A3ED47630FEE4"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1A6CE3F1FE1E7374"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:sweet_berries"
+								}
+								{
+									Count: 1b
+									id: "minecraft:bamboo"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cactus"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "RNGesus Take the Wheel"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"199CB94FA4710B30"
+				"0E1E50CE55AC915A"
+			]
+			description: ["Within the Nether simulation you can find flora from the alien dimension we've preserved. This strange relative of fungus is known as &bNether Wart&r and has many amazing properties not found in the flora of our world. By harvesting some and bringing it back to our world to breed in the new atmosphere we believe you can enhance these qualities."]
+			hide_dependency_lines: false
+			id: "52A5C61CC1621B61"
+			rewards: [
+				{
+					count: 4
+					id: "33087E3BB5FFC869"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					id: "30EA187EF12C0365"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C8A9ED2192B3D23"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: [
+				"By exposing the alien flora to our atmosphere it's taken on an entirely new property. This plant now seems edible and extremely robust. In fact, it seems to be able to &bcure the user of Radiation&r and other maladies. Please submit a sample immediately so that our scientists in the Nexa can continue to discover additional properties."
+				""
+				"Completing this quest will unlock the Biotechnology chapter."
+				""
+				"{@pagebreak}"
+				"To breed Terrawart you normally need to create a breeding bed similar to stickreed breeding but with Nether Wart. Luckily our scientists have discovered the Nether Wart mutate rapidly in the presence of cold. Placing a snow block under the farmland where you plant Nether Wart should yield Terrawart when grown. (No other plants next to it)"
+				"{image:ftbgenesis:textures/quests/terra.png width:100 height:100 align:1}"
+			]
+			id: "22D44A27340C84DC"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					id: "3CBCC7F8FDC7893D"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					id: "6D6624C63BDE3302"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 2
+					id: "042D1EBA72EDFBD8"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:terrawart"
+							gain: 5
+							growth: 5
+							resistance: 5
+							scan: 3
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F3DD422AC784BE1"
+				item: "ic2:terrawart"
+				type: "item"
+			}]
+			title: "Terra Who?"
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: [
+				"&bRedwheat&r will yield &6redstone&r when grown and harvested. Redwheat can be particularly difficult to breed because it requires lower air quality (Enclosed space) and also low light (level 7 or less) to grow. A redstone torch is ideal for these conditions. Netherwart and Aurelia are your best bet for breeding it but two nether wart can also achieve this. There is also an alternate magical recipe once you've progressed far enough. This will be a primary source of redstone!"
+				""
+				"{@pagebreak}"
+				""
+				"{image:ftbgenesis:textures/quests/redwheat.png width:200 height:130 align:1}"
+			]
+			icon: "minecraft:redstone"
+			id: "2FAA7BF3C0A3CED1"
+			rewards: [
+				{
+					count: 4
+					id: "2D420AB1AF4BE6C7"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BEA89C230001FAE"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1561B9E38FE8B471"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:red_wheat"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Redwheat"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: ["&bGlowshrooms&r can provide a renewable and sustainable source of &6glowstone&r. They can be bred from nether wart at a low chance and must have a glowstone block touching the top of their cropsticks in order to fully grow."]
+			icon: "minecraft:glowstone_dust"
+			id: "154CD9B720685905"
+			rewards: [
+				{
+					count: 4
+					id: "5487BDCE3D99B0F2"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:glowshroom"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D672254C4FB91EC"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "07D60E74CCC4393B"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B9927C9A3899FF2"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:glowshroom"
+						}
+					}
+				}
+				match_nbt: true
+				title: "Glowshroom Seeds"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Glowing Mushrooms"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2FAA7BF3C0A3CED1"]
+			description: [
+				"&bBlue wheat&r provides a main source of &6lapis&r and can be bred from red wheat but the target crop block should be waterlogged. Once grown, Blue wheat will grow in normal light. "
+				""
+				"Similar to redwheat, once you've rebuilt enough technology you can more easily create these seeds through alternate methods."
+			]
+			icon: "minecraft:lapis_lazuli"
+			id: "0A731167C2195782"
+			rewards: [
+				{
+					count: 4
+					id: "33E7F84A8E24FA97"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "694C456DF6D3A61B"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F2BF39B0085476B"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:blue_wheat"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Bluewheat"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["Good ole &bwheat&r. Food source, biomass, seeds and breeding stock for many other food products. This is worth growing a patch of indefinitely. "]
+			id: "3E354D0F83B62BAE"
+			rewards: [{
+				count: 4
+				id: "31A59013C126B3F5"
+				item: {
+					Count: 1b
+					id: "ic2:crop_seed"
+					tag: {
+						crop: "ic2:wheat"
+						gain: 5.0d
+						growth: 5.0d
+						resistance: 5.0d
+						scan: 4b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "431CE57F5D84FD8F"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			title: "Amber Waves of ,,, Well You Know."
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["&bCactus&r has many uses and is a dry crop that can bridge your breeding attempts towards more arid products. "]
+			id: "68A0EA9C26BB16B4"
+			rewards: [
+				{
+					count: 4
+					id: "00F2E69FC489312A"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:cactus"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "76B645944159598A"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "741444DACCD7FF94"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			title: "Prickly Plants"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"Make sure you do not harvest your new crops too soon. You are often unable to tell what the newly cross bred plant is until it is fully grown. Stickreed for example looks exactly like sugar cane until its final growth stage where it gets amber colored droplets on it. "
+				""
+				""
+				"{image:ftbgenesis:textures/quests/stickreedfull.png width:200 height:100 align:1}"
+				""
+				"{@pagebreak}"
+				"{image:ftbgenesis:textures/quests/dedplants.png width:100 height:100 align:1}"
+				"It's important to pay attention to the statistics of your soil. When plants have low stats they are more vulnerable. If you look at a plant and see its next growth is 0 it means it is &nDYING&r and &l&4You will lose your plant!&r The common cause of this is either poor air quality, not hydrating enough with a hydration cell or poor nutrients that need fertilizer. Once you see the next growth number above 0 your crop should be ok. "
+			]
+			icon: {
+				Count: 1b
+				id: "ae2:fluix_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "42FF46D223B296BC"
+			rewards: [
+				{
+					count: 8
+					id: "06C89F938B1A6DC9"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "204ECA6D55A12AB8"
+					type: "xp"
+					xp: 12
+				}
+			]
+			tasks: [{
+				id: "0F5C6C378A13C36A"
+				title: "Reap what you Sow"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"You can ensure you never lose important seeds or give yourself extra breeding pairs by &bcloning your seeds&r. To clone your plants take the plant you want to clone and plant it normally in the center and then around it place 4 sets of double crop sticks with no other crops near them. Each of the 4 will become a perfect clone of the parent plant."
+				""
+				"{image:ftbgenesis:textures/quests/clone.png width:200 height:150 align:1}"
+			]
+			icon: "minecraft:wheat"
+			id: "243960E27D2ED148"
+			rewards: [
+				{
+					count: 6
+					id: "760F069A2EB3F143"
+					item: "ic2:copper_insulated_cable_item"
+					type: "item"
+				}
+				{
+					id: "56A790A7CC807B6A"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "219DCEC299CD33AA"
+				title: "Clone Wars"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["Sweet berries make for a sustainable, if meager, source of food and hydration. They can also be used as a breeding crop to grow things like glow berries. "]
+			id: "68D405257D61DA90"
+			rewards: [
+				{
+					count: 4
+					id: "0475088F74527119"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:beetroot"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4131487B868CDEC6"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:lily_of_the_valley"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1DDA5DF006F5ECB9"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			title: "How Berry Sweet of You"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A5C61CC1621B61"]
+			description: ["The unique flora from the Nether realm seems to be able to grow here although it requires very little humidity in order to survive. You can plant these directly on crop sticks without hydrating the soil to grow them. "]
+			id: "18907A119BFF4333"
+			rewards: [
+				{
+					count: 4
+					id: "673F26731AA09CA2"
+					item: "minecraft:warped_fungus"
+					type: "item"
+				}
+				{
+					id: "05E5D82EAD6F7CDD"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "0DC84481D7CC5682"
+				item: "minecraft:crimson_fungus"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["18907A119BFF4333"]
+			description: ["&bMushrooms&r can be found naturally or bred from several sources. They are a useful food product, for stocks and for some more esoteric crafting processes. It is recommended you cultivate a small batch of the fungi for future studies. "]
+			id: "2DAEF1E03B1D621A"
+			rewards: [
+				{
+					id: "5282492F4928F5BC"
+					item: "farmersdelight:mushroom_rice"
+					type: "item"
+				}
+				{
+					id: "587AA8CF94D6A9A9"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "6AB2377AD637A96E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:red_mushroom"
+							}
+							{
+								Count: 1b
+								id: "minecraft:brown_mushroom"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Mushroom not Mooooshrooms"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"The &bCropmatron&r can have water piped in and a hydration cell placed inside as well as fertilizer and it will keep your crops hydrated and fertilized so they grow at peak efficiency. Paired with a crop harvester for automatically harvesting your fields you can fully automate many of your stock crops. "
+				""
+				"&nIMPORTANT&r: As with all IC2C Machines, you need to use a WRENCH to pick them up. A pickaxe will destroy them. Make sure you head over to the Synthetic Acquisitions questline to sythesize a wrench for yourself. "
+			]
+			id: "66492BF1038C0031"
+			rewards: [
+				{
+					id: "2769F20B5378B453"
+					item: "ic2:crop_harvester"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "03DA42BEBD983D4B"
+					item: "ic2:basic_field_expansion_pad_upgrade"
+					type: "item"
+				}
+				{
+					id: "2EC48E3027251C04"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6550F46D3BD18FCB"
+				item: "ic2:cropmatron"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A37CB048C146362"]
+			description: ["&bBamboo&r is a fast growing and hearty building material. It's a genetically diverse plant that can be used to further our habitability project. "]
+			id: "38ED4A2BC5F0AB95"
+			rewards: [
+				{
+					id: "346232772151BE35"
+					item: "ftbgenesis:seed_enhancer_improved"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "41ADE1D4DFAA4569"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E46466E1D3F1193"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:pumpkin"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5D3A01FC92A51919"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38ED4A2BC5F0AB95"]
+			description: ["&bHemp&r is the foundation of many industrial fabric applications. The strong hemp fibers have a myriad of uses and cultivating this plant will prove essential to our society. It can be bred most easily with bamboo parents or produced directly with some more advanced engineering techniques."]
+			icon: "ic2:hemp"
+			id: "60FCAD344525FBD6"
+			rewards: [
+				{
+					count: 4
+					id: "50B5CFF3AAD86E49"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:hemp"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0FD729C99266052E"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5E0F483688978381"
+					item: "immersiveengineering:hemp_fiber"
+					type: "item"
+				}
+			]
+			subtitle: "Take a trip and never leave the farm"
+			tasks: [{
+				id: "36EB9B946C190B82"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:hemp"
+						}
+					}
+				}
+				title: "Hemp Seeds"
+				type: "item"
+			}]
+			title: "The Wildwood Flower"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["All flower species can be directly transformed into seeds from the flowers for breeding by placing 4 of them onto crop sticks. Breed some &bdandelions&r and &bpoppies&r, they'll come in useful for crafting and breeding other plants later. "]
+			icon: "minecraft:dandelion"
+			id: "25A1E95E9742C91E"
+			rewards: [
+				{
+					id: "7E471A42D4747ECA"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "264A730B6126559A"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29B3F89F8DA12249"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F98943D3EAF02C3"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:dandelion"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "That'll Be just Dandelion"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"68D405257D61DA90"
+				"25A1E95E9742C91E"
+			]
+			description: ["By breeding sweet berries with dandelions we have a chance to create &bglow berries&r. They are a better food source and can be used to breed other plants."]
+			icon: "minecraft:glow_berries"
+			id: "78177F4A149190EB"
+			rewards: [
+				{
+					count: 4
+					id: "6270C9D8C9BAB674"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:glow_berry"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2C6C74CA72DD7F0E"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05A338F79FB56D89"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53CE32FE6E09F381"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:melon"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0E931161332ECE70"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:glow_berry"
+						}
+					}
+				}
+				match_nbt: true
+				title: "Glow berry seeds"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Glowed up Berries"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60FCAD344525FBD6"]
+			description: ["&bTea&r and &6hops&r can both be bred from hemp cross breeding and both allow you to get into making powerful drinks to both hydrate and envigorate. "]
+			icon: "ic2:tea_leaf"
+			id: "15A0BFCED48FF8B2"
+			rewards: [
+				{
+					count: 4
+					id: "6ECE2CB2A65939BD"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:hops"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15225F5DDC534DDC"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:tea"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3744EDC239CF4859"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "27A1AF1A8EEE20B1"
+					item: "ic2:glass_fruit_tea"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EB037446AC3D166"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										crop: "ic2:tea"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										crop: "ic2:hops"
+									}
+								}
+							}
+						]
+					}
+				}
+				match_nbt: true
+				title: "Breed Tea or Hops"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Spill the Tea!"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15A0BFCED48FF8B2"]
+			description: ["Among other combinations, breeding tea can sometimes result in &bcoffee&r. Coffee is a highly cafinated bean that can be brewed into a drinkable liquid that both refreshes and stimulates. "]
+			icon: "ic2:coffee_beans"
+			id: "462CB21FACE053A9"
+			rewards: [
+				{
+					count: 4
+					id: "2CAD302C4D235643"
+					item: {
+						Count: 1b
+						id: "ic2:crop_seed"
+						tag: {
+							crop: "ic2:coffee"
+							gain: 5.0d
+							growth: 5.0d
+							resistance: 5.0d
+							scan: 4b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D5FD4BEDED4570"
+					item: "ic2:mug_dark_coffee"
+					type: "item"
+				}
+				{
+					id: "70B01445CDF56B3A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4B502D37DEDD09C8"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:coffee"
+						}
+					}
+				}
+				match_nbt: true
+				title: "Breed coffee seeds"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Powered by Java"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2FAA7BF3C0A3CED1"]
+			description: [
+				"Metal crops can produce almost every type of metal you'll need. This is an optional path of restoration but one worth investing in should you decide to. &bFerru&r is the first of the metallic crops. It will yield &6iron&r byproducts. It can be bred from several paths but blue wheat is one such path, redwheat can work also. "
+				""
+				"{@pagebreak}"
+				"In order to fully grow, the new Ferru plant will require a block of iron anywhere under its farmland up to 4 blocks. &nAll metals and gem plants have this requirement.&r "
+				""
+				"{image:ftbgenesis:textures/quests/subsoil.png width:60 height:100 align:1}"
+			]
+			id: "729561E0448A0B05"
+			rewards: [
+				{
+					id: "6018B6C321BD0BDE"
+					item: "ftbgenesis:seed_enhancer_supreme"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0E897CC9F27EAA50"
+					item: "ic2:fertilizer"
+					type: "item"
+				}
+				{
+					id: "223BE91B288953DC"
+					item: "ic2:overgrowth_fertilizer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "4177FA6398D5970A"
+					item: "ic2:restoring_fertilizer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "408B1421C8A03FF8"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			tasks: [{
+				icon: "ic2:dust_iron"
+				id: "4E7F79C1F600C641"
+				item: {
+					Count: 1b
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							crop: "ic2:ferru"
+						}
+					}
+				}
+				match_nbt: true
+				title: "Breed Ferru seeds"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "These Seeds are METAL AF!"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["The &bcrop analyzer&r block is similar to your handheld analyzer except in block form for automation. It works well with the crop library which can store large amounts of seeds with varying statistics but only after they have been analyzed. "]
+			id: "1BE87214BE69F49C"
+			rewards: [
+				{
+					id: "6A80870C457E2A03"
+					item: "ic2:simple_crop_library"
+					type: "item"
+				}
+				{
+					id: "5815F39A1C9D7007"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "433E678A866610C0"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05E661344172289B"
+				item: "ic2:crop_analyzer_block"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: ["We've been able to miniaturize many common arboreal variants in our simulations. We've adapted the crop sticks to be able to accept and replicate saplings. Simply plant the saplings of your choice on cropsticks to create a miniature &bbonsai tree farm&r."]
+			icon: "biomesoplenty:willow_sapling"
+			id: "56EB13FBFEB313A8"
+			rewards: [
+				{
+					id: "0587F2D4A133ECC1"
+					item: "ftbgenesis:seed_enhancer_basic"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2502EC4C3E77D885"
+					item: "ic2:crop_sticks"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1883F7F613F40B65"
+					table_id: 4051331422368155271L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "3749CB9CD8749A06"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			title: "Banzai, Bonsai!"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0E1E50CE55AC915A"]
+			description: [
+				"While fertilizer is the best thing for plants to keep the soil nutrients up and enhance the growth rate of your plants, you may not have access to recycling yet for scrap. In a pinch, normal &bwheat seeds&r will work as fertilizer as well. Just right click them on a crop stick you've already planted and it will add fertilizer to the soil."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Your plants need nutrients in the soil and hydration as well as air quality. These 3 factors apply towards a plant's needs. Higher tier plants have higher needs and &e&nwill die&r without them."
+				""
+				"One of the best ways to achieve this is with subsoil certain soils will boost the farmland, subsoils can go up to 4 deep below the farmland. A good option is &bSoul Sand&r. It provides lots of nutriends but not much water so make sure your plants are getting hydration manually or with a crop matron. &nWater sourceblocks near them does not count.&r"
+			]
+			id: "5465F54374F3B3F8"
+			rewards: [
+				{
+					count: 64
+					id: "1F0847EFDD66EA05"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0546DC0B29936AD1"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3370E36F7751DB22"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			title: "Happy Plants"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"25A4DE0F0F614D31"
+				"1F7D1E1C9275B3C8"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You are a skilled botanist indeed to recognize my masterful work. I trust you will care and provide for the plants herein and I hereby grant you full access to my private labs. It's the soil you see, sub soils and ideal conditions seem to make the plants grow so much better. To that end I've created a superior version of my original farming simulation and I now place it in your capable hands. Good luck. "
+				""
+				"{@pagebreak}"
+				"P.S. Just as I have created my own virtual environments, I encourage you to do the same. To that end I've left you a few spatial disks to create your own simulated environments. Best wishes, ~Dr. Thorne."
+			]
+			id: "15C138BB91C77B44"
+			optional: true
+			rewards: [
+				{
+					icon: "ae2:spatial_cell_component_128"
+					id: "29FC78CEB7D53DF1"
+					tags: ["prefab_farm2"]
+					title: "Activate the Simulation"
+					type: "custom"
+				}
+				{
+					id: "38D03B0C100B64A8"
+					item: "ae2:spatial_storage_cell_128"
+					type: "item"
+				}
+				{
+					id: "1FA98FC946A8B201"
+					item: "ae2:spatial_storage_cell_128"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7FED8DE61D4886CD"
+					item: "mekanism:advanced_universal_cable"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ae2:spatial_pylon"
+				id: "04BF15F1C8BB130B"
+				ignore_dimension: true
+				position: [I;
+					-12
+					44
+					59
+				]
+				size: [I;
+					1
+					1
+					1
+				]
+				title: "Goto the Simulation Chamber"
+				type: "location"
+			}]
+			title: "Enhanced Farming"
+			x: -0.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["22D44A27340C84DC"]
+			description: ["A strange transmission resonates from within the fields, its source is unknown, as if its coming from the plants themselves! After some investigating you've confirmed, there is a message hidden in the very genetic structure of the plants here in the seed vault. After some quick translation you determine the message reads \"The beetroot was so aptly chosen as to be the root of all evolutionary genetics for Elyria's future. Find the three variant strains and submit them to prove you are qualified to access my research. "]
+			id: "25A4DE0F0F614D31"
+			optional: true
+			rewards: [{
+				id: "688E87A92BF577D7"
+				item: "ae2:spatial_storage_cell_128"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "12952D43AAE082C7"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\":\"yellow\",\"translate\":\"item.minecraft.beetroot_seeds\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					consume_items: true
+					id: "734FCC4143E0D01B"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\":\"gold\",\"text\":\"Beetroot Seeds\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "28685A97E472077F"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"color\":\"red\",\"translate\":\"item.minecraft.beetroot_seeds\"}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Secret of the Seeds"
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["22D44A27340C84DC"]
+			description: ["I dont know how you got these, but these are clearly not authentic. I must admit, however, that your workmanship is second only to my own. I believe I can trust you with my research if you've been able to make such a faithful reproduction of my work. "]
+			id: "1F7D1E1C9275B3C8"
+			optional: true
+			rewards: [{
+				id: "30B9072FA43F029F"
+				item: "ae2:spatial_storage_cell_128"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "46CEF3DFB916EF20"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"red\",\"text\":\"Beetroot Seeds\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "59058753685465E0"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"Beetroot Seeds\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7C6AC084E45A63D8"
+					item: {
+						Count: 1b
+						id: "minecraft:beetroot_seeds"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"gold\",\"text\":\"Beetroot Seeds\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Suspicious Seeds..."
+			x: -1.5d
+			y: -10.0d
+		}
+	]
+	title: "Selective Breeding"
+}

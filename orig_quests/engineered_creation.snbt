@@ -1,0 +1,205 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "engineered_creation"
+	group: "5D5DBBFEECA45FAB"
+	icon: {
+		Count: 1b
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "6EB48DA1AFBA4829"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["41C71732A2A91BC7"]
+			description: ["In order to get a hot enough fire and infuse iron with enough carbon to forge steel we'll need to first build a &bcoke oven&r. A small 3x3x3 structure make of coke bricks should burn hot enough to coke coal. The creosote byproduct may also be useful for many other applications. "]
+			id: "5855D98B3389E082"
+			rewards: [
+				{
+					id: "194C5B98C4A4B746"
+					item: "mekanism:advanced_fluid_tank"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4437F5ECEAF382C9"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 27L
+				id: "4EF7F3A914802AA1"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "Coked up Coal"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"43DD2E397A5249D9"
+				"5855D98B3389E082"
+			]
+			description: ["The &bmetal press&r is a multiblock structure you'll use for fabricating plates and gears for various machinery. These are the blocks it is constructed of. Consult the &eengineer's manual&r we've included in your tome for you to see how to construct it. Once completed, right click with an &6engineer's hammer&r to complete the multiblock. "]
+			icon: "immersiveengineering:metal_press"
+			id: "2BD3F9A2BD534DC9"
+			rewards: [
+				{
+					id: "419AC9A1EB31665E"
+					item: "immersiveengineering:mold_gear"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "03C0CEB8FFF311BA"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B2C83D873E0FE84"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0B0E3AB6C31AA4CB"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "64E15D64D15C4DB0"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2F818331FE805FD5"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "6069A4D030F3E03F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "44875C158AF11803"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+			]
+			title: "Construct a Metal Press"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["308EF169B51EB98B"]
+			description: ["With what limited resources are currently available we can still cobble together some rudimentary machines. The &bpity machine&r frame will enable you to make several useful machines. "]
+			id: "0ECDB4B0723AE6BA"
+			rewards: [
+				{
+					count: 2
+					id: "2693A6EBD153FC7A"
+					item: "industrialforegoing:machine_frame_pity"
+					type: "item"
+				}
+				{
+					id: "6DEF204E8FA5899C"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "47684E92FCB20A15"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			title: "Primitive Machines"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0ECDB4B0723AE6BA"]
+			description: ["The &bfluid extractor&r will slowly extract &6liquid latex&r from &6logs&r placed in front of it. The logs will be destroyed over time and need to be replaced. This can be further processed towards plastic manufacturing."]
+			id: "3DDF54CF3CD7947F"
+			rewards: [{
+				count: 2
+				id: "66B2EB6FD0B74BC7"
+				item: "industrialforegoing:fluid_transporter_type"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5799B66375765C3C"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3DDF54CF3CD7947F"]
+			description: ["Now that you've obtained &6latex&r you'll need to pipe it into a &blatex processor&r. This machine will also require water and a small amount of power to operate. "]
+			id: "519B7ACB9D5165C5"
+			rewards: [
+				{
+					count: 16
+					id: "25A0DE063B08E889"
+					item: "electrodynamics:wireinsulatedtin"
+					type: "item"
+				}
+				{
+					id: "13E0265FDFB1E666"
+					item: "ic2:cell_water"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4FBAA034153D4E3C"
+				item: "industrialforegoing:latex_processing_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["519B7ACB9D5165C5"]
+			description: ["&bPlastic&r is used in most &eIndustrial Foregoing&r basic technologies, and many Pressure-sensitive innovations as well as modern meta materials. You'll use plenty of this in the future so its good to set it up early."]
+			id: "7BFA6D42CAF1328C"
+			rewards: [
+				{
+					count: 16
+					id: "7F56C57155470918"
+					item: "industrialforegoing:conveyor"
+					type: "item"
+				}
+				{
+					id: "38BBEF28F2B2BC4F"
+					item: "industrialforegoing:conveyor_extraction_upgrade"
+					type: "item"
+				}
+				{
+					id: "2889B25F4898A58B"
+					item: "industrialforegoing:conveyor_insertion_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "223279FD8BEE3D9C"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			title: "Lean, Mean, Polyethylene "
+			x: -1.5d
+			y: 3.5d
+		}
+	]
+	title: "Engineered Creation"
+}

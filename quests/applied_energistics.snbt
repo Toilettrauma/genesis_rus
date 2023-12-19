@@ -1,0 +1,562 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: "4C0075272E2F720D"
+	icon: "ae2:fluix_crystal"
+	id: "0728E6A480590763"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"308EF169B51EB98B"
+				"35CAFE13E82C256A"
+			]
+			description: ["{gen.applied_energistics.task_0.desc}"]
+			id: "125174EB6034391C"
+			rewards: [{
+				id: "2D262EE59E86CD0C"
+				item: "ae2:entropy_manipulator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "756A20E1BEA08063"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"11084B5355F27820"
+				"125174EB6034391C"
+			]
+			description: ["{gen.applied_energistics.task_1.desc}"]
+			id: "000EE3C686CBB34C"
+			rewards: [
+				{
+					count: 3
+					id: "30ED067185107B01"
+					item: "ae2:flawless_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "733F6F34F8E8F675"
+					item: "ae2:certus_quartz_wrench"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "647EA0E96E4B4CBA"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["000EE3C686CBB34C"]
+			description: ["{gen.applied_energistics.task_2.desc}"]
+			id: "5796BE0DEBF1AF0E"
+			rewards: [{
+				count: 8
+				id: "4AB52AB734C57197"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "617B773E3154171B"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5796BE0DEBF1AF0E"]
+			description: ["{gen.applied_energistics.task_3.desc}"]
+			id: "498B2E123C3ADF6F"
+			rewards: [
+				{
+					count: 16
+					id: "11F08CB921F5E9B1"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4B2C8970F37EF12C"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+				{
+					id: "26BC9FA2D6DC769D"
+					item: {
+						Count: 1b
+						id: "ae2:dense_energy_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "207575B548340A21"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["125174EB6034391C"]
+			description: ["{gen.applied_energistics.task_4.desc}"]
+			id: "66E9D332512B525A"
+			rewards: [
+				{
+					count: 8
+					id: "767AF6D4CBBBB966"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0133A429528C72EC"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6BA2919C197FB437"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["66E9D332512B525A"]
+			description: ["{gen.applied_energistics.task_5.desc}"]
+			id: "074F27A5B7F53548"
+			rewards: [
+				{
+					count: 16
+					id: "2C85B8871D3AED14"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "755F2F483FBDCE61"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "27B1411E9CE6FA0A"
+					item: "ae2things:advanced_inscriber"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "54FE94AB7CE9C350"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "19EE3978ED2FBEDE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:printed_logic_processor"
+								}
+								{
+									Count: 1b
+									id: "ae2:printed_calculation_processor"
+								}
+								{
+									Count: 1b
+									id: "ae2:printed_engineering_processor"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"074F27A5B7F53548"
+				"586B3283715D58FA"
+			]
+			description: ["{gen.applied_energistics.task_6.desc}"]
+			id: "40C9FC4B88B89CD5"
+			rewards: [
+				{
+					count: 4
+					id: "761CC4FB9D351D93"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A3DD5979980230E"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "69E93C33E2225147"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "069B3E9BBE1D86A4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:logic_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:calculation_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:engineering_processor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{gen.applied_energistics.task_6.title}"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"498B2E123C3ADF6F"
+				"40C9FC4B88B89CD5"
+			]
+			description: ["{gen.applied_energistics.task_7.desc}"]
+			id: "3D30228110B84291"
+			rewards: [
+				{
+					id: "351E3E905C0AEB3D"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "2F80B1DA6F8B7C81"
+					item: "ae2:conversion_monitor"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0FDB7CAF130E48CC"
+					item: "ae2:cable_anchor"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1B9D1A4CE6160566"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "{gen.applied_energistics.task_7.title}"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["{gen.applied_energistics.task_8.desc}"]
+			id: "339F20F9289DDD5F"
+			rewards: [{
+				id: "5CB5DD8E295634DD"
+				item: "megacells:bulk_cell_component"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5896CB7FE9AD1C03"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			title: "{gen.applied_energistics.task_8.title}"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["339F20F9289DDD5F"]
+			description: ["{gen.applied_energistics.task_9.desc}"]
+			id: "7C1BCBBDB26EDE25"
+			rewards: [{
+				id: "2C076A2740B39E1D"
+				item: "ae2:4k_crafting_storage"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2A830E14F25518C8"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["{gen.applied_energistics.task_10.desc}"]
+			id: "1549DB527B4688C6"
+			rewards: [{
+				id: "679D7888C7A130B4"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			tasks: [{
+				id: "421E25CF5490274D"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40C9FC4B88B89CD5"]
+			description: ["{gen.applied_energistics.task_11.desc}"]
+			id: "7EA74A97328DCB26"
+			rewards: [{
+				count: 4
+				id: "5E169A5C83ED71A0"
+				item: "ae2:speed_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52E383EB5C01E5D4"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C1BCBBDB26EDE25"]
+			description: ["{gen.applied_energistics.task_12.desc}"]
+			id: "094FFF692A172AD8"
+			rewards: [{
+				id: "0D996A013EFC662A"
+				item: "megacells:mega_crafting_accelerator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AA78C87F4709FF6"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["{gen.applied_energistics.task_13.desc}"]
+			id: "6F2DEF2DA0E71A65"
+			rewards: [
+				{
+					count: 8
+					id: "557D3B39A48DB4A9"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "219B704ADDE4D248"
+					item: "ae2:level_emitter"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7111489284E6362D"
+					item: "ae2:redstone_card"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3333CD3869968A06"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:import_bus"
+							}
+							{
+								Count: 1b
+								id: "ae2:export_bus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{gen.applied_energistics.task_13.title}"
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["{gen.applied_energistics.task_14.desc}"]
+			id: "13CA79D4F4094E17"
+			rewards: [{
+				count: 3
+				id: "356595C041F53810"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2152AF8B8097734E"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["339F20F9289DDD5F"]
+			description: ["{gen.applied_energistics.task_15.desc}"]
+			id: "4735156D8D012737"
+			rewards: [
+				{
+					id: "682FA9AD46E699D8"
+					item: "ae2:cell_component_64k"
+					type: "item"
+				}
+				{
+					id: "044C3C2748DADCB6"
+					item: "cookingforblockheads:sink"
+					title: "{gen.applied_energistics.task_15.title}"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6792B9BC5ADC0A93"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4735156D8D012737"]
+			description: ["{gen.applied_energistics.task_16.desc}"]
+			id: "5CE85CD6B61F0A7E"
+			rewards: [
+				{
+					id: "0975685221A97173"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "16DC7D5C6574963A"
+					item: "ae2:tiny_tnt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2151FC1D8A3D441C"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["498B2E123C3ADF6F"]
+			description: ["{gen.applied_energistics.task_17.desc}"]
+			id: "0842493BFAE57E6C"
+			rewards: [{
+				id: "19031F9611590F63"
+				item: "ae2:biometric_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FC59FC533548F88"
+				item: "ae2:security_station"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0842493BFAE57E6C"]
+			description: ["{gen.applied_energistics.task_18.desc}"]
+			id: "18EDA84840067CB2"
+			rewards: [{
+				id: "501A9A5ED64B5EB4"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "333DBBF215EF483A"
+				item: {
+					Count: 1b
+					id: "ae2:wireless_crafting_terminal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0842493BFAE57E6C"]
+			description: ["{gen.applied_energistics.task_19.desc}"]
+			id: "3FB8F0028B41F4E9"
+			rewards: [{
+				count: 8
+				id: "293B41202C676BE6"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11EF829174285568"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0842493BFAE57E6C"
+				"18EDA84840067CB2"
+				"5CE85CD6B61F0A7E"
+			]
+			description: ["{gen.applied_energistics.task_20.desc}"]
+			id: "60519EF12D45C54D"
+			tasks: [{
+				id: "1299B516DE1A2247"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+	]
+	title: "{gen.applied_energistics.title}"
+}

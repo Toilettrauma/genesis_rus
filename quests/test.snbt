@@ -1,0 +1,77 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "test"
+	group: ""
+	icon: "engineersdecor:sign_radioactive"
+	id: "39FF25989836DF89"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "73F275C36B56FE19"
+			rewards: [
+				{
+					id: "1832BC2F76B68E7F"
+					tags: ["ocean_vault"]
+					type: "custom"
+				}
+				{
+					command: "/execute at @p as @p run Vault generate ftbseedvaults:ocean_seed_vault"
+					id: "11BB881E36B108B6"
+					type: "command"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "014E9A3B4B37A509"
+				ignore_dimension: true
+				position: [I;
+					2400
+					41
+					600
+				]
+				size: [I;
+					200
+					100
+					220
+				]
+				title: "{gen.test.task_-1.title}"
+				type: "location"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			id: "5E05CB3326ED7DB6"
+			rewards: [{
+				id: "20F7AC95E8238894"
+				tags: ["prefab_wheat"]
+				title: "{gen.test.task_-1.title}"
+				type: "custom"
+			}]
+			tasks: [{
+				id: "7E02B64173038440"
+				title: "{gen.test.task_-1.title}"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			description: ["{gen.test.task_0.desc}"]
+			id: "15C3EE57B9FEE6DA"
+			size: 5.0d
+			subtitle: "{gen.test.task_0.subtitle}"
+			tasks: [{
+				id: "7FFD30EEB3FE0338"
+				title: "{gen.test.task_0.title}"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -7.5d
+		}
+	]
+	title: "{gen.test.title}"
+}

@@ -1,0 +1,678 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "biotechnology"
+	group: "494B330CF50C8720"
+	icon: "botanicadds:flowers/floating/vibrantia"
+	id: "702C67D598A5006A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["22D44A27340C84DC"]
+			description: ["There should be some experimental mystical flower essence in the vault barrels. You can use this to create one of our world's finest achievements, the &bpetal apothecary&r. This simplistic-seeming basin is powered by a living techno-organic flower imbued with nanotechnology. Use some of the mystic petals to fabricate the apothecary."]
+			id: "382BF7E488CD1A8C"
+			rewards: [{
+				count: 4
+				id: "446A7F7C824000E2"
+				item: "botania:white_petal"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Flower Technology"
+			tasks: [{
+				id: "15B39EABECDC5E37"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:apothecary_mossy"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_deepslate"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_default"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_livingrock"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_forest"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_plains"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_mountain"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_fungal"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_swamp"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_desert"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_taiga"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_mesa"
+							}
+						]
+					}
+				}
+				title: "Any Petal Apothecary"
+				type: "item"
+			}]
+			title: "Floral Genesis"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["382BF7E488CD1A8C"]
+			description: ["Using the petal apothecary and more white petals, craft the pure daisy. Items placed around this will transform in time as their molecular structure is reconstituted. This can allow life to be imbued into mundane materials such as stone and wood to create &bliving&r variants. "]
+			icon: "botania:pure_daisy"
+			id: "51F2694FD01DD944"
+			rewards: [
+				{
+					id: "7053723898F38929"
+					item: "botania:white_floating_flower"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51CBCE055047EECB"
+					item: "botania:fertilizer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "11554C53C6EBC4DA"
+					item: "botania:overgrowth_seed"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0C93EBF9501825A0"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2DBC09D07E6AA02A"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5E50AB819BB2483A"
+					item: "botania:livingrock"
+					type: "item"
+				}
+			]
+			title: "Daisy if you Do"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["51F2694FD01DD944"]
+			description: ["We'll need a chemically inert and resonancestable container for the unique energies the living flora can produce. Our scientists have called this mana, which I suspect is some inside joke about people thinking it's magic. A &b\"Mana\" pool&r should work for this. You'll need some specialized gem dust obtained by smashing apothic gems under an anvil and some inert crystals which the Amadron trading system can provide."]
+			id: "1202373D0B88B941"
+			rewards: [
+				{
+					id: "4849BB7E48EBF457"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+				{
+					id: "1522C857BAB97EA3"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "037572C58998E77C"
+					item: "manavisualizer:manareader"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0289A1B90B7DAF76"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			title: "Energy Containment Pool"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1202373D0B88B941"]
+			description: ["This directional lensing apparatus we've dubbed a &bmana spreader&r, can take in and direct the flow of this energy towards other containment pools or floral machines that can utilize this energy. Their effectiveness, speed and potency can be modified in several ways depending on the lens applied. "]
+			icon: "botania:mana_spreader"
+			id: "6ADDB390E980F565"
+			rewards: [{
+				id: "6554BD7E497FA5A5"
+				item: {
+					Count: 1b
+					id: "botania:lens_speed"
+					tag: {
+						compositeLens: {
+							Count: 1b
+							id: "botania:lens_power"
+						}
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Super Lens\"}"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5BBE9EA5703FEC85"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					id: "3C1575F7CFE47F33"
+					item: {
+						Count: 1b
+						id: "botania:twig_wand"
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4F3DC3700E8B4E5B"
+				"3F4F18C438028976"
+			]
+			description: ["The &brunic altar&r can have mana directed towards it to infuse multiple items and embed them into a living rock apparatus. These forged runes have altered metaphysical properties based on the material combinations and can theoretically be used to create many useful devices that are all powered by this energy."]
+			id: "11D222814C8B662D"
+			rewards: [
+				{
+					id: "42FA39AEB854B00C"
+					item: "botania:brewery"
+					type: "item"
+				}
+				{
+					id: "5F7D60FCDFF12B07"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "1787522DF0AD0D59"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1202373D0B88B941"]
+			description: ["By refining iron and then infusing it with this living energy it takes on a brilliant blue hue and resonates with the flow of that energy. It seems to self-heal whenever it's near mana. This may be very useful to make tools out of."]
+			id: "29D0A5B2D5FA5478"
+			rewards: [
+				{
+					id: "1A9ABE53F11D5E66"
+					item: {
+						Count: 1b
+						id: "botania:manasteel_pick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0709CF1BFDFF3276"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "3039E0C5D6EB642A"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			title: "Mana Infused Metal"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1202373D0B88B941"]
+			description: ["&bMana diamonds&r are able to concentrate a large amount of mana inside their crystalline structure. Diamonds are a rare commodity but thanks to the discovery of the dimensional shard's transdimensional resonance, we've adapated the process to use them as well."]
+			icon: "botania:mana_diamond"
+			id: "4F3DC3700E8B4E5B"
+			rewards: [
+				{
+					id: "39369246F97E3FCC"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+				{
+					id: "3FBE60A2E17E8624"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "46F5277103C07D7D"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			title: "A Flower's best friend"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F3DC3700E8B4E5B"]
+			description: ["This portable &bmana tablet&r allows the use of mana to repair tools and power curios on the go."]
+			id: "5BD20C505212336F"
+			rewards: [
+				{
+					id: "74E4680526A377E1"
+					item: "botania:aura_ring"
+					type: "item"
+				}
+				{
+					id: "6E64A83A422D8FB1"
+					type: "xp"
+					xp: 2
+				}
+				{
+					count: 4
+					id: "773D894A00786C55"
+					item: "botania:white_floating_flower"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3AE9021AC9ABA87E"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			title: "Portable Containment"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["11D222814C8B662D"]
+			description: ["Different types of materials yield different runic properties. You'll need several different ones to continue the research in this field. "]
+			id: "397466B12461AA9D"
+			rewards: [
+				{
+					id: "72D58002EAE3A68A"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+				{
+					id: "300FF69BF1A4883F"
+					item: "botania:floating_exoflame"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "571BCD66BA4C33B5"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1C7B415857F1D6F4"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "37AC6761F669C8E6"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "7E948E6CAFA3C72A"
+					item: "botania:rune_air"
+					type: "item"
+				}
+				{
+					id: "28A5D61A9361BAF4"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+			]
+			title: "Runic!"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["11D222814C8B662D"]
+			description: ["Using the refractory properties of the purified prism the energy being directed into a rune can be amplified several times to empower all other runes that are used in conjunction with this one. "]
+			id: "0B15FC22C85314ED"
+			rewards: [
+				{
+					count: 2
+					id: "605BDCEBD5127B39"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+				{
+					id: "0E081EF5D83CDBAD"
+					item: "botania:mana_bottle"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1DB365206444EA90"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"397466B12461AA9D"
+				"0B15FC22C85314ED"
+			]
+			description: ["The &bTerrestrial Agglomeration plate or TAP&r for short can channel vast amounts of mana into several items at once, changing them at the atomic level into completely new materials. One such material is &6terrasteel&r, which is based on the manasteel ingots but force-infused with tremendous amounts of mana thanks to the resonance of the mana diamond and the mana pearl's ender transitional matter.  It may also be able to create some unique new materials that would normally take other more intricate routes of processing."]
+			id: "3FAD1CA70C2E5DD1"
+			rewards: [
+				{
+					id: "061DFF3EFCD040FF"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					id: "568042E740A97627"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "6A1F2B7AEDB4747F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "41FA42BFBAB8683D"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "Energy Agglomeration Pad"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3FAD1CA70C2E5DD1"]
+			description: ["&bTitanium&r is a light and ultra-strong metal that will be used in heavy industrial machine applications. You'll definitely want to get this growing right away and start stockpiling. "]
+			id: "06146F17FEEF0E7F"
+			rewards: [
+				{
+					id: "3E414B2BC1D842C1"
+					item: "mysticalagriculture:mystical_fertilizer"
+					type: "item"
+				}
+				{
+					id: "215B9B7D0B20AA2F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4A89262E22CBD319"
+					item: "mysticalagriculture:supremium_farmland"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "5F705AB84400EEDA"
+				item: "mysticalagriculture:titanium_seeds"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3FAD1CA70C2E5DD1"]
+			description: ["&bTerrasteel&r metal is the highest concentration of mana infused metals we've been able to produce thus far. Its ability to absorb mana seems near limitless."]
+			id: "7F9938E3623B162D"
+			rewards: [
+				{
+					id: "62039634DE3654CF"
+					item: {
+						Count: 1b
+						id: "botania:terra_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75F67403AA08B328"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "0A75B1EB75B1BC62"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["29D0A5B2D5FA5478"]
+			description: ["This &bcatalyst&r redirects the infusion energy from an internal to an external effect. Items brought in contact with this excited-state energy transform into entirely different items. "]
+			id: "3FE5F113F2D9EAA5"
+			rewards: [
+				{
+					id: "5716054AFC952B9D"
+					item: "botania:lens_warp"
+					type: "item"
+				}
+				{
+					id: "2895A694236A09E4"
+					item: "botania:piston_relay"
+					type: "item"
+				}
+				{
+					id: "20740643BD7520FD"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "42F25BF5E3B6DDF5"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			title: "Catalytic Converter"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7F9938E3623B162D"]
+			description: ["Species X-122 was a race of friendly extra dimensional beings that called themselves elves. Their very physics work different than ours so although we have never been able to visit one another directly we have set up trading practices in the past. They may be able to provide some unique materials for us in exchange for materials we produce here that they are unable to. Create a &6gateway portal&r according to the diagram archived in the lexica botanica and re-initiate trade."]
+			icon: "botania:natura_pylon"
+			id: "21AB38B1872A23AD"
+			rewards: [{
+				count: 4
+				id: "416D9807A00C9139"
+				item: "botania:mana_pearl"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "493BC048B2B7648A"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+				{
+					id: "5A6FCC4441E6C209"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "480107689BB79E9C"
+					item: "botania:glimmering_livingwood_log"
+					type: "item"
+				}
+			]
+			title: "The Elven Gateway"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21AB38B1872A23AD"]
+			description: ["Trading sugar to the elves has resulted in a &bhoneyed essence&r that we can use to make liquid honey. The bees in our world died off long ago but with the genetic material contained within this honey, we believe we can initiate a resurgence. "]
+			id: "406CDD321A31814B"
+			rewards: [
+				{
+					id: "116DCE5EF1E14FD2"
+					item: "farmersdelight:honey_glazed_ham_block"
+					type: "item"
+				}
+				{
+					id: "073CF0E29EE6CB44"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3C8B1C43154CAB3C"
+				item: "mysticalagriculture:honey_essence"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21AB38B1872A23AD"]
+			description: ["&6Dragonstone&r, &6Elementium&r and &6Pixie Dust&r all have very intriguing applications in the physics of our world. Our scientists can't even begin to simulate them in the Nexa to know what uses they may have, so that will be up to you to research for now."]
+			id: "744E428ABBE0A664"
+			rewards: [
+				{
+					count: 8
+					id: "34875AF70714D083"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "45A0BA72520EB456"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					id: "4FE88E283EAA27FA"
+					type: "xp"
+					xp: 2
+				}
+			]
+			tasks: [{
+				id: "4EEBAF3C15A67FCD"
+				item: "botania:dragonstone"
+				type: "item"
+			}]
+			title: "Exotic Trades"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["382BF7E488CD1A8C"]
+			description: [
+				"The energizera is capable of absorbing stored FE energy from nearby sources. It can draw from &bbatteries&r, generators and any FE containing source. It will convert this energy into the bioelectrical energy called mana used to power the floral machines."
+				""
+				"While you may be able to create these later in the physical world, for now we'll need to synthesize them for you under more controlled conditions."
+				""
+				""
+				"Note: This quest is repeatable and can also be found under the Synthetic Aquisitions questline."
+			]
+			icon: "botanicadds:flowers/energizera"
+			id: "3F4F18C438028976"
+			rewards: [{
+				id: "3065802DF8F1B60F"
+				item: "botanicadds:flowers/energizera"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "6837027BCF46281C"
+					item: "botania:red_petal"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0160777A21487CAF"
+					item: "botania:green_petal"
+					type: "item"
+				}
+				{
+					id: "1C0A6172865C6161"
+					item: {
+						Count: 1b
+						id: "electrodynamics:battery"
+						tag: {
+							joules: 1666666.0d
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Experimental Energetic Flora"
+			x: 1.0d
+			y: -2.0d
+		}
+	]
+	title: "Biotechnology"
+}
